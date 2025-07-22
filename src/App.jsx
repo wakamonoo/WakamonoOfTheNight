@@ -41,7 +41,7 @@ function App() {
             id="userHero"
             className="flex justify-between"
           >
-            <img src={userImage} alt="User" className="w-auto" />
+            <img src={userImage} alt="Usger" className="w-auto" />
             <div id="userDesc">
               <p className="text-primary text-4xl lg:text-7xl text-techno">JOVEN</p>
             </div>
