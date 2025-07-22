@@ -3,7 +3,7 @@
 /* Custom base styles (fonts, variables, etc.) */
 @layer base {
   :root {
-    --color-brand: #e60023;
+    --color-brand: #14554b;
     --font-heading: 'Poppins', sans-serif;
   }
 
