@@ -6,7 +6,7 @@
 @layer base {
   :root {
     --color-bg: #3E4E42;         /* Dark Olive */
-    --color-accent: #403535;     /* Titan Red */
+    --color-accent: #403535;     /* brown */
     --color-text: #F4EBD0;       /* Bone White */
     --color-panel: #2C2C2C;      /* Steel Gray */
     --color-secondary: #4A773C;  /* Survey Green */
@@ -88,5 +88,9 @@
 
   .border-panel {
     border-color: var(--color-panel);
+  }
+
+  .stroke-text {
+    -webkit-text-stroke: 2px var(--color-accent);
   }
 }
