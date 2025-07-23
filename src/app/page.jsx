@@ -16,7 +16,7 @@ export default function Home() {
         <div id="navBar" className="flex justify-center px-4 py-8">
           <LightMode />
         </div>
-        <div id="bg" className="absolute bottom-0 left-0 w-full h-1/2 md:h-3/4">
+        <div id="bg" className="absolute bottom-0 left-0 w-full h-100">
           <Image src={wall} alt="wall" className="w-full h-full object-cover" />
         </div>
         <Signage />

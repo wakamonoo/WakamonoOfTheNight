@@ -1,21 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Merriweather&family=Special+Elite&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Black+Han+Sans&family=Rubik:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Merriweather&family=Special+Elite&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Black+Han+Sans&family=Rubik:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap");
+
 @import "tailwindcss";
 
 /* ===== BASE LAYER ===== */
 @layer base {
   :root {
-    --color-bg: #3E4E42;         /* Dark Olive */
-    --color-accent: #403535;     /* brown */
-    --color-text: #F4EBD0;       /* Bone White */
-    --color-panel: #2C2C2C;      /* Steel Gray */
-    --color-secondary: #4A773C;  /* Survey Green */
+    --color-bg: #3e4e42; /* Dark Olive */
+    --color-accent: #403535; /* brown */
+    --color-text: #f4ebd0; /* Bone White */
+    --color-panel: #2c2c2c; /* Steel Gray */
+    --color-secondary: #4a773c; /* Survey Green */
 
---font-heading: 'Bangers', cursive;         /* Comic-style, bold, fun but strong */
---font-body: 'Rubik', sans-serif;           /* Rounded, bold, readable */
---font-alt: 'Black Han Sans', sans-serif;   /* All caps, thick Korean style — strong presence */
-
-
+    --font-heading: "Bangers", cursive; /* Comic-style, bold, fun but strong */
+    --font-body: "Rubik", sans-serif; /* Rounded, bold, readable */
+    --font-alt: "Black Han Sans", sans-serif; /* All caps, thick Korean style — strong presence */
+    --font-tall: "Anton", sans-serif; /* Tall, bold and thin */
+    --font-tall-alt: "Bebas Neue", sans-serif; /* Alternative tall and narrow font */
   }
 
   body {
@@ -23,7 +25,10 @@
     font-family: var(--font-body);
   }
 
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     font-family: var(--font-heading);
   }
 
@@ -31,7 +36,9 @@
     font-family: var(--font-heading);
   }
 
-  p, span, li {
+  p,
+  span,
+  li {
     font-family: var(--font-body);
   }
 }
@@ -76,6 +83,13 @@
 
   .font-alt {
     font-family: var(--font-alt);
+  }
+  .font-tall {
+    font-family: var(--font-tall);
+  }
+
+  .font-tall-alt {
+    font-family: var(--font-tall-alt);
   }
 
   .shadow-aot {
