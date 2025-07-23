@@ -7,34 +7,39 @@ import { BsTelephoneFill } from "react-icons/bs";
 import { FaMoon } from "react-icons/fa";
 import logo from "../assets/logo.png";
 import wall from "../assets/aotWall.png";
-import me from "../assets/me.png";
+import me from "../assets/wakamono.png";
+import { FaFacebookF } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import scroll from '../components/scroll.jsx'
 
 export default function Home() {
   return (
     <main>
       <section className="bg-brand h-screen relative">
-        <div id="navBar" className="flex justify-between px-4 py-2">
+        <div id="navBar" className="flex justify-between px-4 py-8">
           <Link href="/">
             <Image src={logo} alt="wakamonophoto" className="w-18 h-auto p-2" />
           </Link>
           <div
             id="navLinks"
-            className="flex gap-2 text-white text-3xl bg-amber-200 rounded-2xl p-2 shadow-2xl"
+            className="flex gap-3 text-text text-3xl bg-brand rounded-xl p-2 shadow-lg"
           >
-            <button>
+            <button title="about">
               <VscAccount />
             </button>
-            <button>
+            <button title="skills">
               <RiRocket2Fill />
             </button>
-            <button>
+            <button title="works">
               <CgWebsite />
             </button>
-            <button>
+            <button title="contact">
               <BsTelephoneFill />
             </button>
           </div>
-          <button className="p-4 text-amber-200 text-2xl">
+          <button className="p-4 text-text text-2xl">
             <FaMoon />
           </button>
         </div>
@@ -48,9 +53,34 @@ export default function Home() {
           >
             <Image src={me} alt="me" fill className="object-contain" />
           </div>
-          <div id="meIntros">
-            <div className="">
-              <p className="text-4xl text-amber-100 pl-8 bottom-92 absolute z-20 text-Poppins p-4 bg-amber-50 rounded-4xl">HI I'M <span className="text-black">JOVEN</span></p>
+
+          <div className="absolute bottom-10 left-10 z-30 flex flex-col items-start gap-6">
+            {/* Name Section */}
+            <div className="text-left">
+              <p className="text-bone text-xl italic font-light tracking-widest">
+                JOVEN
+              </p>
+              <h1 className="text-accent text-6xl font-black tracking-tight drop-shadow-[0_2px_2px_rgba(244,235,208,1)]">
+                BATALLER
+              </h1>
+
+              <p>WEB DEVELOPER</p>
+            </div>
+
+            {/* Social Links */}
+            <div className="flex gap-4 px-6 py-3 bg-white/10 backdrop-blur rounded-2xl text-2xl text-bone">
+              <a href="" aria-label="Facebook" className="hover:text-accent">
+                <FaFacebookF />
+              </a>
+              <a href="#" aria-label="Instagram" className="hover:text-accent">
+                <FaInstagram />
+              </a>
+              <a href="#" aria-label="LinkedIn" className="hover:text-accent">
+                <FaLinkedinIn />
+              </a>
+              <a href="#" aria-label="GitHub" className="hover:text-accent">
+                <FaGithub />
+              </a>
             </div>
           </div>
         </div>

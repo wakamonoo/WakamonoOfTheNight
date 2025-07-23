@@ -1,28 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Merriweather&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Black+Han+Sans&family=Rubik:wght@400;700&display=swap');
 @import "tailwindcss";
 
-/* Custom base styles (fonts, variables, etc.) */
+/* ===== BASE LAYER ===== */
 @layer base {
   :root {
-    --color-brand: #14554b;
-    --font-heading: 'Poppins', sans-serif;
+    --color-bg: #3E4E42;         /* Dark Olive */
+    --color-accent: #403535;     /* Titan Red */
+    --color-text: #F4EBD0;       /* Bone White */
+    --color-panel: #2C2C2C;      /* Steel Gray */
+    --color-secondary: #4A773C;  /* Survey Green */
+
+--font-heading: 'Bangers', cursive;         /* Comic-style, bold, fun but strong */
+--font-body: 'Rubik', sans-serif;           /* Rounded, bold, readable */
+--font-alt: 'Black Han Sans', sans-serif;   /* All caps, thick Korean style — strong presence */
+
+
   }
 
   body {
+    @apply bg-[var(--color-bg)] text-[var(--color-text)];
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4 {
     font-family: var(--font-heading);
+  }
+
+  button {
+    font-family: var(--font-heading);
+  }
+
+  p, span, li {
+    font-family: var(--font-body);
   }
 }
 
-/* Custom utility classes */
+/* ===== UTILITY LAYER ===== */
 @layer utilities {
   .bg-brand {
-    background-color: var(--color-brand);
+    background-color: var(--color-bg);
   }
 
-  .text-brand {
-    color: var(--color-brand);
+  .bg-panel {
+    background-color: var(--color-panel);
   }
 
-  .shadow-brand {
-    box-shadow: 0 4px 10px rgba(230, 0, 35, 0.4);
+  .bg-accent {
+    background-color: var(--color-accent);
+  }
+
+  .text-accent {
+    color: var(--color-accent);
+  }
+
+  .text-secondary {
+    color: var(--color-secondary);
+  }
+
+  .text-bone {
+    color: var(--color-text);
+  }
+
+  .font-heading {
+    font-family: var(--font-heading);
+  }
+
+  .font-body {
+    font-family: var(--font-body);
+  }
+
+  .font-alt {
+    font-family: var(--font-alt);
+  }
+
+  .shadow-aot {
+    box-shadow: 0 4px 10px rgba(139, 30, 30, 0.4); /* Titan Red shadow */
+  }
+
+  .border-accent {
+    border-color: var(--color-accent);
+  }
+
+  .border-panel {
+    border-color: var(--color-panel);
   }
 }
