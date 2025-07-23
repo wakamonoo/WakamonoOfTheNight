@@ -50,6 +50,10 @@
     background-color: var(--color-accent);
   }
 
+  .bg-text {
+    background-color: var(--color-text);
+  }
+
   .text-accent {
     color: var(--color-accent);
   }
