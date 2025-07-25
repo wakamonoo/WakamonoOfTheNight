@@ -32,8 +32,8 @@ const bebasNeue = Bebas_Neue({
 });
 
 export const metadata = {
-  title: "AOT Portfolio",
-  description: "An Attack on Titan themed web developer portfolio",
+  title: "wakamonoofthenight",
+  description: "Joven Bataller AOT Themed Web Developer Portfolio",
 };
 
 export default function RootLayout({ children }) {
