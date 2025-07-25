@@ -105,6 +105,6 @@
   }
 
   .stroke-text {
-    -webkit-text-stroke: 2px var(--color-accent);
+    -webkit-text-stroke: 1px var(--color-accent);
   }
 }

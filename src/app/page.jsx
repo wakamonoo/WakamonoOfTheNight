@@ -28,6 +28,9 @@ export default function Home() {
             <Image src={me} alt="me" fill className="object-contain" />
           </div>   
         </div>
+        <div>
+          
+        </div>
         <BottomHalfCircleMenu />
       </section>
     </main>
