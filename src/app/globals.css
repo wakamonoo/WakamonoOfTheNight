@@ -1,24 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Merriweather&family=Special+Elite&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Black+Han+Sans&family=Rubik:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap");
-
+/* === TAILWIND === */
 @import "tailwindcss";
 
-/* ===== BASE LAYER ===== */
+/* === BASE LAYER === */
 @layer base {
   :root {
-    --color-bg: #3e4e42; /* Dark Olive */
-    --color-accent: #403535; /* brown */
-    --color-text: #f4ebd0; /* Bone White */
-    --color-panel: #8b1e1e; /* Titan Red */
+    --color-bg: #3e4e42;         /* Dark Olive */
+    --color-accent: #403535;     /* Brown */
+    --color-text: #f4ebd0;       /* Bone White */
+    --color-panel: #8b1e1e;      /* Titan Red */
     --color-panel-op: rgb(139 30 30 / 0.9);
-    --color-secondary: #4a773c; /* Survey Green */
+    --color-secondary: #4a773c;  /* Survey Green */
 
-    --font-heading: "Bangers", cursive; /* Comic-style, bold, fun but strong */
-    --font-body: "Rubik", sans-serif; /* Rounded, bold, readable */
-    --font-alt: "Black Han Sans", sans-serif; /* All caps, thick Korean style — strong presence */
-    --font-tall: "Anton", sans-serif; /* Tall, bold and thin */
-    --font-tall-alt: "Bebas Neue", sans-serif; /* Alternative tall and narrow font */
+    --font-heading: "Bangers", cursive;
+    --font-body: "Rubik", sans-serif;
+    --font-alt: "Black Han Sans", sans-serif;
+    --font-tall: "Anton", sans-serif;
+    --font-tall-alt: "Bebas Neue", sans-serif;
   }
 
   body {
@@ -26,25 +23,20 @@
     font-family: var(--font-body);
   }
 
-  h1,
-  h2,
-  h3,
-  h4 {
+  h1, h2, h3, h4 {
     font-family: var(--font-heading);
+  }
+
+  p, span, li {
+    font-family: var(--font-body);
   }
 
   button {
     font-family: var(--font-heading);
   }
-
-  p,
-  span,
-  li {
-    font-family: var(--font-body);
-  }
 }
 
-/* ===== UTILITY LAYER ===== */
+/* === UTILITIES LAYER === */
 @layer utilities {
   .bg-brand {
     background-color: var(--color-bg);
@@ -60,10 +52,6 @@
 
   .bg-text {
     background-color: var(--color-text);
-  }
-
-  .bg-panel {
-    background-color: var(--color-panel);
   }
 
   .text-accent {
@@ -93,6 +81,7 @@
   .font-alt {
     font-family: var(--font-alt);
   }
+
   .font-tall {
     font-family: var(--font-tall);
   }
@@ -115,5 +104,6 @@
 
   .stroke-text {
     -webkit-text-stroke: 1px var(--color-accent);
+    text-stroke: 1px var(--color-accent);
   }
 }
