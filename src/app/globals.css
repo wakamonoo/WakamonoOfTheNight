@@ -12,7 +12,7 @@
     --color-text: #f4ebd0; /* Bone White */
     --color-panel: #8b1e1e; /* Titan Red */
     --color-panel-op: rgb(139 30 30 / 0.9);
-    --color-secondary: #4a773c ; /* Survey Green */
+    --color-secondary: #4a773c; /* Survey Green */
 
     --font-heading: "Bangers", cursive; /* Comic-style, bold, fun but strong */
     --font-body: "Rubik", sans-serif; /* Rounded, bold, readable */
@@ -66,7 +66,6 @@
     background-color: var(--color-panel);
   }
 
-
   .text-accent {
     color: var(--color-accent);
   }
@@ -77,6 +76,10 @@
 
   .text-bone {
     color: var(--color-text);
+  }
+
+  .text-panel {
+    color: var(--color-panel);
   }
 
   .font-heading {
