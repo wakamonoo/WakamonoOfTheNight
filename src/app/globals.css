@@ -10,8 +10,9 @@
     --color-bg: #3e4e42; /* Dark Olive */
     --color-accent: #403535; /* brown */
     --color-text: #f4ebd0; /* Bone White */
-    --color-panel: #2c2c2c; /* Steel Gray */
-    --color-secondary: #4a773c; /* Survey Green */
+    --color-panel: #8b1e1e; /* Titan Red */
+    --color-panel-op: rgb(139 30 30 / 0.9);
+    --color-secondary: #4a773c ; /* Survey Green */
 
     --font-heading: "Bangers", cursive; /* Comic-style, bold, fun but strong */
     --font-body: "Rubik", sans-serif; /* Rounded, bold, readable */
@@ -60,6 +61,11 @@
   .bg-text {
     background-color: var(--color-text);
   }
+
+  .bg-panel {
+    background-color: var(--color-panel);
+  }
+
 
   .text-accent {
     color: var(--color-accent);

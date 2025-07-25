@@ -28,8 +28,23 @@ export default function Home() {
             <Image src={me} alt="me" fill className="object-contain" />
           </div>   
         </div>
-        <div>
-          
+        <div className="absolute z-50 p-4 right-4 mt-24 rounded-2xl bg-[var(--color-panel-op)] bg-opacity-70 ">
+          <h1 className="relative text-4xl text-bone">JOVEN BATALLER</h1>
+          <p className="text-right"><span className="text-2xl text-accent">- </span>web developer</p>
+          <div className="flex gap-2 text-4xl justify-center pt-2 text-accent">
+            <button>
+              <FaFacebookF />
+            </button>
+            <button>
+              <FaInstagram />
+            </button>
+            <button>
+              <FaLinkedinIn />
+            </button>
+            <button>
+              <FaGithub />
+            </button>
+          </div>
         </div>
         <BottomHalfCircleMenu />
       </section>
