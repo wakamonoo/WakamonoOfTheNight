@@ -28,27 +28,27 @@ export default function Home() {
             <Image src={me} alt="me" fill className="object-contain" />
           </div>   
         </div>
-        <div className="absolute z-50 p-4 py-4 right-4 mt-50 rounded-2xl bg-[var(--color-panel-op)] bg-opacity-70 ">
+        <div className="absolute z-50 p-4 right-4 mt-50 rounded-2xl bg-[var(--color-panel-op)] bg-opacity-70 ">
           <h1 className="relative text-4xl text-bone">JOVEN BATALLER</h1>
           <p className="text-right"><span className="text-2xl text-accent">- </span>web developer</p>
-          <div className="flex gap-2 text-4xl justify-center pt-2 text-accent">
+          <div className="flex gap-2 text-4xl justify-center pt-2 text-accent overflow-visible">
             <a href="https://www.facebook.com/joven.serdanbataller">
-              <button className="transition-all duration-300 hover:text-5xl hover:text-[var(--color-text)] active:text-5xl focus:text-[var(--color-text)]">
+              <button className="transition-all duration-300 hover:scale-125 hover:text-[var(--color-text)] active:scale-125 focus:text-[var(--color-text)]">
               <FaFacebookF />
             </button>
             </a>
             <a href="https://www.instagram.com/wakamonoooo/">
-              <button className="transition-all duration-300 hover:text-5xl hover:text-[var(--color-text)] active:text-5xl focus:text-[var(--color-text)]">
+              <button className="transition-all duration-300 hover:scale-125 hover:text-[var(--color-text)] active:scale-125 focus:text-[var(--color-text)]">
               <FaInstagram />
             </button>
             </a>
             <a href="https://www.linkedin.com/in/joven-bataller-085761350/">
-              <button className="transition-all duration-300 hover:text-5xl hover:text-[var(--color-text)] active:text-5xl focus:text-[var(--color-text)]">
+              <button className="transition-all duration-300 hover:scale-125 hover:text-[var(--color-text)] active:scale-125 focus:text-[var(--color-text)]">
               <FaLinkedinIn />
             </button>
             </a>
             <a href="https://github.com/wakamonoo">
-              <button className="transition-all duration-300 hover:text-5xl hover:text-[var(--color-text)] active:text-5xl focus:text-[var(--color-text)]">
+              <button className="transition-all duration-300 hover:scale-125 hover:text-[var(--color-text)] active:scale-125l focus:text-[var(--color-text)]">
               <FaGithub />
             </button>
             </a>
