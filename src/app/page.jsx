@@ -32,18 +32,26 @@ export default function Home() {
           <h1 className="relative text-4xl text-bone">JOVEN BATALLER</h1>
           <p className="text-right"><span className="text-2xl text-accent">- </span>web developer</p>
           <div className="flex gap-2 text-4xl justify-center pt-2 text-accent">
-            <button>
+            <a href="https://www.facebook.com/joven.serdanbataller">
+              <button className="transition-all duration-300 hover:text-5xl hover:text-[var(--color-text)]">
               <FaFacebookF />
             </button>
-            <button>
+            </a>
+            <a href="https://www.instagram.com/wakamonoooo/">
+              <button className="transition-all duration-300 hover:text-5xl hover:text-[var(--color-text)]">
               <FaInstagram />
             </button>
-            <button>
+            </a>
+            <a href="https://www.linkedin.com/in/joven-bataller-085761350/">
+              <button className="transition-all duration-300 hover:text-5xl hover:text-[var(--color-text)]">
               <FaLinkedinIn />
             </button>
-            <button>
+            </a>
+            <a href="https://github.com/wakamonoo">
+              <button className="transition-all duration-300 hover:text-5xl hover:text-[var(--color-text)]">
               <FaGithub />
             </button>
+            </a>
           </div>
         </div>
         <BottomHalfCircleMenu />
