@@ -12,14 +12,14 @@ import Signage from "@/components/signage";
 export default function Home() {
   return (
     <main>
-      <section className="bg-brand h-screen relative">
+      <section className="bg-brand h-screen relative overflow-hidden">
         <div id="navBar" className="flex justify-center px-4 py-8">
           <LightMode />
         </div>
-        <div id="bg" className="absolute bottom-0 left-0 w-full h-100">
-          <Image src={wall} alt="wall" className="w-full h-full object-cover" />
+        <div id="bg" className="absolute bottom-0 left-0 w-full inset-0 top-30">
+          <Signage />
+          <Image src={wall} alt="wall" className="w-full h-full object-cover object-top" />
         </div>
-        <Signage />
         <div id="meInfo">
           <div
             id="mePhoto"
@@ -28,7 +28,7 @@ export default function Home() {
             <Image src={me} alt="me" fill className="object-contain" />
           </div>   
         </div>
-        <div className="absolute z-50 p-4 right-4 mt-24 rounded-2xl bg-[var(--color-panel-op)] bg-opacity-70 ">
+        <div className="absolute z-50 p-4 right-4 mt-50 rounded-2xl bg-[var(--color-panel-op)] bg-opacity-70 ">
           <h1 className="relative text-4xl text-bone">JOVEN BATALLER</h1>
           <p className="text-right"><span className="text-2xl text-accent">- </span>web developer</p>
           <div className="flex gap-2 text-4xl justify-center pt-2 text-accent">
