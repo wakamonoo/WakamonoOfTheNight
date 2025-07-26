@@ -13,8 +13,8 @@ export default function Home() {
   return (
     <main>
       <section className="bg-brand h-screen relative overflow-hidden">
-        <div id="navBar" className="flex justify-center px-4 py-8">
-          <button>
+        <div id="navBar" className="flex justify-between px-4 py-8">
+          <button className="p-2 bg-brand rounded shadow">
             DOWNLOAD CV
           </button>
           <LightMode />
@@ -31,7 +31,7 @@ export default function Home() {
             <Image src={me} alt="me" fill className="object-contain" />
           </div>   
         </div>
-        <div className="absolute z-50 p-4 right-4 mt-50 rounded-2xl bg-[var(--color-panel-op)] bg-opacity-70 ">
+        <div className="absolute z-50 p-4 right-4 mt-50 rounded-2xl bg-brand">
           <h1 className="relative text-4xl text-bone">JOVEN BATALLER</h1>
           <p className="text-right"><span className="text-2xl text-accent">- </span>web developer</p>
           <div className="flex gap-2 text-4xl justify-center pt-2 text-accent overflow-visible">

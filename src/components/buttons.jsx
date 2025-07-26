@@ -10,11 +10,11 @@ import { usePathname } from "next/navigation";
 
 export default function BottomHalfCircleMenu() {
   const pathname = usePathname();
-  const LinkCase = (href) => `${pathname === href ? "scale-125 text-[var(--color-accent)]" : "hover:scale-125 text-[var(--color-secondary)]"}`;
+  const LinkCase = (href) => `${pathname === href ? "scale-125 text-[var(--color-accent)]" : "hover:scale-125 text-[var(--color-bone)]"}`;
 
   return (
     <div className="fixed bottom-0 left-1/2 -translate-x-1/2 z-50">
-      <div className="bg-text rounded-t-full relative">
+      <div className="bg-brand rounded-t-full relative">
         <div
           id="navLinks"
           className="left-1/2 -translate-x-1/2 text-4xl w-64 h-35 relative"
