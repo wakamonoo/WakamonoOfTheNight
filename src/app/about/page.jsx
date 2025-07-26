@@ -6,6 +6,10 @@ import BottomHalfCircleMenu from '@/components/buttons';
 
 export default function AboutPage() {
   return (
-    <BottomHalfCircleMenu />
+    <div>
+      <h1>ABOUT ME</h1>
+
+      <BottomHalfCircleMenu />
+    </div>
   );
 }

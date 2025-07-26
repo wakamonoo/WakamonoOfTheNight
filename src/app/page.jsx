@@ -14,6 +14,9 @@ export default function Home() {
     <main>
       <section className="bg-brand h-screen relative overflow-hidden">
         <div id="navBar" className="flex justify-center px-4 py-8">
+          <button>
+            DOWNLOAD CV
+          </button>
           <LightMode />
         </div>
         <div id="bg" className="absolute bottom-0 left-0 w-full inset-0 top-30">
