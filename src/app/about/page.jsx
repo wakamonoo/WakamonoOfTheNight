@@ -10,7 +10,7 @@ export default function AboutPage() {
   return (
     <section className="bg-accent h-screen p-8">
       <div className="flex">
-        <Image src={AboutImage} className="w-35 h-auto" alt="aboutImage" />
+        <Image src={AboutImage} className="w-35 h-auto rounded-xl" alt="aboutImage" />
         <div className="px-4">
           <h1 className="text-4xl">WHO AM I</h1>
           <p>
@@ -20,7 +20,7 @@ export default function AboutPage() {
         </div>
       </div>
 
-      <div>
+      <div className="mt-4">
         <h2 className="text-2xl">EDUCATION</h2>
         <ul>
           <li>
