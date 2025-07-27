@@ -5,6 +5,16 @@ import NavMenu from "@/components/buttons";
 import Signage from "@/components/signage";
 import AboutImage from "../assets/about.png";
 import Intro from "@/components/intro";
+import {
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiTailwindcss,
+  SiReact,
+  SiNextdotjs,
+  SiFirebase,
+  SiKotlin,
+} from "react-icons/si";
 
 export default function Home() {
   return (
@@ -31,7 +41,7 @@ export default function Home() {
       </section>
 
       <section id="about" className="bg-second p-8">
-        <h1 className="text-3xl mb-4">THE DIGITAL SCOUT ────</h1>
+        <h1 className="text-3xl mb-4 text-header">THE DIGITAL SCOUT ────</h1>
         <div className="flex">
           <Image
             src={AboutImage}
@@ -53,7 +63,7 @@ export default function Home() {
         </div>
 
         <div className="mt-4">
-          <h2 className="text-2xl p-2 bg-brand rounded">EDUCATION</h2>
+          <h2 className="text-2xl p-2 bg-brand rounded text-header">EDUCATION</h2>
           <ul className="mt-4">
             <li className="flex flex-col text-base">
               <div className="flex items-start">
@@ -61,13 +71,14 @@ export default function Home() {
                   2021-2025
                 </span>
                 <div>
-                  INFORMATION TECHNOLOGY<br />
+                  INFORMATION TECHNOLOGY
+                  <br />
                   <span className="text-sm">Bicol University Polangui</span>
                 </div>
               </div>
             </li>
           </ul>
-          <h2 className="text-2xl p-2 bg-brand rounded mt-4">EXPERIENCE</h2>
+          <h2 className="text-2xl p-2 bg-brand rounded mt-4 text-header">EXPERIENCE</h2>
           <ul className="mt-4">
             <li className="flex flex-col text-base">
               <div className="flex items-start">
@@ -75,7 +86,8 @@ export default function Home() {
                   2025
                 </span>
                 <div>
-                  IT SUPPORT<br />
+                  IT SUPPORT
+                  <br />
                   <span className="text-sm">BytesCrafter I.T Solutions</span>
                 </div>
               </div>
@@ -86,6 +98,38 @@ export default function Home() {
         <button className="p-2 mt-4 text-xl bg-brand rounded shadow">
           DOWNLOAD CV
         </button>
+      </section>
+
+      <section id="skills" className="bg-second p-8">
+        <h1 className="text-3xl mb-4 text-header">ODM ARSENAL ────</h1>
+        <div className="flex justify-center">
+          <div className="grid grid-cols-4 gap-2">
+            <div tabIndex="0" className="p-2 text-5xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]">
+              <SiHtml5 />
+            </div>
+            <div tabIndex="0" className="p-2 text-5xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]">
+              <SiCss3 />
+            </div>
+            <div tabIndex="0" className="p-2 text-5xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]">
+              <SiJavascript />
+            </div>
+            <div tabIndex="0" className="p-2 text-5xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]">
+              <SiTailwindcss />
+            </div>
+            <div tabIndex="0" className="p-2 text-5xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]">
+              <SiReact />
+            </div>
+            <div tabIndex="0" className="p-2 text-5xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]">
+              <SiNextdotjs/>
+            </div>
+            <div tabIndex="0" className="p-2 text-5xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]">
+              <SiFirebase />
+            </div>
+            <div tabIndex="0" className="p-2 text-5xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]">
+              <SiKotlin />
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   );
