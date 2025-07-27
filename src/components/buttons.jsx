@@ -14,7 +14,7 @@ export default function NavMenu() {
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
-      setExpanded(false); 
+      setExpanded(false);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -28,7 +28,7 @@ export default function NavMenu() {
         </div>
       </div>
     );
-  } 
+  }
   return (
     <div className="flex left-1/2 transform -translate-x-1/2 p-4 fixed z-100">
       {expanded ? (
@@ -36,13 +36,17 @@ export default function NavMenu() {
           <NavLinks />
         </div>
       ) : (
-        <button onClick={() => setExpanded(true)} className="bg-panel p-4 rounded-full text-2xl text-normal shadow-xl hover:scale-110 transition"> 
+        <button
+          onClick={() => setExpanded(true)}
+          className="bg-panel p-4 rounded-full text-2xl text-normal shadow-xl hover:scale-110 transition"
+        >
           <GiHamburgerMenu />
         </button>
       )}
     </div>
   );
 }
+
 function NavLinks() {
   return (
     <>
