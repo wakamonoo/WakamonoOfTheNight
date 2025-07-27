@@ -14,7 +14,12 @@ import {
   SiNextdotjs,
   SiFirebase,
   SiKotlin,
+  SiVercel,
+  SiVite,
+  SiRender,
 } from "react-icons/si";
+import { FaGithub } from 'react-icons/fa'; 
+
 
 export default function Home() {
   return (
@@ -63,7 +68,9 @@ export default function Home() {
         </div>
 
         <div className="mt-4">
-          <h2 className="text-2xl p-2 bg-brand rounded text-header">EDUCATION</h2>
+          <h2 className="text-2xl p-2 bg-brand rounded text-header">
+            EDUCATION
+          </h2>
           <ul className="mt-4">
             <li className="flex flex-col text-base">
               <div className="flex items-start">
@@ -78,7 +85,9 @@ export default function Home() {
               </div>
             </li>
           </ul>
-          <h2 className="text-2xl p-2 bg-brand rounded mt-4 text-header">EXPERIENCE</h2>
+          <h2 className="text-2xl p-2 bg-brand rounded mt-4 text-header">
+            EXPERIENCE
+          </h2>
           <ul className="mt-4">
             <li className="flex flex-col text-base">
               <div className="flex items-start">
@@ -104,29 +113,77 @@ export default function Home() {
         <h1 className="text-3xl mb-4 text-header">ODM ARSENAL ────</h1>
         <div className="flex justify-center">
           <div className="grid grid-cols-4 gap-2">
-            <div tabIndex="0" className="p-2 text-5xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]">
+            <div
+              tabIndex="0"
+              className="p-2 text-5xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]"
+            >
               <SiHtml5 />
             </div>
-            <div tabIndex="0" className="p-2 text-5xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]">
+            <div
+              tabIndex="0"
+              className="p-2 text-5xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]"
+            >
               <SiCss3 />
             </div>
-            <div tabIndex="0" className="p-2 text-5xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]">
+            <div
+              tabIndex="0"
+              className="p-2 text-5xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]"
+            >
               <SiJavascript />
             </div>
-            <div tabIndex="0" className="p-2 text-5xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]">
+            <div
+              tabIndex="0"
+              className="p-2 text-5xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]"
+            >
               <SiTailwindcss />
             </div>
-            <div tabIndex="0" className="p-2 text-5xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]">
+            <div
+              tabIndex="0"
+              className="p-2 text-5xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]"
+            >
               <SiReact />
             </div>
-            <div tabIndex="0" className="p-2 text-5xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]">
-              <SiNextdotjs/>
+            <div
+              tabIndex="0"
+              className="p-2 text-5xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]"
+            >
+              <SiNextdotjs />
             </div>
-            <div tabIndex="0" className="p-2 text-5xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]">
+            <div
+              tabIndex="0"
+              className="p-2 text-5xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]"
+            >
               <SiFirebase />
             </div>
-            <div tabIndex="0" className="p-2 text-5xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]">
+            <div
+              tabIndex="0"
+              className="p-2 text-5xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]"
+            >
               <SiKotlin />
+            </div>
+            <div
+              tabIndex="0"
+              className="p-2 text-5xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]"
+            >
+              <FaGithub />
+            </div>
+            <div
+              tabIndex="0"
+              className="p-2 text-5xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]"
+            >
+              <SiVercel />
+            </div>
+            <div
+              tabIndex="0"
+              className="p-2 text-5xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]"
+            >
+              <SiVite />
+            </div>
+            <div
+              tabIndex="0"
+              className="p-2 text-5xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]"
+            >
+              <SiRender />
             </div>
           </div>
         </div>
