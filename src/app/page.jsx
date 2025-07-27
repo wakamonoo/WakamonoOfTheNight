@@ -1,25 +1,17 @@
 import Image from "next/image";
 import wall from "../assets/aotWall.png";
 import me from "../assets/wakamono.png";
-import { FaFacebookF } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import BottomHalfCircleMenu from "@/components/buttons";
-import LightMode from "@/components/lightMode";
+import NavMenu from "@/components/buttons";
 import Signage from "@/components/signage";
+import AboutImage from "../assets/about.png";
+import Intro from "@/components/intro";
 
 export default function Home() {
   return (
     <main>
-      <section className="bg-brand h-screen relative overflow-hidden">
-        <div id="navBar" className="flex justify-between px-4 py-8">
-          <button className="p-2 bg-brand rounded shadow">
-            DOWNLOAD CV
-          </button>
-          <LightMode />
-        </div>
-        <div id="bg" className="absolute bottom-0 left-0 w-full inset-0 top-30">
+      <section id="hero" className="bg-brand h-screen relative overflow-hidden">
+        <NavMenu />
+        <div id="bg" className="absolute bottom-0 left-0 w-full inset-0 top-45">
           <Signage />
           <Image src={wall} alt="wall" className="w-full h-full object-cover object-top" />
         </div>
@@ -31,34 +23,39 @@ export default function Home() {
             <Image src={me} alt="me" fill className="object-contain" />
           </div>   
         </div>
-        <div className="absolute z-50 p-4 right-4 mt-50 rounded-2xl bg-brand">
-          <h1 className="relative text-4xl text-bone">JOVEN BATALLER</h1>
-          <p className="text-right"><span className="text-2xl text-accent">- </span>web developer</p>
-          <div className="flex gap-2 text-4xl justify-center pt-2 text-accent overflow-visible">
-            <a href="https://www.facebook.com/joven.serdanbataller">
-              <button className="transition-all duration-300 hover:scale-125 hover:text-[var(--color-text)] active:scale-125 focus:text-[var(--color-text)]">
-              <FaFacebookF />
-            </button>
-            </a>
-            <a href="https://www.instagram.com/wakamonoooo/">
-              <button className="transition-all duration-300 hover:scale-125 hover:text-[var(--color-text)] active:scale-125 focus:text-[var(--color-text)]">
-              <FaInstagram />
-            </button>
-            </a>
-            <a href="https://www.linkedin.com/in/joven-bataller-085761350/">
-              <button className="transition-all duration-300 hover:scale-125 hover:text-[var(--color-text)] active:scale-125 focus:text-[var(--color-text)]">
-              <FaLinkedinIn />
-            </button>
-            </a>
-            <a href="https://github.com/wakamonoo">
-              <button className="transition-all duration-300 hover:scale-125 hover:text-[var(--color-text)] active:scale-125l focus:text-[var(--color-text)]">
-              <FaGithub />
-            </button>
-            </a>
-          </div>
-        </div>
-        <BottomHalfCircleMenu />
+        <Intro />
       </section>
+
+      <section id="about" className="bg-accent h-screen p-8">
+            <div className="flex">
+              <Image src={AboutImage} className="w-35 h-auto rounded-xl" alt="aboutImage" />
+              <div className="px-4">
+                <h1 className="text-4xl">WHO AM I</h1>
+                <p>
+                  I am Joven Serdan Bataller, an Information Technology graduate and
+                  website developer.
+                </p>
+              </div>
+            </div>
+      
+            <div className="mt-4">
+              <h2 className="text-2xl">EDUCATION</h2>
+              <ul>
+                <li>
+                  BS in Information Technology at Bicol University Polangui{" "}
+                  <span>2021-2025</span>
+                </li>
+              </ul>
+              <h2 className="text-2xl">EXPERIENCE</h2>
+              <ul>
+                <li>
+                  IT Support at BytesCrafter IT Solutions <span>FEB - MAY, 2025</span>
+                </li>
+              </ul>
+            </div>
+      
+            <button className="p-2 mt-4 bg-brand rounded shadow">DOWNLOAD CV</button>
+          </section>
     </main>
   );
 }

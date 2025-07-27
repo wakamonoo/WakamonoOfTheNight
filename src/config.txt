@@ -1,0 +1,8 @@
+Color Scheme:
+Primary BG-Color: ----------- #6f553f
+Header Color:     ----------- #ffeccf
+Normal Text:      ----------- #f5f5f5
+Accent Color:     ----------- #6f876f
+Secondary BG:     ----------- #5e5e5e
+Highlight Color:  ----------- #912f2f
+Nav Background:   ----------- #3b2f2f

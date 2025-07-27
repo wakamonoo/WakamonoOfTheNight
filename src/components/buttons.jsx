@@ -1,57 +1,37 @@
-'use client';
 import { AiFillHome } from "react-icons/ai";
 import { VscAccount } from "react-icons/vsc";
 import { RiRocket2Fill } from "react-icons/ri";
 import { CgWebsite } from "react-icons/cg";
-import { BsTelephoneFill } from "react-icons/bs";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { FaEnvelope } from "react-icons/fa";
 
-
-export default function BottomHalfCircleMenu() {
-  const pathname = usePathname();
-  const LinkCase = (href) => `${pathname === href ? "scale-125 text-[var(--color-accent)]" : "hover:scale-125 text-[var(--color-bone)]"}`;
-
+export default function NavMenu() {
   return (
-    <div className="fixed bottom-0 left-1/2 -translate-x-1/2 z-50">
-      <div className="bg-brand rounded-t-full relative">
-        <div
-          id="navLinks"
-          className="left-1/2 -translate-x-1/2 text-4xl w-64 h-35 relative"
+    <div className="flex left-1/2 transform -translate-x-1/2 p-4 fixed z-100">
+      <div className="flex text-4xl gap-2 bg-panel p-4 rounded-2xl">
+        <a
+          href="#hero"
+          className="text-normal transition-all duration-200 hover:text-[var(--color-accent)] hover:scale-110"
         >
-          <div>
-            <Link href="/skills">
-              <button className={`${LinkCase("/skills")} absolute left-6 bottom-4 transition-all duration-300`}>
-              <RiRocket2Fill />
-            </button>
-            </Link>
-
-            <Link href="/about">
-              <button className={`${LinkCase("/about")} absolute left-14 bottom-16 transition-all duration-300`}>
-                <VscAccount />
-              </button>
-            </Link>
-
-            <Link href="/">
-              <button className={`${LinkCase("/")} absolute left-1/2 -translate-x-1/2 bottom-22 transition-all duration-300`}>
-              <AiFillHome />
-            </button>
-            </Link>
-
-            <Link href="/portfolio">
-              <button className={`${LinkCase("/portfolio")} absolute right-14 bottom-16 transition-all duration-300`}>
-              <CgWebsite />
-            </button>
-            </Link>
-
-            <Link href="/contact">
-              <button className={`${LinkCase("/contact")} absolute right-6 bottom-4 transition-all duration-300`}>
-              <BsTelephoneFill />
-            </button>
-            </Link>
-          </div>
-        </div>
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-28 h-14 bg-accent rounded-t-full"></div>
+          <AiFillHome />
+        </a>
+        <a
+          href="#about"
+          className="text-normal transition-all duration-200 hover:text-[var(--color-accent)] hover:scale-110"
+        >
+          <VscAccount />
+        </a>
+        <a href="#skills"
+          className="text-normal transition-all duration-200 hover:text-[var(--color-accent)] hover:scale-110">
+          <RiRocket2Fill />
+        </a>
+        <a href="#projects"
+          className="text-normal transition-all duration-200 hover:text-[var(--color-accent)] hover:scale-110">
+          <CgWebsite />
+        </a>
+        <a href="#contact"
+          className="text-normal transition-all duration-200 hover:text-[var(--color-accent)] hover:scale-110">
+          <FaEnvelope />
+        </a>
       </div>
     </div>
   );
