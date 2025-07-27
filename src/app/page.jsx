@@ -26,30 +26,38 @@ export default function Home() {
         <Intro />
       </section>
 
-      <section id="about" className="bg-accent h-screen p-8">
+      <section id="about" className="bg-second p-8">
+        <h1 className="text-3xl mb-4">THE DIGITAL SCOUT ────</h1>
             <div className="flex">
               <Image src={AboutImage} className="w-35 h-auto rounded-xl" alt="aboutImage" />
               <div className="px-4">
-                <h1 className="text-4xl">WHO AM I</h1>
-                <p>
+                <p className="text-normal text-base font-normal">
                   I am Joven Serdan Bataller, an Information Technology graduate and
                   website developer.
                 </p>
               </div>
             </div>
+            <div>
+              <p className="text-normal text-base font-normal">
+                I specialize in building user-friendly, visually appealing and reliable website applications.
+              </p>
+            </div>
       
             <div className="mt-4">
-              <h2 className="text-2xl">EDUCATION</h2>
-              <ul>
+              <h2 className="text-2xl p-2 bg-brand w-fit rounded-xl">EDUCATION</h2>
+              <ul className="mt-4">
                 <li>
-                  BS in Information Technology at Bicol University Polangui{" "}
-                  <span>2021-2025</span>
+                  <span className="p-2 border border-accent rounded-2xl mr-2 w-25 text-center inline-block">2021-2025</span>
+                  Information Technology <br />
+                  <span className="text-sm left-30 relative block">Bicol University Polangui</span>
                 </li>
               </ul>
-              <h2 className="text-2xl">EXPERIENCE</h2>
-              <ul>
+              <h2 className="text-2xl p-2 bg-brand w-fit rounded-xl">EXPERIENCE</h2>
+              <ul className="mt-4">
                 <li>
-                  IT Support at BytesCrafter IT Solutions <span>FEB - MAY, 2025</span>
+                  <span className="p-2 border border-accent rounded-2xl mr-2 w-25 text-center inline-block">2025</span>
+                  Information Technology <br />
+                  <span className="text-sm left-30 relative block">Bicol University Polangui</span>
                 </li>
               </ul>
             </div>
