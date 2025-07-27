@@ -13,7 +13,11 @@ export default function Home() {
         <NavMenu />
         <div id="bg" className="absolute bottom-0 left-0 w-full inset-0 top-45">
           <Signage />
-          <Image src={wall} alt="wall" className="w-full h-full object-cover object-top" />
+          <Image
+            src={wall}
+            alt="wall"
+            className="w-full h-full object-cover object-top"
+          />
         </div>
         <div id="meInfo">
           <div
@@ -21,49 +25,68 @@ export default function Home() {
             className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-10 w-full h-[85vh] max-w-[450px] max-h-[850px] flex justify-center items-end"
           >
             <Image src={me} alt="me" fill className="object-contain" />
-          </div>   
+          </div>
         </div>
         <Intro />
       </section>
 
       <section id="about" className="bg-second p-8">
         <h1 className="text-3xl mb-4">THE DIGITAL SCOUT ────</h1>
-            <div className="flex">
-              <Image src={AboutImage} className="w-35 h-auto rounded-xl" alt="aboutImage" />
-              <div className="px-4">
-                <p className="text-normal text-base font-normal">
-                  I am Joven Serdan Bataller, an Information Technology graduate and
-                  website developer.
-                </p>
+        <div className="flex">
+          <Image
+            src={AboutImage}
+            className="w-35 h-auto rounded-xl"
+            alt="aboutImage"
+          />
+          <div className="px-4">
+            <p className="text-normal text-base font-normal">
+              I am Joven Serdan Bataller, an Information Technology graduate and
+              website developer.
+            </p>
+          </div>
+        </div>
+        <div>
+          <p className="text-normal text-base font-normal">
+            I specialize in building user-friendly, visually appealing and
+            reliable website applications.
+          </p>
+        </div>
+
+        <div className="mt-4">
+          <h2 className="text-2xl p-2 bg-brand rounded">EDUCATION</h2>
+          <ul className="mt-4">
+            <li className="flex flex-col text-base">
+              <div className="flex items-start">
+                <span className="p-2 border border-accent rounded-2xl mr-2 w-28 text-center inline-block">
+                  2021-2025
+                </span>
+                <div>
+                  INFORMATION TECHNOLOGY<br />
+                  <span className="text-sm">Bicol University Polangui</span>
+                </div>
               </div>
-            </div>
-            <div>
-              <p className="text-normal text-base font-normal">
-                I specialize in building user-friendly, visually appealing and reliable website applications.
-              </p>
-            </div>
-      
-            <div className="mt-4">
-              <h2 className="text-2xl p-2 bg-brand w-fit rounded-xl">EDUCATION</h2>
-              <ul className="mt-4">
-                <li>
-                  <span className="p-2 border border-accent rounded-2xl mr-2 w-25 text-center inline-block">2021-2025</span>
-                  Information Technology <br />
-                  <span className="text-sm left-30 relative block">Bicol University Polangui</span>
-                </li>
-              </ul>
-              <h2 className="text-2xl p-2 bg-brand w-fit rounded-xl">EXPERIENCE</h2>
-              <ul className="mt-4">
-                <li>
-                  <span className="p-2 border border-accent rounded-2xl mr-2 w-25 text-center inline-block">2025</span>
-                  Information Technology <br />
-                  <span className="text-sm left-30 relative block">Bicol University Polangui</span>
-                </li>
-              </ul>
-            </div>
-      
-            <button className="p-2 mt-4 bg-brand rounded shadow">DOWNLOAD CV</button>
-          </section>
+            </li>
+          </ul>
+          <h2 className="text-2xl p-2 bg-brand rounded mt-4">EXPERIENCE</h2>
+          <ul className="mt-4">
+            <li className="flex flex-col text-base">
+              <div className="flex items-start">
+                <span className="p-2 border border-accent rounded-2xl mr-2 w-28 text-center inline-block">
+                  2025
+                </span>
+                <div>
+                  IT SUPPORT<br />
+                  <span className="text-sm">BytesCrafter I.T Solutions</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <button className="p-2 mt-4 text-xl bg-brand rounded shadow">
+          DOWNLOAD CV
+        </button>
+      </section>
     </main>
   );
 }
