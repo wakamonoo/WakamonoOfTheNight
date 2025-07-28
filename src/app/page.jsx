@@ -82,7 +82,7 @@ export default function Home() {
                 <span className="p-2 border border-accent rounded-2xl mr-2 w-28 text-center inline-block">
                   2021-2025
                 </span>
-                <div>
+                <div className="text-normal font-normal leading-4">
                   INFORMATION TECHNOLOGY
                   <br />
                   <span className="text-sm">Bicol University Polangui</span>
@@ -99,7 +99,7 @@ export default function Home() {
                 <span className="p-2 border border-accent rounded-2xl mr-2 w-28 text-center inline-block">
                   2025
                 </span>
-                <div>
+                <div className="text-normal font-normal leading-4">
                   IT SUPPORT
                   <br />
                   <span className="text-sm">BytesCrafter I.T Solutions</span>
@@ -109,7 +109,11 @@ export default function Home() {
           </ul>
         </div>
 
-        <button className="p-2 mt-4 text-xl bg-brand rounded shadow">
+        <button
+            className="p-2 mt-2 bg-brand rounded shadow-2xl border border-panel transition-all duration-200
+             hover:bg-[var(--color-panel)] hover:scale-110 
+             active:scale-110 active:bg-[var(--color-panel)]"
+          >
           DOWNLOAD CV
         </button>
       </section>
@@ -227,7 +231,7 @@ export default function Home() {
              hover:bg-[var(--color-panel)] hover:scale-110 
              active:scale-110 active:bg-[var(--color-panel)]"
           >
-            Dispatch Message
+            ALERT HEADQUARTERS
           </button>
           <p className="font-normal text-sm py-8 text-normal">
             alternate recon points:
