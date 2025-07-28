@@ -20,8 +20,11 @@ import {
   SiMysql,
   SiPhp,
 } from "react-icons/si";
-import { FaGithub } from "react-icons/fa";
+import { FaGit, FaGithub } from "react-icons/fa";
 import Projects from "@/components/projects";
+import { FaFacebookF } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -219,9 +222,92 @@ export default function Home() {
               className="w-full h-40 border bg-panel p-2 rounded"
             />
           </div>
-          <button className="p-2 mt-2 bg-brand rounded shadow-2xl border border-panel transition-all hover:bg-[var(--color-panel)] hover:scale-110">
+          <button
+            className="p-2 mt-2 bg-brand rounded shadow-2xl border border-panel transition-all duration-200
+             hover:bg-[var(--color-panel)] hover:scale-110 
+             active:scale-110 active:bg-[var(--color-panel)]"
+          >
             Dispatch Message
           </button>
+          <p className="font-normal text-sm py-8 text-normal">
+            alternate recon points:
+          </p>
+          <div className="flex justify-center">
+            <div className="flex flex-col gap-4">
+              <a href="https://www.facebook.com/joven.serdanbataller">
+                <div
+                  className="p-4 w-full h-full bg-brand rounded border transition-all duration-200
+             hover:bg-[var(--color-panel)] hover:scale-110 
+             active:scale-110 active:bg-[var(--color-panel)]"
+                >
+                  <div className="text-4xl mb-8 font-header text-header">
+                    <FaFacebookF />
+                  </div>
+                  <h4 className="text-4xl font-header text-header">
+                    Joven Bataller
+                  </h4>
+                  <p className="text-xs font-normal text-normal">
+                    facebook.com/joven.serdanbataller
+                  </p>
+                </div>
+              </a>
+
+              <a href="https://www.instagram.com/wakamonoooo/">
+                <div
+                  className="p-4 w-full h-full bg-brand rounded border transition-all duration-200
+             hover:bg-[var(--color-panel)] hover:scale-110 
+             active:scale-110 active:bg-[var(--color-panel)]"
+                >
+                  <div className="text-4xl mb-8 font-header text-header">
+                    <FaInstagram />
+                  </div>
+                  <h4 className="text-4xl font-header text-header">
+                    WAKAMONOOOO
+                  </h4>
+                  <p className="text-xs font-normal text-normal">
+                    instagram.com/wakamonoooo
+                  </p>
+                </div>
+              </a>
+
+              <a href="https://www.linkedin.com/in/joven-bataller-085761350/">
+                <div
+                  className="p-4 w-full h-full bg-brand rounded border transition-all duration-200
+             hover:bg-[var(--color-panel)] hover:scale-110 
+             active:scale-110 active:bg-[var(--color-panel)]"
+                >
+                  <div className="text-4xl mb-8 font-header text-header">
+                    <FaLinkedinIn />
+                  </div>
+                  <h4 className="text-4xl font-header text-header">
+                    JOVEN BATALLER
+                  </h4>
+                  <p className="text-xs font-normal text-normal">
+                    linkedin.com/in/joven-bataller-085761350
+                  </p>
+                </div>
+              </a>
+
+              <a href="https://github.com/wakamonoo">
+                <div
+                  className="p-4 w-full h-full bg-brand rounded border transition-all duration-200
+             hover:bg-[var(--color-panel)] hover:scale-110 
+             active:scale-110 active:bg-[var(--color-panel)]"
+                >
+                  <div className="text-4xl mb-8 font-header text-header">
+                    <FaGithub />
+                  </div>
+                  <h4 className="text-4xl font-header text-header">
+                    WAKAMONOO
+                  </h4>
+                  <p className="text-xs font-normal text-normal">
+                    github.com/wakamonoo
+                  </p>
+                </div>
+              </a>
+
+            </div>
+          </div>
         </div>
       </section>
     </main>
