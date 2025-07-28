@@ -197,6 +197,33 @@ export default function Home() {
           <Projects />
         </div>
       </section>
+
+      <section id="contact" className="bg-second p-8">
+        <h1 className="text-3xl mb-4 text-header">DISPATCH A RAVEN ────</h1>
+        <div>
+          <div className="flex flex-col gap-2">
+            <input
+              placeholder="enter cadet name"
+              className="w-full border bg-panel p-2 rounded"
+            />
+            <input
+              placeholder="your signal relay code (email)"
+              className="w-full border bg-panel p-2 rounded"
+            />
+            <input
+              placeholder="mission intent"
+              className="w-full border bg-panel p-2 rounded"
+            />
+            <textarea
+              placeholder="detail your intel"
+              className="w-full h-40 border bg-panel p-2 rounded"
+            />
+          </div>
+          <button className="p-2 mt-2 bg-brand rounded shadow-2xl border border-panel transition-all hover:bg-[var(--color-panel)] hover:scale-110">
+            Dispatch Message
+          </button>
+        </div>
+      </section>
     </main>
   );
 }
