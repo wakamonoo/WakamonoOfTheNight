@@ -211,18 +211,22 @@ export default function Home() {
           <div className="flex flex-col gap-2">
             <input
               placeholder="enter cadet name"
+              type="text"
               className="w-full border bg-panel p-2 rounded"
             />
-            <input
-              placeholder="your signal relay code (email)"
+            <input 
+              placeholder="your signal relay code (email)"     
+              type="email"
               className="w-full border bg-panel p-2 rounded"
             />
             <input
               placeholder="mission intent"
+              type="text"
               className="w-full border bg-panel p-2 rounded"
             />
             <textarea
               placeholder="detail your intel"
+              type="text"
               className="w-full h-40 border bg-panel p-2 rounded"
             />
           </div>
