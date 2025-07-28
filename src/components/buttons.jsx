@@ -69,7 +69,7 @@ function NavLinks() {
         <RiRocket2Fill />
       </a>
       <a
-        href="#projects"
+        href="#portfolio"
         className="text-normal transition-all duration-200 hover:text-[var(--color-accent)] hover:scale-110"
       >
         <CgWebsite />
