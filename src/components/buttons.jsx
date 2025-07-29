@@ -23,7 +23,7 @@ export default function NavMenu() {
   if (!isScrolled) {
     return (
       <div className="flex left-1/2 transform -translate-x-1/2 p-4 fixed z-100">
-        <div className="flex text-4xl gap-2 bg-panel p-4 rounded-2xl">
+        <div className="flex text-4xl md:text-5xl gap-2 bg-panel p-4 rounded-2xl">
           <NavLinks />
         </div>
       </div>
@@ -40,7 +40,7 @@ export default function NavMenu() {
           onClick={() => setExpanded(true)}
           className="bg-panel p-4 rounded-full text-2xl text-normal shadow-xl hover:scale-110 transition"
         >
-          <GiHamburgerMenu />
+          <GiHamburgerMenu className="text-4xl md:text-5xl"/>
         </button>
       )}
     </div>

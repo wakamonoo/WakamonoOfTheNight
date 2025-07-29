@@ -8,20 +8,20 @@ import Bell from "../assets/bell.png";
 export default function Intro() {
   return (
     <div className="flex justify-end">
-      <div className="relative z-50 p-4 right-4 mt-100 rounded-xl bg-panel w-70">
+      <div className="relative z-50 p-4 right-4 sm:right-8 lg:right-64 mt-100 sm:mt-110 rounded-xl bg-panel w-70 sm:w-85 lg:w-110">
         <div className="absolute bottom-30 -left-8">
           <Image
             src={Bell}
             alt="bell"
-            className="w-16 h-auto overflow-auto -rotate-45"
+            className="w-16 sm:w-18 lg:w-24 h-auto overflow-auto -rotate-45"
           />
         </div>
 
-        <h1 className="relative text-5xl text-header">JOVEN BATALLER</h1>
-        <p className="text-right text-2xl text-normal">
-          <span className="text-2xl text-normal">──── </span>web developer
+        <h1 className="relative text-5xl sm:text-6xl lg:text-7xl text-header text-right">JOVEN BATALLER</h1>
+        <p className="text-right text-2xl sm:text-3xl lg:text-4xl text-normal">
+          <span className="text-2xl sm:text-3xl lg:text-4xl text-normal">──── </span>web developer
         </p>
-        <div className="flex gap-2 text-4xl justify-center pt-2 text-normal overflow-visible">
+        <div className="flex gap-2 text-4xl sm:text-5xl lg:text-6xl justify-center pt-2 text-normal overflow-visible">
           <a href="https://www.facebook.com/joven.serdanbataller">
             <button className="transition-all duration-300 hover:scale-125 hover:text-[var(--color-accent)] active:scale-125 focus:text-[var(--color-accent)]">
               <FaFacebookF />

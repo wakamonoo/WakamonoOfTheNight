@@ -31,7 +31,10 @@ export default function Home() {
     <main>
       <section id="hero" className="bg-brand h-screen relative overflow-hidden">
         <NavMenu />
-        <div id="bg" className="absolute bottom-0 left-0 w-full inset-0 top-45">
+        <div
+          id="bg"
+          className="absolute bottom-0 left-0 w-full inset-0 top-45 sm:top-40 lg:top-28"
+        >
           <Signage />
           <Image
             src={wall}
@@ -42,12 +45,14 @@ export default function Home() {
         <div id="meInfo">
           <div
             id="mePhoto"
-            className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-10 w-full h-[85vh] max-w-[450px] max-h-[850px] flex justify-center items-end"
+            className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-10
+             w-full h-[85vh] sm:h-[90vh] max-w-[450px] max-h-[850px] md:max-h-[1000px] lg:max-h-[1024px]
+             flex justify-center items-end"
           >
             <Image src={me} alt="me" fill className="object-contain" />
           </div>
+          <Intro />
         </div>
-        <Intro />
       </section>
 
       <section id="about" className="bg-second p-8">
@@ -60,8 +65,8 @@ export default function Home() {
           />
           <div className="px-4">
             <p className="text-normal text-base font-normal leading-4.5">
-              I am Joven Serdan Bataller, 22 years old from Region-V Philippines and a BS in Information Technology graduate and
-              website developer.
+              I am Joven Serdan Bataller, 22 years old from Region-V Philippines
+              and a BS in Information Technology graduate and website developer.
             </p>
           </div>
         </div>
@@ -110,10 +115,10 @@ export default function Home() {
         </div>
 
         <button
-            className="p-2 mt-2 bg-brand rounded shadow-2xl border border-accent transition-all duration-200
+          className="p-2 mt-2 bg-brand rounded shadow-2xl border border-accent transition-all duration-200
              hover:bg-[var(--color-panel)] hover:scale-110 
              active:scale-110 active:bg-[var(--color-panel)]"
-          >
+        >
           DOWNLOAD CV
         </button>
       </section>
@@ -214,8 +219,8 @@ export default function Home() {
               type="text"
               className="w-full border bg-panel p-2 rounded"
             />
-            <input 
-              placeholder="your signal relay code (email)"     
+            <input
+              placeholder="your signal relay code (email)"
               type="email"
               className="w-full border bg-panel p-2 rounded"
             />
@@ -296,12 +301,9 @@ export default function Home() {
                   <div className="text-4xl mb-4 font-header text-header">
                     <FaGithub />
                   </div>
-                  <h4 className="text-xl font-header text-header">
-                    WAKAMONOO
-                  </h4>
+                  <h4 className="text-xl font-header text-header">WAKAMONOO</h4>
                 </div>
               </a>
-
             </div>
           </div>
         </div>
