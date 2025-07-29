@@ -49,7 +49,7 @@ export default function Home() {
              w-full h-[85vh] sm:h-[90vh] max-w-[450px] max-h-[850px] md:max-h-[1000px] lg:max-h-[1024px]
              flex justify-center items-end"
           >
-            <Image src={me} alt="me" fill className="object-contain" />
+            <Image src={me} alt="me" fill className="object-cover object-top" />
           </div>
           <Intro />
         </div>

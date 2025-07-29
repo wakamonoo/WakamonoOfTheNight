@@ -38,7 +38,7 @@ export default function NavMenu() {
       ) : (
         <button
           onClick={() => setExpanded(true)}
-          className="bg-panel p-4 rounded-full text-2xl text-normal shadow-xl hover:scale-110 transition"
+          className="p-4 text-normal hover:scale-110 transition"
         >
           <GiHamburgerMenu className="text-4xl md:text-5xl"/>
         </button>
