@@ -55,59 +55,54 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="about" className="bg-second p-8">
-        <h1 className="text-3xl mb-4 text-header">THE DIGITAL SCOUT ────</h1>
+      <section id="about" className="bg-second p-8 sm:p-15">
+        <h1 className="text-3xl sm:text-5xl mb-4 text-header">THE DIGITAL SCOUT ────</h1>
         <div className="flex">
           <Image
             src={AboutImage}
-            className="w-35 h-auto rounded-xl"
+            className="w-[8rem] h-[15rem] sm:w-[20rem] sm:h-[20rem] rounded-xl"
             alt="aboutImage"
           />
           <div className="px-4">
-            <p className="text-normal text-base font-normal leading-4.5">
-              I am Joven Serdan Bataller, 22 years old from Region-V Philippines
-              and a BS in Information Technology graduate and website developer.
+            <p className="text-normal text-base sm:text-xl  font-normal leading-4.5 sm:leading-6">
+              I am Joven Serdan Bataller, 22 years old from The Philippines
+              and a BS in Information Technology graduate. I am a website developer that offers user-friendly, visually appealing and
+            reliable website applications.
             </p>
           </div>
         </div>
-        <div>
-          <p className="text-normal text-base font-normal leading-4.5 mt-2">
-            I specialize in building user-friendly, visually appealing and
-            reliable website applications.
-          </p>
-        </div>
 
-        <div className="mt-4">
-          <h2 className="text-2xl p-2 bg-brand rounded text-header">
+        <div className="mt-4 sm:mt-8">
+          <h2 className="text-2xl sm:text-3xl p-2 bg-brand rounded text-header">
             EDUCATION
           </h2>
           <ul className="mt-4">
             <li className="flex flex-col text-base">
               <div className="flex items-start">
-                <span className="p-2 border border-accent rounded-2xl mr-2 w-28 text-center inline-block">
+                <span className="flex justify-center items-center sm:text-xl p-2 border border-accent rounded-2xl mr-2 w-[8rem] h-[2.5rem]">
                   2021-2025
                 </span>
-                <div className="text-normal font-normal leading-4">
+                <div className="sm:text-xl text-normal font-normal leading-4">
                   INFORMATION TECHNOLOGY
                   <br />
-                  <span className="text-sm">Bicol University Polangui</span>
+                  <span className="text-sm sm:text-md">Bicol University Polangui</span>
                 </div>
               </div>
             </li>
           </ul>
-          <h2 className="text-2xl p-2 bg-brand rounded mt-4 text-header">
+          <h2 className="text-2xl sm:text-3xl p-2 bg-brand rounded mt-4 text-header">
             EXPERIENCE
           </h2>
           <ul className="mt-4">
             <li className="flex flex-col text-base">
               <div className="flex items-start">
-                <span className="p-2 border border-accent rounded-2xl mr-2 w-28 text-center inline-block">
+                <span className="flex justify-center items-center sm:text-xl p-2 border border-accent rounded-2xl mr-2 w-[8rem] h-[2.5rem]">
                   2025
                 </span>
-                <div className="text-normal font-normal leading-4">
+                <div className="sm:text-xl text-normal font-normal leading-4">
                   IT SUPPORT
                   <br />
-                  <span className="text-sm">BytesCrafter I.T Solutions</span>
+                  <span className="text-sm sm:text-md">BytesCrafter I.T Solutions</span>
                 </div>
               </div>
             </li>
@@ -115,7 +110,7 @@ export default function Home() {
         </div>
 
         <button
-          className="p-2 mt-2 bg-brand rounded shadow-2xl border border-accent transition-all duration-200
+          className="p-2 sm:p-4 sm:text-xl mt-8 bg-brand rounded shadow-2xl border border-accent transition-all duration-200
              hover:bg-[var(--color-panel)] hover:scale-110 
              active:scale-110 active:bg-[var(--color-panel)]"
         >
@@ -123,79 +118,79 @@ export default function Home() {
         </button>
       </section>
 
-      <section id="skills" className="bg-second p-8">
-        <h1 className="text-3xl mb-4 text-header">ODM ARSENAL ────</h1>
+      <section id="skills" className="bg-second p-8 sm:p-15">
+        <h1 className="text-3xl sm:text-5xl mb-4 text-header">ODM ARSENAL ────</h1>
         <div className="flex justify-center">
-          <div className="grid grid-cols-4 gap-2">
+          <div className="grid grid-cols-4 sm:grid-cols-6 gap-2">
             <div
               tabIndex="0"
-              className="p-2 text-5xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]"
+              className="p-2 text-5xl sm:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]"
             >
               <SiHtml5 />
             </div>
             <div
               tabIndex="0"
-              className="p-2 text-5xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]"
+              className="p-2 text-5xl sm:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]"
             >
               <SiCss3 />
             </div>
             <div
               tabIndex="0"
-              className="p-2 text-5xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]"
+              className="p-2 text-5xl sm:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]"
             >
               <SiJavascript />
             </div>
             <div
               tabIndex="0"
-              className="p-2 text-5xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]"
+              className="p-2 text-5xl sm:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]"
             >
               <SiTailwindcss />
             </div>
             <div
               tabIndex="0"
-              className="p-2 text-5xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]"
+              className="p-2 text-5xl sm:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]"
             >
               <SiReact />
             </div>
             <div
               tabIndex="0"
-              className="p-2 text-5xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]"
+              className="p-2 text-5xl sm:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]"
             >
               <SiNextdotjs />
             </div>
             <div
               tabIndex="0"
-              className="p-2 text-5xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]"
+              className="p-2 text-5xl sm:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]"
             >
               <SiFirebase />
             </div>
             <div
               tabIndex="0"
-              className="p-2 text-5xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]"
+              className="p-2 text-5xl sm:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]"
             >
               <SiKotlin />
             </div>
             <div
               tabIndex="0"
-              className="p-2 text-5xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]"
+              className="p-2 text-5xl sm:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]"
             >
               <FaGithub />
             </div>
             <div
               tabIndex="0"
-              className="p-2 text-5xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]"
+              className="p-2 text-5xl sm:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]"
             >
               <SiVercel />
             </div>
             <div
               tabIndex="0"
-              className="p-2 text-5xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]"
+              className="p-2 text-5xl sm:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]"
             >
               <SiVite />
             </div>
             <div
               tabIndex="0"
-              className="p-2 text-5xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]"
+              className="p-2 text-5xl sm:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]"
             >
               <SiRender />
             </div>
@@ -203,15 +198,15 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="portfolio" className="bg-second p-8">
-        <h1 className="text-3xl mb-4 text-header">RECON MISSIONS ────</h1>
-        <div className="flex flex-col gap-4">
+      <section id="portfolio" className="bg-second p-8 sm:p-15">
+        <h1 className="text-3xl sm:text-5xl mb-4 text-header">RECON MISSIONS ────</h1>
+        <div className="grid grid-cols-1 gap-4">
           <Projects />
         </div>
       </section>
 
-      <section id="contact" className="bg-second p-8">
-        <h1 className="text-3xl mb-4 text-header">DISPATCH A RAVEN ────</h1>
+      <section id="contact" className="bg-second p-8 sm:p-15">
+        <h1 className="text-3xl sm:text-5xl mb-4 text-header">DISPATCH RESOLVE ────</h1>
         <div>
           <div className="flex flex-col gap-2">
             <input
@@ -236,27 +231,27 @@ export default function Home() {
             />
           </div>
           <button
-            className="p-2 mt-2 bg-brand rounded shadow-2xl border border-accent transition-all duration-200
+            className="p-2 sm:p-4 sm:text-xl mt-4 bg-brand rounded shadow-2xl border border-accent transition-all duration-200
              hover:bg-[var(--color-panel)] hover:scale-110 
              active:scale-110 active:bg-[var(--color-panel)]"
           >
             ALERT HEADQUARTERS
           </button>
-          <p className="font-normal text-sm py-8 text-normal">
+          <p className="font-normal text-sm sm:text-base py-8 text-normal">
             alternate recon points:
           </p>
           <div className="flex justify-center">
             <div className="grid grid-cols-2 gap-4">
               <a href="https://www.facebook.com/joven.serdanbataller">
                 <div
-                  className="p-4 w-full h-full bg-brand rounded border transition-all duration-200
+                  className="p-4 sm:p-8 w-full h-full bg-brand rounded border transition-all duration-200
              hover:bg-[var(--color-panel)] hover:scale-110 
              active:scale-110 active:bg-[var(--color-panel)]"
                 >
-                  <div className="text-4xl mb-4 font-header text-header">
+                  <div className="text-4xl sm:text-5xl mb-4 font-header text-header">
                     <FaFacebookF />
                   </div>
-                  <h4 className="text-xl font-header text-header">
+                  <h4 className="text-xl sm:text-3xl font-header text-header">
                     Joven Bataller
                   </h4>
                 </div>
@@ -264,14 +259,14 @@ export default function Home() {
 
               <a href="https://www.instagram.com/wakamonoooo/">
                 <div
-                  className="p-4 w-full h-full bg-brand rounded border transition-all duration-200
+                  className="p-4 sm:p-8 w-full h-full bg-brand rounded border transition-all duration-200
              hover:bg-[var(--color-panel)] hover:scale-110 
              active:scale-110 active:bg-[var(--color-panel)]"
                 >
-                  <div className="text-4xl mb-4 font-header text-header">
+                  <div className="text-4xl sm:text-5xl mb-4 font-header text-header">
                     <FaInstagram />
                   </div>
-                  <h4 className="text-xl font-header text-header">
+                  <h4 className="text-xl sm:text-3xl font-header text-header">
                     WAKAMONOOOO
                   </h4>
                 </div>
@@ -279,14 +274,14 @@ export default function Home() {
 
               <a href="https://www.linkedin.com/in/joven-bataller-085761350/">
                 <div
-                  className="p-4 w-full h-full bg-brand rounded border transition-all duration-200
+                  className="p-4 sm:p-8 w-full h-full bg-brand rounded border transition-all duration-200
              hover:bg-[var(--color-panel)] hover:scale-110 
              active:scale-110 active:bg-[var(--color-panel)]"
                 >
-                  <div className="text-4xl mb-4 font-header text-header">
+                  <div className="text-4xl sm:text-5xl mb-4 font-header text-header">
                     <FaLinkedinIn />
                   </div>
-                  <h4 className="text-xl font-header text-header">
+                  <h4 className="text-xl sm:text-3xl font-header text-header">
                     JOVEN BATALLER
                   </h4>
                 </div>
@@ -294,14 +289,14 @@ export default function Home() {
 
               <a href="https://github.com/wakamonoo">
                 <div
-                  className="p-4 w-full h-full bg-brand rounded border transition-all duration-200
+                  className="p-4 sm:p-8 w-full h-full bg-brand rounded border transition-all duration-200
              hover:bg-[var(--color-panel)] hover:scale-110 
              active:scale-110 active:bg-[var(--color-panel)]"
                 >
-                  <div className="text-4xl mb-4 font-header text-header">
+                  <div className="text-4xl sm:text-5xl mb-4 font-header text-header">
                     <FaGithub />
                   </div>
-                  <h4 className="text-xl font-header text-header">WAKAMONOO</h4>
+                  <h4 className="text-xl sm:text-3xl font-header text-header">WAKAMONOO</h4>
                 </div>
               </a>
             </div>
