@@ -59,14 +59,14 @@ export default function Home() {
             alt="aboutImage"
           />
           <div className="px-4">
-            <p className="text-normal text-base font-normal">
-              I am Joven Serdan Bataller, an Information Technology graduate and
+            <p className="text-normal text-base font-normal leading-4.5">
+              I am Joven Serdan Bataller, 22 years old from Region-V Philippines and a BS in Information Technology graduate and
               website developer.
             </p>
           </div>
         </div>
         <div>
-          <p className="text-normal text-base font-normal">
+          <p className="text-normal text-base font-normal leading-4.5 mt-2">
             I specialize in building user-friendly, visually appealing and
             reliable website applications.
           </p>
@@ -110,7 +110,7 @@ export default function Home() {
         </div>
 
         <button
-            className="p-2 mt-2 bg-brand rounded shadow-2xl border border-panel transition-all duration-200
+            className="p-2 mt-2 bg-brand rounded shadow-2xl border border-accent transition-all duration-200
              hover:bg-[var(--color-panel)] hover:scale-110 
              active:scale-110 active:bg-[var(--color-panel)]"
           >
@@ -220,7 +220,7 @@ export default function Home() {
               className="w-full border bg-panel p-2 rounded"
             />
             <input
-              placeholder="mission intent"
+              placeholder="mission intent (subject)"
               type="text"
               className="w-full border bg-panel p-2 rounded"
             />
@@ -231,7 +231,7 @@ export default function Home() {
             />
           </div>
           <button
-            className="p-2 mt-2 bg-brand rounded shadow-2xl border border-panel transition-all duration-200
+            className="p-2 mt-2 bg-brand rounded shadow-2xl border border-accent transition-all duration-200
              hover:bg-[var(--color-panel)] hover:scale-110 
              active:scale-110 active:bg-[var(--color-panel)]"
           >
@@ -241,22 +241,19 @@ export default function Home() {
             alternate recon points:
           </p>
           <div className="flex justify-center">
-            <div className="flex flex-col gap-4">
+            <div className="grid grid-cols-2 gap-4">
               <a href="https://www.facebook.com/joven.serdanbataller">
                 <div
                   className="p-4 w-full h-full bg-brand rounded border transition-all duration-200
              hover:bg-[var(--color-panel)] hover:scale-110 
              active:scale-110 active:bg-[var(--color-panel)]"
                 >
-                  <div className="text-4xl mb-8 font-header text-header">
+                  <div className="text-4xl mb-4 font-header text-header">
                     <FaFacebookF />
                   </div>
-                  <h4 className="text-4xl font-header text-header">
+                  <h4 className="text-xl font-header text-header">
                     Joven Bataller
                   </h4>
-                  <p className="text-xs font-normal text-normal">
-                    facebook.com/joven.serdanbataller
-                  </p>
                 </div>
               </a>
 
@@ -266,15 +263,12 @@ export default function Home() {
              hover:bg-[var(--color-panel)] hover:scale-110 
              active:scale-110 active:bg-[var(--color-panel)]"
                 >
-                  <div className="text-4xl mb-8 font-header text-header">
+                  <div className="text-4xl mb-4 font-header text-header">
                     <FaInstagram />
                   </div>
-                  <h4 className="text-4xl font-header text-header">
+                  <h4 className="text-xl font-header text-header">
                     WAKAMONOOOO
                   </h4>
-                  <p className="text-xs font-normal text-normal">
-                    instagram.com/wakamonoooo
-                  </p>
                 </div>
               </a>
 
@@ -284,15 +278,12 @@ export default function Home() {
              hover:bg-[var(--color-panel)] hover:scale-110 
              active:scale-110 active:bg-[var(--color-panel)]"
                 >
-                  <div className="text-4xl mb-8 font-header text-header">
+                  <div className="text-4xl mb-4 font-header text-header">
                     <FaLinkedinIn />
                   </div>
-                  <h4 className="text-4xl font-header text-header">
+                  <h4 className="text-xl font-header text-header">
                     JOVEN BATALLER
                   </h4>
-                  <p className="text-xs font-normal text-normal">
-                    linkedin.com/in/joven-bataller-085761350
-                  </p>
                 </div>
               </a>
 
@@ -302,15 +293,12 @@ export default function Home() {
              hover:bg-[var(--color-panel)] hover:scale-110 
              active:scale-110 active:bg-[var(--color-panel)]"
                 >
-                  <div className="text-4xl mb-8 font-header text-header">
+                  <div className="text-4xl mb-4 font-header text-header">
                     <FaGithub />
                   </div>
-                  <h4 className="text-4xl font-header text-header">
+                  <h4 className="text-xl font-header text-header">
                     WAKAMONOO
                   </h4>
-                  <p className="text-xs font-normal text-normal">
-                    github.com/wakamonoo
-                  </p>
                 </div>
               </a>
 
