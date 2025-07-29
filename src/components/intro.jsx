@@ -8,7 +8,7 @@ import Bell from "../assets/bell.png";
 export default function Intro() {
   return (
     <div className="flex justify-end">
-      <div className="relative z-50 p-4 right-4 sm:right-8 lg:right-64 mt-100 sm:mt-110 rounded-xl bg-panel w-70 sm:w-85 lg:w-110">
+      <div className="relative z-50 p-4 right-[2rem] sm:right-[4rem] md:right-[10rem] lg:right-[10rem] xl:right-[15rem] top-[40rem]  md:top-[40rem] rounded-xl bg-panel w-70 sm:w-85 lg:w-110">
         <div className="absolute bottom-30 -left-8">
           <Image
             src={Bell}
