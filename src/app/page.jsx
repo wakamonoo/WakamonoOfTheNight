@@ -562,15 +562,15 @@ export default function Home() {
           )}
         </div>
         <div className="flex justify-center">
-            <button
-              onClick={() => setShowProjects((prev) => !prev)}
-              className="p-2 sm:p-4 sm:text-xl md:text-2xl mt-8 bg-brand rounded shadow-2xl border border-accent transition-all duration-200
+          <button
+            onClick={() => setShowProjects((prev) => !prev)}
+            className="p-2 sm:p-4 sm:text-xl md:text-2xl mt-8 bg-brand rounded shadow-2xl border border-accent transition-all duration-200
              hover:bg-[var(--color-panel)] hover:scale-110 
              active:scale-110 active:bg-[var(--color-panel)] cursor-pointer"
-            >
-              {showProjects? "STAND DOWN MINI-OPS" : "INITIATE MINI-OPS"}
-            </button>
-          </div>
+          >
+            {showProjects ? "STAND DOWN MINI-OPS" : "INITIATE MINI-OPS"}
+          </button>
+        </div>
       </section>
 
       <section
