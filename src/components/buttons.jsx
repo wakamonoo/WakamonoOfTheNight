@@ -5,7 +5,7 @@ import { VscAccount } from "react-icons/vsc";
 import { RiRocket2Fill } from "react-icons/ri";
 import { CgWebsite } from "react-icons/cg";
 import { FaEnvelope } from "react-icons/fa";
-import { GiHamburgerMenu } from "react-icons/gi";
+import { MdApps } from "react-icons/md";
 
 export default function NavMenu() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -40,7 +40,7 @@ export default function NavMenu() {
           onClick={() => setExpanded(true)}
           className="p-4 text-normal hover:scale-110 transition"
         >
-          <GiHamburgerMenu className="text-4xl md:text-5xl"/>
+          <MdApps className="text-4xl md:text-5xl"/>
         </button>
       )}
     </div>
