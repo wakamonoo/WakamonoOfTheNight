@@ -59,7 +59,7 @@ export default function Home() {
         id="about"
         className="bg-second p-8 sm:p-15 md:p-24 lg:p-32 xl:px-72"
       >
-        <h1 className="text-3xl sm:text-5xl md:text-6xl mb-4 text-header">
+        <h1 className="text-3xl sm:text-5xl md:text-6xl mb-4 text-header md:mb-8 lg:mb-12 xl:mb-16">
           THE DIGITAL SCOUT ────
         </h1>
         <div className="w-full clearfix">
@@ -132,7 +132,7 @@ export default function Home() {
         id="skills"
         className="bg-second p-8 sm:p-15 md:p-24 lg:p-32 xl:px-72"
       >
-        <h1 className="text-3xl sm:text-5xl md:text-6xl mb-4 text-header">
+        <h1 className="text-3xl sm:text-5xl md:text-6xl mb-4 text-header md:mb-8 lg:mb-12 xl:mb-16">
           ODM ARSENAL ────
         </h1>
         <div className="flex justify-center">
@@ -217,7 +217,7 @@ export default function Home() {
         id="portfolio"
         className="bg-second p-8 sm:p-15 md:p-24 lg:p-32 xl:px-72"
       >
-        <h1 className="text-3xl sm:text-5xl md:text-6xl mb-4 text-header">
+        <h1 className="text-3xl sm:text-5xl md:text-6xl mb-4 text-header md:mb-8 lg:mb-12 xl:mb-16">
           RECON MISSIONS ────
         </h1>
         <div className="grid grid-cols-1 xl-plus:grid-cols-2 gap-4">
@@ -225,11 +225,12 @@ export default function Home() {
         </div>
       </section>
 
+
       <section
         id="contact"
         className="bg-second p-8 sm:p-15 md:p-24 lg:p-32 xl:px-72"
       >
-        <h1 className="text-3xl sm:text-5xl md:text-6xl mb-4 text-header">
+        <h1 className="text-3xl sm:text-5xl md:text-6xl mb-4 text-header md:mb-8 lg:mb-12 xl:mb-16">
           DISPATCH RESOLVE ────
         </h1>
         <div>

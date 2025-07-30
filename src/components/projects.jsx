@@ -49,7 +49,7 @@ export default function Projects() {
                 Commence Operation
               </button>
             </a>
-            <a href="">
+            <a href="https://github.com/wakamonoo/FirstResponse">
               <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full">
                 Open War Archives
               </button>
@@ -85,7 +85,7 @@ export default function Projects() {
                 Commence Operation
               </button>
             </a>
-            <a href="">
+            <a href="https://github.com/wakamonoo/RevvedEcommerce">
               <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full">
                 Open War Archives
               </button>
@@ -121,7 +121,7 @@ export default function Projects() {
                 Advance Beyond Walls
               </button>
             </a>
-            <a href="">
+            <a href="https://github.com/wakamonoo/ancestory">
               <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full">
                 Open War Archives
               </button>
@@ -157,7 +157,7 @@ export default function Projects() {
                 Advance Beyond Walls
               </button>
             </a>
-            <a href="">
+            <a href="https://github.com/wakamonoo/Sora">
               <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full">
                 Open War Archives
               </button>
@@ -193,7 +193,7 @@ export default function Projects() {
                 Advance Beyond Walls
               </button>
             </a>
-            <a href="">
+            <a href="https://github.com/wakamonoo/Debtflix">
               <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full">
                 Open War Archives
               </button>
@@ -230,7 +230,7 @@ export default function Projects() {
                 Advance Beyond Walls
               </button>
             </a>
-            <a href="">
+            <a href="https://github.com/wakamonoo/Kandili">
               <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full">
                 Open War Archives
               </button>
@@ -266,7 +266,7 @@ export default function Projects() {
                 Advance Beyond Walls
               </button>
             </a>
-            <a href="">
+            <a href="https://github.com/wakamonoo/Todochan">
               <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full">
                 Open War Archives
               </button>
@@ -301,7 +301,7 @@ export default function Projects() {
                 Advance Beyond Walls
               </button>
             </a>
-            <a href="">
+            <a href="https://github.com/wakamonoo/PointCity">
               <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full">
                 Open War Archives
               </button>
@@ -337,7 +337,7 @@ export default function Projects() {
                 Advance Beyond Walls
               </button>
             </a>
-            <a href="">
+            <a href="https://github.com/wakamonoo/Rina">
               <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full">
                 Open War Archives
               </button>
@@ -373,7 +373,7 @@ export default function Projects() {
                 Advance Beyond Walls
               </button>
             </a>
-            <a href="">
+            <a href="https://github.com/wakamonoo/DCXVI-Initiative">
               <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full">
                 Open War Archives
               </button>
