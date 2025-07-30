@@ -55,6 +55,10 @@
     background-color: var(--color-secondary);
   }
 
+  .text-brand {
+    color: var(--color-bg);
+  }
+
   .text-header {
     color: var(--color-accent);
   }
