@@ -45,12 +45,16 @@ export default function Projects() {
         <div className="flex justify-center">
           <div className="mt-2 w-full grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4">
             <a href="">
-              <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer">
+              <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer transition-all duration-200
+             hover:bg-[var(--color-panel)] hover:scale-110 
+             active:scale-110 active:bg-[var(--color-panel)]">
                 Commence Operation
               </button>
             </a>
             <a href="https://github.com/wakamonoo/FirstResponse">
-              <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer">
+              <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer transition-all duration-200
+             hover:bg-[var(--color-panel)] hover:scale-110 
+             active:scale-110 active:bg-[var(--color-panel)]">
                 Open War Archives
               </button>
             </a>
@@ -81,12 +85,16 @@ export default function Projects() {
         <div className="flex justify-center">
           <div className="mt-2 w-full grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4">
             <a href="">
-              <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer">
+              <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer transition-all duration-200
+             hover:bg-[var(--color-panel)] hover:scale-110 
+             active:scale-110 active:bg-[var(--color-panel)]">
                 Commence Operation
               </button>
             </a>
             <a href="https://github.com/wakamonoo/RevvedEcommerce">
-              <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer">
+              <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer transition-all duration-200
+             hover:bg-[var(--color-panel)] hover:scale-110 
+             active:scale-110 active:bg-[var(--color-panel)]">
                 Open War Archives
               </button>
             </a>
@@ -117,12 +125,16 @@ export default function Projects() {
         <div className="flex justify-center">
           <div className="mt-2 w-full grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4">
             <a href="https://ancestory-wakamonoo.vercel.app">
-              <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer">
+              <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer transition-all duration-200
+             hover:bg-[var(--color-panel)] hover:scale-110 
+             active:scale-110 active:bg-[var(--color-panel)]">
                 Advance Beyond Walls
               </button>
             </a>
             <a href="https://github.com/wakamonoo/ancestory">
-              <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer">
+              <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer transition-all duration-200
+             hover:bg-[var(--color-panel)] hover:scale-110 
+             active:scale-110 active:bg-[var(--color-panel)]">
                 Open War Archives
               </button>
             </a>
@@ -153,12 +165,16 @@ export default function Projects() {
         <div className="flex justify-center">
           <div className="mt-2 w-full grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4">
             <a href="https://sora-wakamonoo.vercel.app">
-              <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer">
+              <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer transition-all duration-200
+             hover:bg-[var(--color-panel)] hover:scale-110 
+             active:scale-110 active:bg-[var(--color-panel)]">
                 Advance Beyond Walls
               </button>
             </a>
             <a href="https://github.com/wakamonoo/Sora">
-              <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer">
+              <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer transition-all duration-200
+             hover:bg-[var(--color-panel)] hover:scale-110 
+             active:scale-110 active:bg-[var(--color-panel)]">
                 Open War Archives
               </button>
             </a>
@@ -189,12 +205,16 @@ export default function Projects() {
         <div className="flex justify-center">
           <div className="mt-2 w-full grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4">
             <a href="https://debtflix-wakamonoo.vercel.app">
-              <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer">
+              <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer transition-all duration-200
+             hover:bg-[var(--color-panel)] hover:scale-110 
+             active:scale-110 active:bg-[var(--color-panel)]">
                 Advance Beyond Walls
               </button>
             </a>
             <a href="https://github.com/wakamonoo/Debtflix">
-              <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer">
+              <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer transition-all duration-200
+             hover:bg-[var(--color-panel)] hover:scale-110 
+             active:scale-110 active:bg-[var(--color-panel)]">
                 Open War Archives
               </button>
             </a>
@@ -226,12 +246,16 @@ export default function Projects() {
         <div className="flex justify-center">
           <div className="mt-2 w-full grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4">
             <a href="https://kandili-wakamonoo.vercel.app">
-              <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer">
+              <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer transition-all duration-200
+             hover:bg-[var(--color-panel)] hover:scale-110 
+             active:scale-110 active:bg-[var(--color-panel)]">
                 Advance Beyond Walls
               </button>
             </a>
             <a href="https://github.com/wakamonoo/Kandili">
-              <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer">
+              <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer transition-all duration-200
+             hover:bg-[var(--color-panel)] hover:scale-110 
+             active:scale-110 active:bg-[var(--color-panel)]">
                 Open War Archives
               </button>
             </a>
@@ -262,12 +286,16 @@ export default function Projects() {
         <div className="flex justify-center">
           <div className="mt-2 w-full grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4">
             <a href="https://todochan-wakamonoo.vercel.app">
-              <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer">
+              <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer transition-all duration-200
+             hover:bg-[var(--color-panel)] hover:scale-110 
+             active:scale-110 active:bg-[var(--color-panel)]">
                 Advance Beyond Walls
               </button>
             </a>
             <a href="https://github.com/wakamonoo/Todochan">
-              <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer">
+              <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer transition-all duration-200
+             hover:bg-[var(--color-panel)] hover:scale-110 
+             active:scale-110 active:bg-[var(--color-panel)]">
                 Open War Archives
               </button>
             </a>
@@ -297,12 +325,16 @@ export default function Projects() {
         <div className="flex justify-center">
           <div className="mt-2 w-full grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4">
             <a href="https://pointcity-wakamonoo.vercel.app">
-              <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer">
+              <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer transition-all duration-200
+             hover:bg-[var(--color-panel)] hover:scale-110 
+             active:scale-110 active:bg-[var(--color-panel)]">
                 Advance Beyond Walls
               </button>
             </a>
             <a href="https://github.com/wakamonoo/PointCity">
-              <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer">
+              <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer transition-all duration-200
+             hover:bg-[var(--color-panel)] hover:scale-110 
+             active:scale-110 active:bg-[var(--color-panel)]">
                 Open War Archives
               </button>
             </a>
@@ -333,12 +365,16 @@ export default function Projects() {
         <div className="flex justify-center">
           <div className="mt-2 w-full grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4">
             <a href="https://rina-wakamonoo.vercel.app">
-              <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer">
+              <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer transition-all duration-200
+             hover:bg-[var(--color-panel)] hover:scale-110 
+             active:scale-110 active:bg-[var(--color-panel)]">
                 Advance Beyond Walls
               </button>
             </a>
             <a href="https://github.com/wakamonoo/Rina">
-              <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer">
+              <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer transition-all duration-200
+             hover:bg-[var(--color-panel)] hover:scale-110 
+             active:scale-110 active:bg-[var(--color-panel)]">
                 Open War Archives
               </button>
             </a>
@@ -369,12 +405,16 @@ export default function Projects() {
         <div className="flex justify-center">
           <div className="mt-2 w-full grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4">
             <a href="https://dcxvi-initiative-wakamonoo.vercel.app">
-              <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer">
+              <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer transition-all duration-200
+             hover:bg-[var(--color-panel)] hover:scale-110 
+             active:scale-110 active:bg-[var(--color-panel)]">
                 Advance Beyond Walls
               </button>
             </a>
             <a href="https://github.com/wakamonoo/DCXVI-Initiative">
-              <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer">
+              <button className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer transition-all duration-200
+             hover:bg-[var(--color-panel)] hover:scale-110 
+             active:scale-110 active:bg-[var(--color-panel)]">
                 Open War Archives
               </button>
             </a>

@@ -9,7 +9,7 @@ export default function Intro() {
   return (
     <div className="flex justify-end">
       <div className="relative z-50 p-4 right-[5vw] lg:right-[5vw] xl:right-[12vw] top-[60vh] h-full rounded-xl bg-panel w-70 sm:w-85 lg:w-110 xl:w-150">
-        <div className="absolute bottom-30 -left-8">
+        <div className="absolute bottom-30 lg:bottom-38 -left-8">
           <Image
             src={Bell}
             alt="bell"

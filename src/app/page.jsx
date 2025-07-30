@@ -118,13 +118,15 @@ export default function Home() {
             </ul>
           </div>
 
-          <button
-            className="p-2 sm:p-4 sm:text-xl md:text-2xl mt-8 bg-brand rounded shadow-2xl border border-accent transition-all duration-200
+          <a href="Bataller_Resume.pdf" download>
+            <button
+              className="p-2 sm:p-4 sm:text-xl md:text-2xl mt-8 bg-brand rounded shadow-2xl border border-accent transition-all duration-200
              hover:bg-[var(--color-panel)] hover:scale-110 
-             active:scale-110 active:bg-[var(--color-panel)]"
-          >
-            DOWNLOAD CV
-          </button>
+             active:scale-110 active:bg-[var(--color-panel)] cursor-pointer"
+            >
+              DOWNLOAD CV
+            </button>
+          </a>
         </div>
       </section>
 
@@ -224,7 +226,6 @@ export default function Home() {
           <Projects />
         </div>
       </section>
-
 
       <section
         id="contact"
