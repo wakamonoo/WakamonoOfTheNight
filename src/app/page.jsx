@@ -55,7 +55,6 @@ export default function Home() {
         </div>
       </section>
 
-
       <section
         id="about"
         className="bg-second p-8 sm:p-15 md:p-24 lg:p-32 xl:px-72"
@@ -71,12 +70,12 @@ export default function Home() {
               alt="aboutImage"
             />
           </div>
-            <p className="text-normal text-base sm:text-xl md:text-2xl font-normal leading-4.5 sm:leading-6 md:leading-8 lg:leading-8.5">
-              I am Joven Serdan Bataller, 22 years old from The Philippines and
-              a BS in Information Technology graduate. I am a website developer
-              that offers user-friendly, visually appealing and reliable website
-              applications.
-            </p>
+          <p className="text-normal text-base sm:text-xl md:text-2xl font-normal leading-4.5 sm:leading-6 md:leading-8 lg:leading-8.5">
+            I am Joven Serdan Bataller, 22 years old from The Philippines and a
+            BS in Information Technology graduate. I am a website developer that
+            offers user-friendly, visually appealing and reliable website
+            applications.
+          </p>
 
           <div className="mt-4 sm:mt-8">
             <h2 className="text-2xl sm:text-3xl md:text-4xl p-2 bg-brand rounded text-header">
@@ -129,8 +128,10 @@ export default function Home() {
         </div>
       </section>
 
-
-      <section id="skills" className="bg-second p-8 sm:p-15 md:p-24 lg:p-32 xl:px-72">
+      <section
+        id="skills"
+        className="bg-second p-8 sm:p-15 md:p-24 lg:p-32 xl:px-72"
+      >
         <h1 className="text-3xl sm:text-5xl md:text-6xl mb-4 text-header">
           ODM ARSENAL ────
         </h1>
@@ -212,7 +213,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="portfolio" className="bg-second p-8 sm:p-15 md:p-24 lg:p-32 xl:px-72">
+      <section
+        id="portfolio"
+        className="bg-second p-8 sm:p-15 md:p-24 lg:p-32 xl:px-72"
+      >
         <h1 className="text-3xl sm:text-5xl md:text-6xl mb-4 text-header">
           RECON MISSIONS ────
         </h1>
@@ -221,8 +225,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contact" className="bg-second p-8 sm:p-15">
-        <h1 className="text-3xl sm:text-5xl mb-4 text-header">
+      <section
+        id="contact"
+        className="bg-second p-8 sm:p-15 md:p-24 lg:p-32 xl:px-72"
+      >
+        <h1 className="text-3xl sm:text-5xl md:text-6xl mb-4 text-header">
           DISPATCH RESOLVE ────
         </h1>
         <div>
@@ -249,17 +256,17 @@ export default function Home() {
             />
           </div>
           <button
-            className="p-2 sm:p-4 sm:text-xl mt-4 bg-brand rounded shadow-2xl border border-accent transition-all duration-200
+            className="p-2 sm:p-4 sm:text-xl md:text-2xl mt-4 bg-brand rounded shadow-2xl border border-accent transition-all duration-200
              hover:bg-[var(--color-panel)] hover:scale-110 
              active:scale-110 active:bg-[var(--color-panel)]"
           >
             ALERT HEADQUARTERS
           </button>
-          <p className="font-normal text-sm sm:text-base py-8 text-normal">
+          <p className="font-normal text-sm sm:text-base md:text-xl py-8 text-normal">
             alternate recon points:
           </p>
-          <div className="flex justify-center">
-            <div className="grid grid-cols-2 gap-4">
+          <div className="w-full">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
               <a href="https://www.facebook.com/joven.serdanbataller">
                 <div
                   className="p-4 sm:p-8 w-full h-full bg-brand rounded border transition-all duration-200
@@ -269,7 +276,7 @@ export default function Home() {
                   <div className="text-4xl sm:text-5xl mb-4 font-header text-header">
                     <FaFacebookF />
                   </div>
-                  <h4 className="text-xl sm:text-3xl font-header text-header">
+                  <h4 className="text-xl sm:text-3xl lg:text-xl 2xl:text-3xl font-header text-header">
                     Joven Bataller
                   </h4>
                 </div>
@@ -284,7 +291,7 @@ export default function Home() {
                   <div className="text-4xl sm:text-5xl mb-4 font-header text-header">
                     <FaInstagram />
                   </div>
-                  <h4 className="text-xl sm:text-3xl font-header text-header">
+                  <h4 className="text-xl sm:text-3xl lg:text-xl 2xl:text-3xl  font-header text-header">
                     WAKAMONOOOO
                   </h4>
                 </div>
@@ -299,7 +306,7 @@ export default function Home() {
                   <div className="text-4xl sm:text-5xl mb-4 font-header text-header">
                     <FaLinkedinIn />
                   </div>
-                  <h4 className="text-xl sm:text-3xl font-header text-header">
+                  <h4 className="text-xl sm:text-3xl lg:text-xl 2xl:text-3xl font-header text-header">
                     JOVEN BATALLER
                   </h4>
                 </div>
@@ -314,7 +321,7 @@ export default function Home() {
                   <div className="text-4xl sm:text-5xl mb-4 font-header text-header">
                     <FaGithub />
                   </div>
-                  <h4 className="text-xl sm:text-3xl font-header text-header">
+                  <h4 className="text-xl sm:text-3xl lg:text-xl 2xl:text-3xl font-header text-header">
                     WAKAMONOO
                   </h4>
                 </div>
