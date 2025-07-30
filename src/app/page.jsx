@@ -55,16 +55,16 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="about" className="bg-second p-8 sm:p-15">
-        <h1 className="text-3xl sm:text-5xl mb-4 text-header">THE DIGITAL SCOUT ────</h1>
+      <section id="about" className="bg-second p-8 sm:p-15 md:p-24">
+        <h1 className="text-3xl sm:text-5xl md:text-6xl mb-4 text-header">THE DIGITAL SCOUT ────</h1>
         <div className="flex">
           <Image
             src={AboutImage}
-            className="w-[8rem] h-[15rem] sm:w-[20rem] sm:h-[20rem] rounded-xl"
+            className="w-[8rem] h-[15rem] sm:w-[20rem] sm:h-[20rem] md:w-[24rem] md:sm:h-[24rem] rounded-xl"
             alt="aboutImage"
           />
           <div className="px-4">
-            <p className="text-normal text-base sm:text-xl  font-normal leading-4.5 sm:leading-6">
+            <p className="text-normal text-base sm:text-xl md:text-2xl font-normal leading-4.5 sm:leading-6 md:leading-8">
               I am Joven Serdan Bataller, 22 years old from The Philippines
               and a BS in Information Technology graduate. I am a website developer that offers user-friendly, visually appealing and
             reliable website applications.
@@ -73,19 +73,19 @@ export default function Home() {
         </div>
 
         <div className="mt-4 sm:mt-8">
-          <h2 className="text-2xl sm:text-3xl p-2 bg-brand rounded text-header">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl p-2 bg-brand rounded text-header">
             EDUCATION
           </h2>
           <ul className="mt-4">
             <li className="flex flex-col text-base">
               <div className="flex items-start">
-                <span className="flex justify-center items-center sm:text-xl p-2 border border-accent rounded-2xl mr-2 w-[8rem] h-[2.5rem]">
+                <span className="flex justify-center items-center sm:text-xl md:text-2xl p-2 border border-accent rounded-2xl mr-2 w-[8rem] h-[2.5rem] md:w-[10rem]">
                   2021-2025
                 </span>
-                <div className="sm:text-xl text-normal font-normal leading-4">
+                <div className="sm:text-xl md:text-2xl text-normal font-normal leading-4">
                   INFORMATION TECHNOLOGY
                   <br />
-                  <span className="text-sm sm:text-md">Bicol University Polangui</span>
+                  <span className="text-sm sm:text-md md:text-base">Bicol University Polangui</span>
                 </div>
               </div>
             </li>
@@ -96,13 +96,13 @@ export default function Home() {
           <ul className="mt-4">
             <li className="flex flex-col text-base">
               <div className="flex items-start">
-                <span className="flex justify-center items-center sm:text-xl p-2 border border-accent rounded-2xl mr-2 w-[8rem] h-[2.5rem]">
+                <span className="flex justify-center items-center sm:text-xl md:text-2xl p-2 border border-accent rounded-2xl mr-2 w-[8rem] h-[2.5rem] md:w-[10rem]">
                   2025
                 </span>
-                <div className="sm:text-xl text-normal font-normal leading-4">
+                <div className="sm:text-xl md:text-2xl text-normal font-normal leading-4">
                   IT SUPPORT
                   <br />
-                  <span className="text-sm sm:text-md">BytesCrafter I.T Solutions</span>
+                  <span className="text-sm sm:text-md md:text-base">BytesCrafter I.T Solutions</span>
                 </div>
               </div>
             </li>
@@ -110,7 +110,7 @@ export default function Home() {
         </div>
 
         <button
-          className="p-2 sm:p-4 sm:text-xl mt-8 bg-brand rounded shadow-2xl border border-accent transition-all duration-200
+          className="p-2 sm:p-4 sm:text-xl md:text-2xl mt-8 bg-brand rounded shadow-2xl border border-accent transition-all duration-200
              hover:bg-[var(--color-panel)] hover:scale-110 
              active:scale-110 active:bg-[var(--color-panel)]"
         >
