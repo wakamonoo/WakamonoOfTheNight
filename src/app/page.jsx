@@ -87,10 +87,10 @@ export default function Home() {
                   <span className="flex justify-center items-center sm:text-xl md:text-2xl p-2 border border-accent rounded-2xl mr-2  md:mr-4 lg:mr-8 w-1/2">
                     2021-2025
                   </span>
-                  <div className="text-base sm:text-xl md:text-2xl text-normal font-normal leading-4 md:leading-5 w-1/2">
+                  <div className="text-base sm:text-xl md:text-2xl font-normal text-header leading-4 md:leading-5 w-1/2">
                     INFORMATION TECHNOLOGY
                     <br />
-                    <span className="text-sm sm:text-md md:text-base leading-2">
+                    <span className="text-sm sm:text-md md:text-base text-normal leading-2">
                       Bicol University Polangui
                     </span>
                   </div>
@@ -106,10 +106,10 @@ export default function Home() {
                   <span className="flex justify-center items-center sm:text-xl md:text-2xl p-2 px-12 border border-accent rounded-2xl mr-2  md:mr-4 lg:mr-8 w-1/2">
                     2025
                   </span>
-                  <div className="text-base sm:text-xl md:text-2xl text-normal font-normal leading-4 md:leading-5 w-1/2">
+                  <div className="text-base sm:text-xl md:text-2xl text-header font-normal leading-4 md:leading-5 w-1/2">
                     IT SUPPORT
                     <br />
-                    <span className="text-sm sm:text-md md:text-base leading-2">
+                    <span className="text-sm sm:text-md text-normal md:text-base leading-2">
                       BytesCrafter I.T Solutions
                     </span>
                   </div>
