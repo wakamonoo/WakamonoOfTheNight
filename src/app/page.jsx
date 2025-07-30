@@ -568,7 +568,7 @@ export default function Home() {
              hover:bg-[var(--color-panel)] hover:scale-110 
              active:scale-110 active:bg-[var(--color-panel)] cursor-pointer"
             >
-              Show Mini Projects
+              {showProjects? "STAND DOWN MINI-OPS" : "INITIATE MINI-OPS"}
             </button>
           </div>
       </section>
