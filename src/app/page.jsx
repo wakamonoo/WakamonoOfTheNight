@@ -9,26 +9,23 @@ import Loader from "@/components/loader";
 import { useEffect, useState } from "react";
 
 export default function Home() {
-const [ loading, setLoading ] = useState(true);
-const [ data, setData ] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [data, setData] = useState(null);
 
-useEffect(() => {
-  const fetchSomething = async () => {
+  useEffect(() => {
+    const fetchSomething = async () => {
       const result = await new Promise((resolve) =>
-        setTimeout(() => resolve("Done loading!"), 1500)
+        setTimeout(() => resolve("done loading"), 1500)
       );
       setData(result);
       setLoading(false);
     };
-
-    fetchSomething(); // ✅ Call the async function
+    fetchSomething();
   }, []);
 
-if(loading) {
-  return(
-    <Loader />
-  )
-}
+  if (loading) {
+    return <Loader />;
+  }
 
   return (
     <main>
@@ -64,7 +61,7 @@ if(loading) {
         <Contact />
       </section>
 
-      <section className="flex justify-center h-auto w-full bg-panel py-4"> 
+      <section className="flex justify-center h-auto w-full bg-panel py-4">
         <Footer />
       </section>
     </main>
