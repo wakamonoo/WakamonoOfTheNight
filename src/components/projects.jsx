@@ -2,18 +2,10 @@ import Image from "next/image";
 import Work1 from "../assets/work-1.png";
 import Work2 from "../assets/work-2.png";
 import Work3 from "../assets/work-3.png";
-import Work4 from "../assets/work-4.png";
-import Work5 from "../assets/work-5.png";
-import Work6 from "../assets/work-6.png";
-import Work7 from "../assets/work-7.png";
-import Work8 from "../assets/work-8.png";
-import Work9 from "../assets/work-9.png";
-import Work10 from "../assets/work-10.png";
 import {
   SiHtml5,
   SiCss3,
   SiJavascript,
-  SiTailwindcss,
   SiFirebase,
   SiKotlin,
   SiMysql,
@@ -23,7 +15,7 @@ import {
 export default function Projects() {
   return (
     <>
-      <div className="p-4 sm:p-8 bg-brand w-full h-full rounded shadow-2xl">
+      <div className="p-4 sm:p-8 bg-brand w-full h-full rounded shadow-xl focus:shadow-2xl focus:-translate-y-2 hover:shadow-2xl hover:-translate-y-2 duration-200 ease-in-out">
         <div className="flex justify-between">
           <Image
             src={Work1}
@@ -68,7 +60,7 @@ export default function Projects() {
         </div>
       </div>
 
-      <div className="p-4 sm:p-8 bg-brand w-full h-full rounded shadow-2xl">
+      <div className="p-4 sm:p-8 bg-brand w-full h-full rounded shadow-xl focus:shadow-2xl focus:-translate-y-2 hover:shadow-2xl hover:-translate-y-2 duration-200 ease-in-out">
         <div className="flex justify-between">
           <Image
             src={Work2}
@@ -114,7 +106,7 @@ export default function Projects() {
         </div>
       </div>
 
-      <div className="p-4 sm:p-8 bg-brand w-full h-full rounded shadow-2xl">
+      <div className="p-4 sm:p-8 bg-brand w-full h-full rounded shadow-xl focus:shadow-2xl focus:-translate-y-2 hover:shadow-2xl hover:-translate-y-2 duration-200 ease-in-out">
         <div className="flex justify-between">
           <Image
             src={Work3}
