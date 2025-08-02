@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Loader = () => {
   return (
     <StyledWrapper>
-      <div className="loader">
+      <div className="loader flex">
         <span />
       </div>
     </StyledWrapper>
@@ -11,6 +11,13 @@ const Loader = () => {
 }
 
 const StyledWrapper = styled.div`
+height: 100vh;
+width: 100vw;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
   .loader {
     position: relative;
     width: 150px;
