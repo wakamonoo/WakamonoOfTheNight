@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${bangers.variable} ${rubik.variable} ${blackHan.variable} ${anton.variable} ${bebasNeue.variable}`}
+      className={`${bangers.variable} ${rubik.variable} ${blackHan.variable} ${anton.variable} ${bebasNeue.variable} scroll-smooth`}
     >
       <body>{children}</body>
     </html>
