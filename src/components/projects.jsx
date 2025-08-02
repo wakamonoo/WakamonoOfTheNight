@@ -23,7 +23,7 @@ import {
 export default function Projects() {
   return (
     <>
-      <div className="p-4 sm:p-8 bg-brand w-full h-full rounded">
+      <div className="p-4 sm:p-8 bg-brand w-full h-full rounded shadow-2xl">
         <div className="flex justify-between">
           <Image
             src={Work1}
@@ -68,7 +68,7 @@ export default function Projects() {
         </div>
       </div>
 
-      <div className="p-4 sm:p-8 bg-brand w-full h-full rounded">
+      <div className="p-4 sm:p-8 bg-brand w-full h-full rounded shadow-2xl">
         <div className="flex justify-between">
           <Image
             src={Work2}
@@ -114,7 +114,7 @@ export default function Projects() {
         </div>
       </div>
 
-      <div className="p-4 sm:p-8 bg-brand w-full h-full rounded">
+      <div className="p-4 sm:p-8 bg-brand w-full h-full rounded shadow-2xl">
         <div className="flex justify-between">
           <Image
             src={Work3}
