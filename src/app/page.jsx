@@ -1,47 +1,34 @@
 "use client";
-import Image from "next/image";
-import wall from "../assets/aotWall.png";
-import me from "../assets/wakamono.png";
-import NavMenu from "@/components/buttons";
-import Signage from "@/components/signage";
-import AboutImage from "../assets/about.png";
-import Intro from "@/components/intro";
-import {
-  SiHtml5,
-  SiCss3,
-  SiJavascript,
-  SiTailwindcss,
-  SiReact,
-  SiNextdotjs,
-  SiFirebase,
-  SiKotlin,
-  SiVercel,
-  SiVite,
-  SiRender,
-  SiMysql,
-  SiPhp,
-} from "react-icons/si";
-import { FaGithub } from "react-icons/fa";
-import Projects from "@/components/projects";
-import { FaFacebookF } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { useState } from "react";
-import Work4 from "../assets/work-4.png";
-import Work5 from "../assets/work-5.png";
-import Work6 from "../assets/work-6.png";
-import Work7 from "../assets/work-7.png";
-import Work8 from "../assets/work-8.png";
-import Work9 from "../assets/work-9.png";
-import Work10 from "../assets/work-10.png";
 import Hero from "@/sections/heroSection";
 import About from "@/sections/aboutSection";
 import Skills from "@/sections/skillSection";
 import Portfolio from "@/sections/portfolioSection";
 import Contact from "@/sections/contactSection";
 import Footer from "@/sections/footer";
+import Loader from "@/components/loader";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+const [ loading, setLoading ] = useState(true);
+const [ data, setData ] = useState(null);
+
+useEffect(() => {
+  const fetchSomething = async () => {
+      const result = await new Promise((resolve) =>
+        setTimeout(() => resolve("Done loading!"), 1500)
+      );
+      setData(result);
+      setLoading(false);
+    };
+
+    fetchSomething(); // ✅ Call the async function
+  }, []);
+
+if(loading) {
+  return(
+    <Loader />
+  )
+}
 
   return (
     <main>
