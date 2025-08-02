@@ -28,7 +28,7 @@ export default function Portfolio() {
         <Projects />
         {showProjects && (
           <div className="contents">
-            <div className="p-4 sm:p-8 bg-brand w-full h-full rounded shadow-xl focus:shadow-2xl focus:-translate-y-2 hover:shadow-2xl hover:-translate-y-2 duration-200 ease-in-out">
+            <div className="p-4 sm:p-8 bg-army w-full h-full rounded shadow-xl focus:shadow-2xl focus:-translate-y-2 hover:shadow-2xl hover:-translate-y-2 duration-200 ease-in-out">
               <div className="flex justify-between">
                 <Image
                   src={Work4}
@@ -74,7 +74,7 @@ export default function Portfolio() {
               </div>
             </div>
 
-            <div className="p-4 sm:p-8 bg-brand w-full h-full rounded shadow-xl focus:shadow-2xl focus:-translate-y-2 hover:shadow-2xl hover:-translate-y-2 duration-200 ease-in-out">
+            <div className="p-4 sm:p-8 bg-army w-full h-full rounded shadow-xl focus:shadow-2xl focus:-translate-y-2 hover:shadow-2xl hover:-translate-y-2 duration-200 ease-in-out">
               <div className="flex justify-between">
                 <Image
                   src={Work5}
@@ -120,7 +120,7 @@ export default function Portfolio() {
               </div>
             </div>
 
-            <div className="p-4 sm:p-8 bg-brand w-full h-full rounded shadow-xl focus:shadow-2xl focus:-translate-y-2 hover:shadow-2xl hover:-translate-y-2 duration-200 ease-in-out">
+            <div className="p-4 sm:p-8 bg-army w-full h-full rounded shadow-xl focus:shadow-2xl focus:-translate-y-2 hover:shadow-2xl hover:-translate-y-2 duration-200 ease-in-out">
               <div className="flex justify-between">
                 <Image
                   src={Work6}
@@ -167,7 +167,7 @@ export default function Portfolio() {
               </div>
             </div>
 
-            <div className="p-4 sm:p-8 bg-brand w-full h-full rounded shadow-xl focus:shadow-2xl focus:-translate-y-2 hover:shadow-2xl hover:-translate-y-2 duration-200 ease-in-out">
+            <div className="p-4 sm:p-8 bg-army w-full h-full rounded shadow-xl focus:shadow-2xl focus:-translate-y-2 hover:shadow-2xl hover:-translate-y-2 duration-200 ease-in-out">
               <div className="flex justify-between">
                 <Image
                   src={Work7}
@@ -213,7 +213,7 @@ export default function Portfolio() {
               </div>
             </div>
 
-            <div className="p-4 sm:p-8 bg-brand w-full h-full rounded shadow-xl focus:shadow-2xl focus:-translate-y-2 hover:shadow-2xl hover:-translate-y-2 duration-200 ease-in-out">
+            <div className="p-4 sm:p-8 bg-army w-full h-full rounded shadow-xl focus:shadow-2xl focus:-translate-y-2 hover:shadow-2xl hover:-translate-y-2 duration-200 ease-in-out">
               <div className="flex justify-between">
                 <Image
                   src={Work8}
@@ -258,7 +258,7 @@ export default function Portfolio() {
               </div>
             </div>
 
-            <div className="p-4 sm:p-8 bg-brand w-full h-full rounded shadow-xl focus:shadow-2xl focus:-translate-y-2 hover:shadow-2xl hover:-translate-y-2 duration-200 ease-in-out">
+            <div className="p-4 sm:p-8 bg-army w-full h-full rounded shadow-xl focus:shadow-2xl focus:-translate-y-2 hover:shadow-2xl hover:-translate-y-2 duration-200 ease-in-out">
               <div className="flex justify-between">
                 <Image
                   src={Work9}
@@ -304,7 +304,7 @@ export default function Portfolio() {
               </div>
             </div>
 
-            <div className="p-4 sm:p-8 bg-brand w-full h-full rounded shadow-xl focus:shadow-2xl focus:-translate-y-2 hover:shadow-2xl hover:-translate-y-2 duration-200 ease-in-out">
+            <div className="p-4 sm:p-8 bg-army w-full h-full rounded shadow-xl focus:shadow-2xl focus:-translate-y-2 hover:shadow-2xl hover:-translate-y-2 duration-200 ease-in-out">
               <div className="flex justify-between">
                 <Image
                   src={Work10}
