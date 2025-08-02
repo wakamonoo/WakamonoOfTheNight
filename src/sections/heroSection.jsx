@@ -5,11 +5,19 @@ import me from "../assets/wakamono.png";
 import NavMenu from "@/components/buttons";
 import Signage from "@/components/signage";
 import Intro from "@/components/intro";
+import Titan from "../assets/bertolo.png";
 
 export default function Hero() {
   return (
     <>
       <NavMenu />
+      <div className="">
+        <Image
+          src={Titan}
+          alt="titan"
+          className="w-full h-full object-cover object-top"
+        />
+      </div>
       <div
         id="bg"
         className="absolute bottom-0 left-0 w-full inset-0 top-45 sm:top-40 lg:top-28"

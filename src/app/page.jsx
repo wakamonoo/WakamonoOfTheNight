@@ -39,6 +39,7 @@ import About from "@/sections/aboutSection";
 import Skills from "@/sections/skillSection";
 import Portfolio from "@/sections/portfolioSection";
 import Contact from "@/sections/contactSection";
+import Footer from "@/sections/footer";
 
 export default function Home() {
 
@@ -74,6 +75,10 @@ export default function Home() {
         className="bg-second p-8 sm:p-15 md:p-24 lg:p-32 xl:px-72"
       >
         <Contact />
+      </section>
+
+      <section className="flex justify-center h-auto w-full bg-panel py-4"> 
+        <Footer />
       </section>
     </main>
   );

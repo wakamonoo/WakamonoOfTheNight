@@ -81,7 +81,7 @@ export default function Contact() {
         <p className="font-normal text-sm sm:text-base md:text-xl py-8 text-normal">
           alternate recon points:
         </p>
-        <div className="w-full">
+        <div className="w-full mb-16">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             <a href="https://www.facebook.com/joven.serdanbataller">
               <div
