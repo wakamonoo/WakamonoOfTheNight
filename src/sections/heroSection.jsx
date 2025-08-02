@@ -11,13 +11,10 @@ export default function Hero() {
   return (
     <>
       <NavMenu />
-      <div className="">
-        <Image
-          src={Titan}
-          alt="titan"
-          className="w-full h-full object-cover object-top"
-        />
+      <div className="absolute top-15 left-1/2 transform -translate-x-1/2 w-[35rem] sm:w-[40rem] h-[20rem] sm:h-[25rem] md:w-[45rem] md:h-[30rem] lg:w-[50rem] lg:h-[30rem]xl:w-[50rem] xl:h-[30rem]">
+        <Image src={Titan} alt="titan" fill className="object-cover" />
       </div>
+
       <div
         id="bg"
         className="absolute bottom-0 left-0 w-full inset-0 top-45 sm:top-40 lg:top-28"
