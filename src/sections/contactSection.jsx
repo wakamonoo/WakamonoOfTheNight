@@ -25,7 +25,12 @@ export default function Contact() {
           Swal.fire({
             title: 'Mission Accomplished!',
             text: "Intel Transmision Succesful",
-            icon: "success"
+            icon: "success",
+            background: "#3b2f2f",
+            color: "#f5f5f5",
+            showConfirmButton: false,
+            timer: 2000,
+            timerProgressBar: true,
           })
           form.current.reset();
         },
@@ -33,7 +38,12 @@ export default function Contact() {
           Swal.fire({
             title: 'Breach Detected!',
             text: "Lost Contact with Recon Unit",
-            icon: "error"
+            icon: "error",
+            background: "#3b2f2f",
+            color: "#f5f5f5",
+            showConfirmButton: false,
+            timer: 2000,
+            timerProgressBar: true,
           })
           console.error(error.text);
         }
