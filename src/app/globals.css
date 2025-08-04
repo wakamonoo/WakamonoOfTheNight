@@ -112,28 +112,6 @@
     -webkit-text-stroke: 1px var(--color-bg);
     text-stroke: 1px var(--color-bg);
   }
-
-  @keyframes beat {
-    0%, 100% {
-      transform: scale(1);
-    }
-    14% {
-      transform: scale(1.3);
-    }
-    28% {
-      transform: scale(1);
-    }
-    42% {
-      transform: scale(1.3);
-    }
-    70% {
-      transform: scale(1);
-    }
-  }
-
-  .animate-beat {
-    animation: beat 1.5s ease-in-out infinite;
-  }
 }
 
 @media (min-width: 1600px) {

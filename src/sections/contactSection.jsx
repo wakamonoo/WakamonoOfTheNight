@@ -5,6 +5,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
+import Swal from "sweetalert2";
 
 export default function Contact() {
   const form = useRef();
@@ -21,11 +22,19 @@ export default function Contact() {
       )
       .then(
         () => {
-          alert("Message Deployed");
+          Swal.fire({
+            title: 'Mission Accomplished!',
+            text: "Intel Transmision Succesful",
+            icon: "success"
+          })
           form.current.reset();
         },
         (error) => {
-          alert("Deployment Error, Try Again");
+          Swal.fire({
+            title: 'Breach Detected!',
+            text: "Lost Contact with Recon Unit",
+            icon: "error"
+          })
           console.error(error.text);
         }
       );
