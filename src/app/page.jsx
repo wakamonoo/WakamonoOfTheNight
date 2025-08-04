@@ -23,12 +23,9 @@ export default function Home() {
     fetchSomething();
   }, []);
 
-  if (loading) {
-    return <Loader />;
-  }
-
   return (
     <main>
+      {loading && <Loader />}
       <section id="hero" className="bg-brand h-screen relative overflow-hidden">
         <Hero />
       </section>
