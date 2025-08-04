@@ -22,7 +22,7 @@ export default function NavMenu() {
 
   if (!isScrolled) {
     return (
-      <div className="flex left-1/2 transform -translate-x-1/2 p-4 fixed z-100">
+      <div className="flex left-1/2 transform -translate-x-1/2 p-4 fixed z-50">
         <div className="flex text-4xl md:text-5xl gap-2 bg-panel p-4 rounded-2xl">
           <NavLinks />
         </div>
@@ -30,9 +30,9 @@ export default function NavMenu() {
     );
   }
   return (
-    <div className="flex left-1/2 transform -translate-x-1/2 p-4 fixed z-100">
+    <div className="flex left-1/2 transform -translate-x-1/2 p-4 fixed z-50">
       {expanded ? (
-        <div className="flex text-4xl gap-2 bg-panel p-4 rounded-2xl">
+        <div className="flex text-4xl md:text-5xl gap-2 bg-panel p-4 rounded-2xl">
           <NavLinks />
         </div>
       ) : (

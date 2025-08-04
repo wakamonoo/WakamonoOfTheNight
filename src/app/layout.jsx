@@ -1,3 +1,4 @@
+import { IconBase } from "react-icons";
 import "./globals.css";
 import { Bangers, Rubik, Black_Han_Sans, Anton, Bebas_Neue } from "next/font/google";
 
@@ -34,6 +35,9 @@ const bebasNeue = Bebas_Neue({
 export const metadata = {
   title: "wakamonoofthenight",
   description: "Joven Bataller AOT Themed Web Developer Portfolio",
+  icons: {
+    icon: "/logo.png"
+  }
 };
 
 export default function RootLayout({ children }) {
