@@ -9,8 +9,8 @@ import {
   SiFirebase,
   SiKotlin,
   SiVercel,
-  SiVite,
-  SiRender,
+  SiPhp,
+  SiMysql,
 } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 
@@ -86,13 +86,13 @@ export default function Skills() {
             tabIndex="0"
             className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]"
           >
-            <SiVite />
+            <SiPhp />
           </div>
           <div
             tabIndex="0"
             className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:scale-110 hover:text-[var(--color-accent)] active:scale-110 focus:text-[var(--color-accent)]"
           >
-            <SiRender />
+            <SiMysql />
           </div>
         </div>
       </div>
