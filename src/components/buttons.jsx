@@ -40,7 +40,7 @@ export default function NavMenu() {
           onClick={() => setExpanded(true)}
           className="p-4 text-normal hover:scale-110 transition"
         >
-          <MdApps className="text-4xl md:text-5xl text-normal" />
+          <MdApps className="text-4xl md:text-5xl text-normal cursor-pointer" />
         </button>
       )}
     </div>
