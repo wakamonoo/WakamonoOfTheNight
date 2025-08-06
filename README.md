@@ -36,6 +36,12 @@ A sleek, developer-focused personal portfolio built with modern tools like **Nex
 
 ---
 
+## 🚀 Try It Out
+
+Visit the live demo at [wakamonoo.vercel.app](https://wakamonoo.vercel.app) :contentReference[oaicite:1]{index=1}
+
+---
+
 ## 🚀 Getting Started
 
 ```bash
