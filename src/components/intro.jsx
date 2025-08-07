@@ -17,9 +17,14 @@ export default function Intro() {
           />
         </div>
 
-        <h1 className="relative text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-header text-right">JOVEN BATALLER</h1>
+        <h1 className="relative text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-header text-right">
+          JOVEN BATALLER
+        </h1>
         <p className="text-right text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-normal">
-          <span className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl  text-normal">──── </span>web developer
+          <span className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl  text-normal">
+            ────{" "}
+          </span>
+          web developer
         </p>
         <div className="flex gap-2 text-4xl sm:text-5xl lg:text-6xl xl:text-7xl justify-center pt-2 text-normal overflow-visible">
           <a href="https://www.facebook.com/joven.serdanbataller">

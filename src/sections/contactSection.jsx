@@ -23,7 +23,7 @@ export default function Contact() {
       .then(
         () => {
           Swal.fire({
-            title: 'Mission Accomplished!',
+            title: "Mission Accomplished!",
             text: "Intel Transmision Succesful",
             icon: "success",
             background: "#3b2f2f",
@@ -31,12 +31,12 @@ export default function Contact() {
             showConfirmButton: false,
             timer: 2000,
             timerProgressBar: true,
-          })
+          });
           form.current.reset();
         },
         (error) => {
           Swal.fire({
-            title: 'Breach Detected!',
+            title: "Breach Detected!",
             text: "Lost Contact with Recon Unit",
             icon: "error",
             background: "#3b2f2f",
@@ -44,7 +44,7 @@ export default function Contact() {
             showConfirmButton: false,
             timer: 2000,
             timerProgressBar: true,
-          })
+          });
           console.error(error.text);
         }
       );

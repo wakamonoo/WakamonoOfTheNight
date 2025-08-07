@@ -38,7 +38,11 @@ export default function Portfolio() {
           TACTICAL CAMPAIGNS
         </h2>
         <p className="text-normal text-base sm:text-xl md:text-2xl font-normal leading-4.5 sm:leading-6 md:leading-8 lg:leading-8.5 mb-4 md:mb-8">
-          Full-scale operations executed by the elite Survey Corps, these are high-impact missions demanding precise strategy, relentless execution, and adaptability in hostile and ever-shifting environments. Each deployment is a testament to survival, innovation, and pushing past the walls of convention.
+          Full-scale operations executed by the elite Survey Corps, these are
+          high-impact missions demanding precise strategy, relentless execution,
+          and adaptability in hostile and ever-shifting environments. Each
+          deployment is a testament to survival, innovation, and pushing past
+          the walls of convention.
         </p>
         <div className="grid grid-cols-1 xl-plus:grid-cols-2 gap-4">
           <div className="p-4 sm:p-8 bg-brand w-full h-full rounded shadow-xl focus:shadow-2xl focus:-translate-y-2 hover:shadow-2xl hover:-translate-y-2 duration-200 ease-in-out">
@@ -188,7 +192,7 @@ export default function Portfolio() {
              hover:bg-[var(--color-panel)] hover:scale-110 
              active:scale-110 active:bg-[var(--color-panel)] cursor-pointer"
           >
-             {showProjects ? 'NIGERO逃げろ!' : 'SUSUME進め!'}
+            {showProjects ? "NIGERO逃げろ!" : "SUSUME進め!"}
           </button>
         </div>
       </div>
@@ -198,7 +202,10 @@ export default function Portfolio() {
           ODM FIELD TEST
         </h2>
         <p className="text-normal text-base sm:text-xl md:text-2xl font-normal leading-4.5 sm:leading-6 md:leading-8 lg:leading-8.5 mb-4 md:mb-8">
-          Off-duty developments and training exercises, crafted during moments of peace between battles. These small-scale operations serve as field drills for mastering new technologies and refining old skills. Not every mission makes history, but each one sharpens the blade.
+          Off-duty developments and training exercises, crafted during moments
+          of peace between battles. These small-scale operations serve as field
+          drills for mastering new technologies and refining old skills. Not
+          every mission makes history, but each one sharpens the blade.
         </p>
         <div className="grid grid-cols-1 xl-plus:grid-cols-2 gap-4">
           <div className="contents">
@@ -530,12 +537,13 @@ export default function Portfolio() {
           </div>
         </div>
         <div className="flex">
-          <button onClick={() => setShowMinorProjects((prevs) => !prevs)}
+          <button
+            onClick={() => setShowMinorProjects((prevs) => !prevs)}
             className="p-2 sm:p-4 sm:text-xl md:text-2xl mt-8 bg-brand rounded shadow-2xl border border-accent transition-all duration-200
              hover:bg-[var(--color-panel)] hover:scale-110 
              active:scale-110 active:bg-[var(--color-panel)] cursor-pointer"
           >
-            {showMinorProjects ? 'NIGERO逃げろ!' : 'SUSUME進め!'}
+            {showMinorProjects ? "NIGERO逃げろ!" : "SUSUME進め!"}
           </button>
         </div>
       </div>

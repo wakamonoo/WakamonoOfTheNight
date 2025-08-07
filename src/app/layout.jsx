@@ -1,6 +1,12 @@
 import { IconBase } from "react-icons";
 import "./globals.css";
-import { Bangers, Rubik, Black_Han_Sans, Anton, Bebas_Neue } from "next/font/google";
+import {
+  Bangers,
+  Rubik,
+  Black_Han_Sans,
+  Anton,
+  Bebas_Neue,
+} from "next/font/google";
 
 const bangers = Bangers({
   subsets: ["latin"],
@@ -36,8 +42,8 @@ export const metadata = {
   title: "wakamonoofthenight",
   description: "Joven Bataller AOT Themed Web Developer Portfolio",
   icons: {
-    icon: "/logo.png"
-  }
+    icon: "/logo.png",
+  },
 };
 
 export default function RootLayout({ children }) {

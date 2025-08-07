@@ -12,7 +12,12 @@ export default function Hero() {
     <>
       <NavMenu />
       <div className="absolute top-8 left-1/2 transform -translate-x-1/2 w-[35rem] sm:w-[40rem] h-[20rem] sm:h-[25rem] md:w-[45rem] md:h-[30rem] lg:w-[50rem] lg:h-[30rem]xl:w-[50rem] xl:h-[30rem]">
-        <Image src={Titan} alt="titan" fill className="object-cover object-top blur-xs" />
+        <Image
+          src={Titan}
+          alt="titan"
+          fill
+          className="object-cover object-top blur-xs"
+        />
       </div>
 
       <div
