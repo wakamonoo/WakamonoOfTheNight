@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const apikey = process.env.NEXT_PUBLIC_OPEN_ROUTER_API_KEY;
+const apikey = process.env.OPEN_ROUTER_API_KEY;
 
 app.post('/api/chat', async (req, res) => {
   const { messages } = req.body;
