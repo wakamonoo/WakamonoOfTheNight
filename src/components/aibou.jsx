@@ -21,7 +21,7 @@ export default function Aibou() {
     }
     try {
       const response = await fetch(
-        "https://openrouter.ai/api/v1/chat/completions",
+        "https://wakamonoofthenight.onrender.com/",
         {
           method: "POST",
           headers: {
