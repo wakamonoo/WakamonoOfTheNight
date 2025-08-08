@@ -4,6 +4,7 @@ import { FiSend } from "react-icons/fi";
 import { FiUser } from "react-icons/fi";
 import { presetInfo } from "./presetInfo";
 import AibouLoader from "./aibouLoader";
+import ReactMarkdown from "react-markdown";
 
 export default function Aibou() {
   const [isOpen, setIsOpen] = useState(false);
@@ -113,9 +114,9 @@ export default function Aibou() {
                 ) : (
                   <>
                     <MdMessage className="text-4xl bg-panel rounded-2xl p-2" />
-                    <p className="bg-panel w-50 p-2 text-normal rounded-2xl">
-                      {msg.text}
-                    </p>
+                    <div className="bg-panel w-50 p-2 text-normal rounded-2xl">
+                      <ReactMarkdown>{msg.text}</ReactMarkdown>
+                    </div>
                   </>
                 )}
               </div>
