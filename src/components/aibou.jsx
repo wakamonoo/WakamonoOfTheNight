@@ -21,7 +21,7 @@ export default function Aibou() {
     }
     try {
       const response = await fetch(
-        "https://wakamonoofthenight.onrender.com/",
+        "https://wakamonoofthenight.onrender.com/api/chat",
         {
           method: "POST",
           headers: {
