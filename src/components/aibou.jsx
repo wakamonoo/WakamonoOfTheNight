@@ -20,11 +20,13 @@ export default function Aibou() {
       setError(null);
     }
     try {
+      const apikey = process.env.NEXT_PUBLIC_OPEN_ROUTER_API_KEY;
       const response = await fetch(
-        "https://wakamonoofthenight.onrender.com/api/chat",
+        "https://openrouter.ai/api/v1/chat/completions",
         {
           method: "POST",
           headers: {
+            Authorization: `Bearer ${apikey}`,
             "HTTP-Referer": "wakamonoo.vercel.app",
             "X-Title": "wakamonoofthenight",
             "Content-Type": "application/json",
