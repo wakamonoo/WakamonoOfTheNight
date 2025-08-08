@@ -10,9 +10,10 @@ export default function Aibou() {
   const [showMessage, setShowMessage] = useState(false);
 
   function handleSent() {
-    if (draftText.trim !== "") {
+    if (draftText.trim() !== "") {
       setSentText(draftText);
       setDraftText("");
+      setShowMessage(true);
     }
   }
 
@@ -57,10 +58,7 @@ export default function Aibou() {
               }}
             />
             <FiSend
-              onClick={() => {
-                handleSent();
-                setShowMessage(true);
-              }}
+              onClick={handleSent}
               className="text-5xl text-normal bg-brand p-2 rounded-md"
             />
           </div>
