@@ -6,12 +6,13 @@ import { FiUser } from "react-icons/fi";
 export default function Aibou() {
   const [isOpen, setIsOpen] = useState(false);
   const [draftText, setDraftText] = useState("");
-  const [sentText, setSentText] = useState("");
+  const [sentText, setSentText] = useState([]);
   const [showMessage, setShowMessage] = useState(false);
 
   function handleSent() {
-    if (draftText.trim() !== "") {
-      setSentText(draftText);
+    const text = draftText.trim();
+    if (text !== "") {
+      setSentText((prev) => [...prev, draftText]);
       setDraftText("");
       setShowMessage(true);
     }
@@ -34,14 +35,16 @@ export default function Aibou() {
           </div>
 
           <div className="flex-1 p-2 overflow-y-auto">
-            {showMessage && (
-              <div className="flex items-center gap-2 justify-end pl-4">
+            
+              {sentText.map((msg, index) => (
+                <div key={index} className="flex items-center gap-2 p-2 justify-end pl-4">
                 <p className="bg-brand p-2 text-normal rounded-2xl">
-                  {sentText}
+                  {msg}
                 </p>
                 <FiUser className="text-4xl bg-brand rounded-2xl p-2" />
               </div>
-            )}
+              ))}
+            
           </div>
 
           <div className="flex justify-between gap-2 items-center p-2">
