@@ -7,6 +7,7 @@ export default function Aibou() {
   const [isOpen, setIsOpen] = useState(false);
   const [draftText, setDraftText] = useState("");
   const [sentText, setSentText] = useState("");
+  const [showMessage, setShowMessage] = useState(false);
 
   function handleSent() {
     if (draftText.trim !== "") {
@@ -32,10 +33,14 @@ export default function Aibou() {
           </div>
 
           <div className="flex-1 p-2 overflow-y-auto">
-            <div className="flex items-center gap-2 justify-end pl-4">
-              <p className="bg-brand p-2 text-normal rounded-2xl">{sentText}</p>
-              <FiUser className="text-4xl bg-brand rounded-2xl p-2" />
-            </div>
+            {showMessage && (
+              <div className="flex items-center gap-2 justify-end pl-4">
+                <p className="bg-brand p-2 text-normal rounded-2xl">
+                  {sentText}
+                </p>
+                <FiUser className="text-4xl bg-brand rounded-2xl p-2" />
+              </div>
+            )}
           </div>
 
           <div className="flex justify-between gap-2 items-center p-2">
@@ -45,14 +50,17 @@ export default function Aibou() {
               value={draftText}
               onChange={(e) => setDraftText(e.target.value)}
               onKeyDown={(e) => {
-                if(e.key === "Enter" && !e.shiftKey) {
+                if (e.key === "Enter" && !e.shiftKey) {
                   e.preventDefault();
                   handleSent();
                 }
               }}
             />
             <FiSend
-              onClick={handleSent}
+              onClick={() => {
+                handleSent();
+                setShowMessage(true);
+              }}
               className="text-5xl text-normal bg-brand p-2 rounded-md"
             />
           </div>
