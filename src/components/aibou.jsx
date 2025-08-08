@@ -20,13 +20,11 @@ export default function Aibou() {
       setError(null);
     }
     try {
-      const apikey = process.env.NEXT_PUBLIC_OPEN_ROUTER_API_KEY;
       const response = await fetch(
         "https://openrouter.ai/api/v1/chat/completions",
         {
           method: "POST",
           headers: {
-            Authorization: `Bearer ${apikey}`,
             "HTTP-Referer": "wakamonoo.vercel.app",
             "X-Title": "wakamonoofthenight",
             "Content-Type": "application/json",
@@ -94,7 +92,7 @@ export default function Aibou() {
             {sentText.map((msg, index) => (
               <div
                 key={index}
-                className={`flex items-center gap-2 p-2 ${
+                className={`flex items-start gap-2 p-2 ${
                   msg.sender === "user"
                     ? "justify-end p-4"
                     : "justify-start p-4"
