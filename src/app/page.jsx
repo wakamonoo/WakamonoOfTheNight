@@ -7,6 +7,7 @@ import Contact from "@/sections/contactSection";
 import Footer from "@/sections/footer";
 import Loader from "@/components/loader";
 import { useEffect, useState } from "react";
+import Aibou from "@/components/aibou";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -26,6 +27,7 @@ export default function Home() {
   return (
     <main>
       {loading && <Loader />}
+      <Aibou />
       <section id="hero" className="bg-brand h-screen relative overflow-hidden">
         <Hero />
       </section>
