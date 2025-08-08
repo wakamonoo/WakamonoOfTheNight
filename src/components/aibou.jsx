@@ -1,7 +1,7 @@
 import { MdMessage } from "react-icons/md";
 import { useState } from "react";
 import { FiSend } from "react-icons/fi";
-import { FiUser } from "react-icons/fi"; 
+import { FiUser } from "react-icons/fi";
 
 export default function Aibou() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,13 +9,11 @@ export default function Aibou() {
   const [sentText, setSentText] = useState("");
 
   function handleSent() {
-    if(draftText.trim !== "") {
+    if (draftText.trim !== "") {
       setSentText(draftText);
       setDraftText("");
     }
   }
-
-
 
   return (
     <>
@@ -36,7 +34,7 @@ export default function Aibou() {
           <div className="flex-1 p-2 overflow-y-auto">
             <div className="flex items-center gap-2 justify-end pl-4">
               <p className="bg-brand p-2 text-normal rounded-2xl">{sentText}</p>
-              <FiUser className="text-4xl bg-brand rounded-2xl p-2"/>
+              <FiUser className="text-4xl bg-brand rounded-2xl p-2" />
             </div>
           </div>
 
@@ -46,8 +44,17 @@ export default function Aibou() {
               placeholder="what do you want to ask?"
               value={draftText}
               onChange={(e) => setDraftText(e.target.value)}
+              onKeyDown={(e) => {
+                if(e.key === "Enter" && !e.shiftKey) {
+                  e.preventDefault();
+                  handleSent();
+                }
+              }}
             />
-            <FiSend onClick={handleSent} className="text-5xl text-normal bg-brand p-2 rounded-md" />
+            <FiSend
+              onClick={handleSent}
+              className="text-5xl text-normal bg-brand p-2 rounded-md"
+            />
           </div>
         </div>
       )}
