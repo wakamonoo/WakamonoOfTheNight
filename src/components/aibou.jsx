@@ -15,6 +15,7 @@ export default function Aibou() {
   const [Preset, setPreset] = useState(true);
   const scrollEnd = useRef(null);
   const scrollStart = useRef(null);
+  const divRef = useRef(null);
 
   useEffect(() => {
     const lastText = sentText[sentText.length - 1];
@@ -24,6 +25,18 @@ export default function Aibou() {
       scrollStart.current.scrollIntoView({ behavior: "smooth" });
     }
   }, [sentText]);
+
+  useEffect(() => {
+    function handleClickOutside(e) {
+      if (divRef.current && !divRef.current.contains(e.target)) {
+        setIsOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   async function handleSent(textToSend) {
     const text = textToSend ?? draftText.trim();
@@ -100,7 +113,10 @@ export default function Aibou() {
       </div>
 
       {isOpen && (
-        <div className="fixed flex flex-col bottom-22 right-4 z-100 bg-army shadow-2xl w-80 h-110 rounded-2xl overflow-hidden">
+        <div
+          ref={divRef}
+          className="fixed flex flex-col bottom-22 right-4 z-100 bg-army shadow-2xl w-80 h-110 rounded-2xl overflow-hidden"
+        >
           <div className="p-2 text-xl text-header flex justify-center items-center gap-4 w-full h-8 bg-panel">
             <MdMessage className="font-heading" />
             <p className=" font-heading">AIbou</p>
