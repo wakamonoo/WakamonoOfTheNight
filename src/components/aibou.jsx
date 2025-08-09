@@ -27,15 +27,14 @@ export default function Aibou() {
   }, [sentText]);
 
   useEffect(() => {
-    function handleClickOutside(e) {
-      if (divRef.current && !divRef.current.contains(e.target)) {
-        setIsOpen(false);
-      }
-    }
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+    function handleOutClick(e) {
+      if (divRef.current && divRef.current.contains(e.target));
+      setIsOpen(false);
     };
+    document.addEventListener("pointerdown", handleOutClick);
+    return () => {
+      document.removeEventListener("pointerdown", handleOutClick);
+    }
   }, []);
 
   async function handleSent(textToSend) {
