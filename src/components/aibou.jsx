@@ -156,10 +156,10 @@ export default function Aibou() {
                 Tell me more about Joven!
               </p>
               <p
-                onClick={() => handleSent("What is his tech-stack?")}
+                onClick={() => handleSent("What is Joven's tech-stack?")}
                 className="bg-panel p-2 w-full rounded-md text-normal font-normal text-center cursor-pointer"
               >
-                What is his tech-stack?
+                What is Joven's tech-stack?
               </p>
               <p
                 onClick={() => handleSent("Why are you called AIbou?")}
@@ -173,7 +173,7 @@ export default function Aibou() {
           <div className="flex bg-panel justify-between gap-2 items-center p-2">
             <textarea
               className="w-full h-12 bg-brand p-2 rounded-md"
-              placeholder="sorry, still working on backend"
+              placeholder="hi, im aibou! how can i assist?"
               value={draftText}
               onChange={(e) => setDraftText(e.target.value)}
               onKeyDown={(e) => {
@@ -188,7 +188,7 @@ export default function Aibou() {
               onClick={() => {
                 if (!loading) handleSent();
               }}
-              className="text-5xl text-normal bg-brand p-2 rounded-md"
+              className="text-5xl text-normal bg-brand p-2 rounded-md hover:scale-110 active:scale-110"
             />
           </div>
         </div>
