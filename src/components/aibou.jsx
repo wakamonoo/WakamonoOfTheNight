@@ -35,56 +35,63 @@ export default function Aibou() {
     document.addEventListener("pointerdown", handleOutClick);
     return () => {
       document.removeEventListener("pointerdown", handleOutClick);
-    }
+    };
   }, []);
 
   async function handleSent(textToSend) {
-  const text = textToSend ?? draftText.trim();
-  if (text === "") return;
-
-  setSentText((prev) => [...prev, { sender: "user", text }]);
-  setDraftText("");
-  setLoading(true);
-  setError(null);
-  setPreset(false);
-
-  try {
-    // Prepare messages array as before
-    const messages = [
-      ...presetInfo,
-      ...sentText.map((msg) => ({
-        role: msg.sender === "user" ? "user" : "assistant",
-        content: msg.text,
-      })),
-      {
-        role: "user",
-        content: text,
-      },
-    ];
-
-    const response = await fetch("/api/chatbot", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ messages }),
-    });
-
-    const data = await response.json();
-
-    if (response.ok && data.choices && data.choices.length > 0) {
-      const aiText = data.choices[0].message.content.trim();
-      setSentText((prev) => [...prev, { sender: "aibou", text: aiText }]);
-    } else {
-      setSentText((prev) => [...prev, { sender: "aibou", text: "Sorry, server error!" }]);
-      setError(data.error || "Unexpected API error");
+    const text = textToSend ?? draftText.trim();
+    if (text !== "") {
+      setSentText((prev) => [...prev, { sender: "user", text }]);
+      setDraftText("");
+      setLoading(true);
+      setError(null);
+      setPreset(false);
     }
-  } catch (err) {
-    setError("Error contacting AI service!");
-    setSentText((prev) => [...prev, { sender: "aibou", text: "Error contacting AI service!" }]);
-    console.error(err);
-  } finally {
-    setLoading(false);
+    try {
+      const response = await fetch("api/chatbot", {
+        method: "POST",
+        headers: {
+          "HTTP-Referer": "https://wakamonoo.vercel.app",
+          "X-Title": "wakamonoofthenight",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          messages: [
+            ...presetInfo,
+            ...sentText.map((msg) => ({
+              role: msg.user === "user" ? "user" : "assistant",
+              content: msg.txt,
+            })),
+            {
+              role: "user",
+              content: text,
+            },
+          ],
+        }),
+      });
+
+      const data = await response.json();
+
+      if (data.choices && data.choices.length > 0) {
+        const aiText = data.choices[0].message.content.trim();
+        setSentText((prev) => [...prev, { sender: "aibou", text: aiText }]);
+      } else {
+        setSentText((prev) => [
+          ...prev,
+          { sender: "aibou", text: "sumemasen! server down!" },
+        ]);
+      }
+    } catch (err) {
+      setError("Error contacting aibou!");
+      setSentText((prev) => [
+        ...prev,
+        { sender: "aibou", text: "Error contacting aibou!" },
+      ]);
+      console.error(err);
+    } finally {
+      setLoading(false);
+    }
   }
-}
 
   return (
     <>

@@ -1,11 +1,10 @@
-// app/api/server/route.js
 import { NextResponse } from 'next/server';
 
 export async function POST(request) {
   try {
     const { messages } = await request.json();
 
-    const apikey = process.env.OPEN_ROUTER_API_KEY; // secret key, NOT exposed to frontend
+    const apikey = process.env.OPEN_ROUTER_API_KEY; 
 
     const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
       method: "POST",
