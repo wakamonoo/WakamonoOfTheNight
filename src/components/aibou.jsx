@@ -28,9 +28,10 @@ export default function Aibou() {
 
   useEffect(() => {
     function handleOutClick(e) {
-      if (divRef.current && divRef.current.contains(e.target));
-      setIsOpen(false);
-    };
+      if (divRef.current && !divRef.current.contains(e.target)) {
+        setIsOpen(false);
+      }
+    }
     document.addEventListener("pointerdown", handleOutClick);
     return () => {
       document.removeEventListener("pointerdown", handleOutClick);
@@ -182,7 +183,7 @@ export default function Aibou() {
           <div className="flex bg-panel justify-between gap-2 items-center p-2">
             <textarea
               className="w-full h-12 bg-brand p-2 rounded-md"
-              placeholder="what do you want to ask?"
+              placeholder="sorry, still working on backend"
               value={draftText}
               onChange={(e) => setDraftText(e.target.value)}
               onKeyDown={(e) => {
