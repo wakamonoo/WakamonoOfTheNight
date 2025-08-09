@@ -59,18 +59,18 @@ export default function Aibou() {
 
       if (data.choices && data.choices.length > 0) {
         const aiText = data.choices[0].message.content.trim();
-        setSentText((prev) => [...prev, { sender: "ai", text: aiText }]);
+        setSentText((prev) => [...prev, { sender: "aibou", text: aiText }]);
       } else {
         setSentText((prev) => [
           ...prev,
-          { sender: "ai", text: "sumemasen, couldn't quite catch that!" },
+          { sender: "aibou", text: "sumemasen, couldn't quite catch that!" },
         ]);
       }
     } catch (err) {
       setError("Error contacting aibou!");
       setSentText((prev) => [
         ...prev,
-        { sender: "ai", text: "Error contacting aibou!" },
+        { sender: "aibou", text: "Error contacting aibou!" },
       ]);
       console.error(err);
     } finally {
