@@ -1,5 +1,5 @@
 import { MdMessage } from "react-icons/md";
-import { useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { FiSend } from "react-icons/fi";
 import { FiUser } from "react-icons/fi";
 import { presetInfo } from "./presetInfo";
@@ -13,6 +13,17 @@ export default function Aibou() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [Preset, setPreset] = useState(true);
+  const scrollEnd = useRef(null);
+  const scrollStart = useRef(null);
+
+  useEffect(() => {
+    const lastText = sentText[sentText.length - 1];
+    if (scrollEnd.current && lastText?.sender === "user") {
+      scrollEnd.current.scrollIntoView({ behavior: "smooth" });
+    } else if (scrollStart.current && lastText?.sender === "aibou") {
+      scrollStart.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [sentText]);
 
   async function handleSent(textToSend) {
     const text = textToSend ?? draftText.trim();
@@ -44,6 +55,7 @@ export default function Aibou() {
                 role: msg.sender === "user" ? "user" : "assistant",
                 content: msg.text,
               })),
+
               {
                 role: "user",
                 content: text,
@@ -63,7 +75,7 @@ export default function Aibou() {
       } else {
         setSentText((prev) => [
           ...prev,
-          { sender: "aibou", text: "sumemasen, couldn't quite catch that!" },
+          { sender: "aibou", text: "sumemasen! server down!" },
         ]);
       }
     } catch (err) {
@@ -113,6 +125,7 @@ export default function Aibou() {
                   </>
                 ) : (
                   <>
+                    <div ref={scrollStart} />
                     <MdMessage className="text-4xl bg-panel rounded-2xl p-2" />
                     <div className="bg-panel w-50 p-2 text-normal rounded-2xl">
                       <ReactMarkdown>{msg.text}</ReactMarkdown>
@@ -125,17 +138,27 @@ export default function Aibou() {
             {error && (
               <p className="text-center text-red-500 italic">{error}</p>
             )}
+            <div ref={scrollEnd} />
           </div>
 
           {Preset && (
             <div className="flex flex-col gap-2 p-4">
-              <p onClick={() => handleSent("Tell me more about Joven!")} className="bg-panel p-2 w-full rounded-md text-normal font-normal text-center cursor-pointer">
+              <p
+                onClick={() => handleSent("Tell me more about Joven!")}
+                className="bg-panel p-2 w-full rounded-md text-normal font-normal text-center cursor-pointer"
+              >
                 Tell me more about Joven!
               </p>
-              <p onClick={() => handleSent("What is his tech-stack?")} className="bg-panel p-2 w-full rounded-md text-normal font-normal text-center cursor-pointer">
+              <p
+                onClick={() => handleSent("What is his tech-stack?")}
+                className="bg-panel p-2 w-full rounded-md text-normal font-normal text-center cursor-pointer"
+              >
                 What is his tech-stack?
               </p>
-              <p onClick={() => handleSent("Why are you called AIbou?")} className="bg-panel p-2 w-full rounded-md text-normal font-normal text-center cursor-pointer">
+              <p
+                onClick={() => handleSent("Why are you called AIbou?")}
+                className="bg-panel p-2 w-full rounded-md text-normal font-normal text-center cursor-pointer"
+              >
                 Why are you called AIbou?
               </p>
             </div>
