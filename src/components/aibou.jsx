@@ -134,12 +134,12 @@ export default function Aibou() {
                     <p className="bg-brand w-50 p-2 text-normal rounded-2xl">
                       {msg.text}
                     </p>
-                    <FiUser className="text-4xl bg-brand rounded-2xl p-2" />
+                    <FiUser className="text-4xl bg-brand rounded-full p-2" />
                   </>
                 ) : (
                   <>
                     <div ref={scrollStart} />
-                    <Image src={Bot} alt="bot" className="w-12 bg-panel p-2 rounded-full"/>
+                    <Image src={Bot} alt="bot" className="w-10 bg-panel p-2 rounded-full"/>
                     <div className="bg-panel w-50 p-2 text-normal rounded-2xl">
                       <ReactMarkdown>{msg.text}</ReactMarkdown>
                     </div>
