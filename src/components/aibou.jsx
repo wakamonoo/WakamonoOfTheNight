@@ -103,6 +103,10 @@ export default function Aibou() {
 
   return (
     <>
+    {isOpen && (
+      <div className="fixed inset-0 backdrop-blur-2xl pointer-events-none z-60" />
+    )}
+
       <div
         ref={botRef}
         onClick={() => setIsOpen((open) => !open)}
@@ -114,7 +118,7 @@ export default function Aibou() {
       {isOpen && (
         <div
           ref={divRef}
-          className="fixed flex flex-col bottom-22 right-4 z-100 bg-army shadow-2xl w-80 h-110 rounded-2xl overflow-hidden"
+          className="fixed flex flex-col bottom-25 right-4 z-100 bg-army shadow-2xl w-80 h-110 rounded-2xl overflow-hidden"
         >
           <div className="p-4 py-8 text-2xl text-header flex justify-between items-center gap-4 w-full h-8 bg-panel">
             <div className="flex items-center gap-4">
