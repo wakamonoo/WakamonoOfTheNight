@@ -68,7 +68,7 @@ export default function Aibou() {
             ...presetInfo,
             ...sentText.map((msg) => ({
               role: msg.user === "user" ? "user" : "assistant",
-              content: msg.txt,
+              content: msg.text,
             })),
             {
               role: "user",
@@ -110,7 +110,7 @@ export default function Aibou() {
       <div
         ref={botRef}
         onClick={() => setIsOpen((open) => !open)}
-        className="fixed bottom-4 p-2 right-4 flex rounded-full bg-army shadow-2xl z-60 cursor-pointer"
+        className="fixed bottom-4 p-2 right-4 flex rounded-full bg-army shadow-2xl z-60 cursor-pointer transform translate duration-200 hover:scale-110 active:scale-110"
       >
         <Image src={Bot} alt="bot" className="w-16 h-auto" />
       </div>
