@@ -1,10 +1,12 @@
-import { MdMessage } from "react-icons/md";
+import { MdMessage, MdClose } from "react-icons/md";
 import { useEffect, useState, useRef } from "react";
 import { FiSend } from "react-icons/fi";
 import { FiUser } from "react-icons/fi";
 import { presetInfo } from "./presetInfo";
 import AibouLoader from "./aibouLoader";
 import ReactMarkdown from "react-markdown";
+import Bot from "../assets/aibou.png";
+import Image from "next/image";
 
 export default function Aibou() {
   const [isOpen, setIsOpen] = useState(false);
@@ -97,9 +99,9 @@ export default function Aibou() {
     <>
       <div
         onClick={() => setIsOpen((open) => !open)}
-        className="fixed bottom-4 p-4 right-4 flex rounded-4xl bg-army shadow-2xl z-60 cursor-pointer"
+        className="fixed bottom-4 p-4 right-4 flex rounded-full bg-army shadow-2xl z-60 cursor-pointer"
       >
-        <MdMessage className="text-4xl text-normal" />
+        <Image src={Bot} alt="bot" className="w-16 h-auto" />
       </div>
 
       {isOpen && (
@@ -107,9 +109,14 @@ export default function Aibou() {
           ref={divRef}
           className="fixed flex flex-col bottom-22 right-4 z-100 bg-army shadow-2xl w-80 h-110 rounded-2xl overflow-hidden"
         >
-          <div className="p-2 text-xl text-header flex justify-center items-center gap-4 w-full h-8 bg-panel">
-            <MdMessage className="font-heading" />
-            <p className=" font-heading">AIbou</p>
+          <div className="p-4 py-8 text-2xl text-header flex justify-between items-center gap-4 w-full h-8 bg-panel">
+            <div className="flex items-center gap-4">
+              <MdMessage className="font-heading" />
+              <p className=" font-heading">AIbou</p>
+            </div>
+            <div>
+              <MdClose onClick={() => setIsOpen(false)} className="hover:scale-110 active:scale-110 cursor-pointer" />
+            </div>
           </div>
 
           <div className="flex-1 p-2 overflow-y-auto">
