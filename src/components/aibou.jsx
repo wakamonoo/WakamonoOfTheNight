@@ -99,7 +99,7 @@ export default function Aibou() {
     <>
       <div
         onClick={() => setIsOpen((open) => !open)}
-        className="fixed bottom-4 p-4 right-4 flex rounded-full bg-army shadow-2xl z-60 cursor-pointer"
+        className="fixed bottom-4 p-2 right-4 flex rounded-full bg-army shadow-2xl z-60 cursor-pointer"
       >
         <Image src={Bot} alt="bot" className="w-16 h-auto" />
       </div>
@@ -111,7 +111,7 @@ export default function Aibou() {
         >
           <div className="p-4 py-8 text-2xl text-header flex justify-between items-center gap-4 w-full h-8 bg-panel">
             <div className="flex items-center gap-4">
-              <MdMessage className="font-heading" />
+              <Image src={Bot} alt="bot" className="w-12 bg-army p-2 rounded-full"/>
               <p className=" font-heading">AIbou</p>
             </div>
             <div>
@@ -139,7 +139,7 @@ export default function Aibou() {
                 ) : (
                   <>
                     <div ref={scrollStart} />
-                    <MdMessage className="text-4xl bg-panel rounded-2xl p-2" />
+                    <Image src={Bot} alt="bot" className="w-12 bg-panel p-2 rounded-full"/>
                     <div className="bg-panel w-50 p-2 text-normal rounded-2xl">
                       <ReactMarkdown>{msg.text}</ReactMarkdown>
                     </div>
