@@ -18,6 +18,7 @@ export default function Aibou() {
   const scrollEnd = useRef(null);
   const scrollStart = useRef(null);
   const divRef = useRef(null);
+  const botRef = useRef(null);
 
   useEffect(() => {
     const lastText = sentText[sentText.length - 1];
@@ -30,7 +31,12 @@ export default function Aibou() {
 
   useEffect(() => {
     function handleOutClick(e) {
-      if (divRef.current && !divRef.current.contains(e.target)) {
+      if (
+        divRef.current &&
+        !divRef.current.contains(e.target) &&
+        botRef.current &&
+        !botRef.current.contains(e.target)
+      ) {
         setIsOpen(false);
       }
     }
@@ -98,6 +104,7 @@ export default function Aibou() {
   return (
     <>
       <div
+        ref={botRef}
         onClick={() => setIsOpen((open) => !open)}
         className="fixed bottom-4 p-2 right-4 flex rounded-full bg-army shadow-2xl z-60 cursor-pointer"
       >
@@ -111,11 +118,18 @@ export default function Aibou() {
         >
           <div className="p-4 py-8 text-2xl text-header flex justify-between items-center gap-4 w-full h-8 bg-panel">
             <div className="flex items-center gap-4">
-              <Image src={Bot} alt="bot" className="w-12 bg-army p-2 rounded-full"/>
+              <Image
+                src={Bot}
+                alt="bot"
+                className="w-12 bg-army p-2 rounded-full"
+              />
               <p className=" font-heading">AIbou</p>
             </div>
             <div>
-              <MdClose onClick={() => setIsOpen(false)} className="hover:scale-110 active:scale-110 cursor-pointer" />
+              <MdClose
+                onClick={() => setIsOpen(false)}
+                className="hover:scale-110 active:scale-110 cursor-pointer"
+              />
             </div>
           </div>
 
@@ -139,7 +153,11 @@ export default function Aibou() {
                 ) : (
                   <>
                     <div ref={scrollStart} />
-                    <Image src={Bot} alt="bot" className="w-10 bg-panel p-2 rounded-full"/>
+                    <Image
+                      src={Bot}
+                      alt="bot"
+                      className="w-10 bg-panel p-2 rounded-full"
+                    />
                     <div className="bg-panel w-50 p-2 text-normal rounded-2xl">
                       <ReactMarkdown>{msg.text}</ReactMarkdown>
                     </div>
