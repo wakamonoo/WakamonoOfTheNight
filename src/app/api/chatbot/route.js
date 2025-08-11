@@ -17,7 +17,7 @@ export async function POST(request) {
         body: JSON.stringify({
           model: "z-ai/glm-4.5-air:free",
           messages: messages,
-          max_tokens: 512,
+          max_tokens: 2048,
           temperature: 0.7,
         }),
       }
