@@ -1,4 +1,4 @@
-import { MdMessage, MdClose } from "react-icons/md";
+import { MdClose } from "react-icons/md";
 import { useEffect, useState, useRef } from "react";
 import { FiSend } from "react-icons/fi";
 import { FiUser } from "react-icons/fi";

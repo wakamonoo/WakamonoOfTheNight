@@ -15,7 +15,7 @@ export async function POST(request) {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          model: "gpt-oss-20b",
+          model: "qwen/qwen3-coder:free",
           messages: messages,
           max_tokens: 512,
           temperature: 0.7,
