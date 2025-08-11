@@ -67,7 +67,7 @@ export default function Aibou() {
           messages: [
             ...presetInfo,
             ...sentText.map((msg) => ({
-              role: msg.user === "user" ? "user" : "assistant",
+              role: msg.sender === "user" ? "user" : "assistant",
               content: msg.text,
             })),
             {
@@ -103,9 +103,9 @@ export default function Aibou() {
 
   return (
     <>
-    {isOpen && (
-      <div className="fixed inset-0 backdrop-blur-2xl pointer-events-none z-60" />
-    )}
+      {isOpen && (
+        <div className="fixed inset-0 backdrop-blur-2xl pointer-events-none z-60" />
+      )}
 
       <div
         ref={botRef}
