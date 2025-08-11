@@ -15,7 +15,7 @@ export async function POST(request) {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          model: "qwen/qwen3-coder:free",
+          model: "z-ai/glm-4.5-air:free",
           messages: messages,
           max_tokens: 512,
           temperature: 0.7,
