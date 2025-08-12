@@ -552,6 +552,11 @@ export default function Portfolio() {
         <h2 className="text-2xl sm:text-3xl md:text-4xl p-2 bg-brand rounded text-header mb-4 mt-16">
           BATTLE RECORD
         </h2>
+        <p className="text-normal text-base sm:text-xl md:text-2xl font-normal leading-4.5 sm:leading-6 md:leading-8 lg:leading-8.5 mb-4 md:mb-8">
+          Beyond the walls of hesitation lies the battlefield of creation. Every
+          commit is a battle, every push a charge into the unknown. Here stands
+          the record of every campaign fought in code.
+        </p>
         <img
           src="https://ghchart.rshah.org/6f553f/wakamonoo"
           alt="git contributions"
