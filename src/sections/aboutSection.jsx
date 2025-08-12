@@ -23,14 +23,6 @@ export default function About() {
           applications.
         </p>
 
-        <div className="flex justify-center">
-      <img
-        src="https://ghchart.rshah.org/wakamonoo"
-        alt="GitHub Contributions"
-        className="w-full max-w-4xl"
-      />
-    </div>
-
         <div className="mt-4 sm:mt-8">
           <h2 className="text-2xl sm:text-3xl md:text-4xl p-2 bg-brand rounded text-header">
             EDUCATION

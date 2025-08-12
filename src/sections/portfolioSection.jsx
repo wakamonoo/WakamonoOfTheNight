@@ -547,6 +547,17 @@ export default function Portfolio() {
           </button>
         </div>
       </div>
+
+      <div>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl p-2 bg-brand rounded text-header mb-4 mt-16">
+          BATTLE RECORD
+        </h2>
+        <img
+          src="https://ghchart.rshah.org/6f553f/wakamonoo"
+          alt="git contributions"
+          className="w-full h-auto"
+        />
+      </div>
     </>
   );
 }
