@@ -7,8 +7,9 @@ export default function Loader() {
       <Image
         src={Logo}
         alt="wakamono-logo"
-        className="object-cover w-36 sm:w-50 lg:w-60 xl:70 h-auto animate-pulse"
+        className="absolute object-cover w-36 sm:w-50 lg:w-60 xl:70 h-auto animate-[center-left_1s_ease-in-out_forwards] [animation-delay:500ms]"
       />
+      <h1 className="absolute font-tall text-6xl sm:text-7xl lg:text-8xl xl:text-9xl opacity-0 text-black ml-24 sm:ml-32 lg:ml-42 xl:ml-50 animate-[wkmn-fade_1s_ease-in-out_forwards] [animation-delay:700ms]">WKMN</h1>
     </div>
   );
 }

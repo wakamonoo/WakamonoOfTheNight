@@ -9,13 +9,12 @@
 /* === BASE LAYER === */
 @layer base {
   :root {
-    --color-bg: #6f553f;         /* Primary-Bg */
-    --color-accent: #ffeccf;     /* Header */
-    --color-text: #f5f5f5;       /* Normal-Text */
-    --color-panel: #3b2f2f;      /* nav bg */
-    --color-secondary: #5e5e5e;  /* 2nd BG */
-    --color-army: #4E6952;
-
+    --color-bg: #6f553f; /* Primary-Bg */
+    --color-accent: #ffeccf; /* Header */
+    --color-text: #f5f5f5; /* Normal-Text */
+    --color-panel: #3b2f2f; /* nav bg */
+    --color-secondary: #5e5e5e; /* 2nd BG */
+    --color-army: #4e6952;
 
     --font-heading: "Bangers", cursive;
     --font-body: "Rubik", sans-serif;
@@ -29,11 +28,16 @@
     font-family: var(--font-body);
   }
 
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     font-family: var(--font-heading);
   }
 
-  p, span, li {
+  p,
+  span,
+  li {
     font-family: var(--font-body);
   }
 
@@ -111,6 +115,73 @@
   .stroke-text {
     -webkit-text-stroke: 1px var(--color-bg);
     text-stroke: 1px var(--color-bg);
+  }
+}
+
+@keyframes center-left {
+  0% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    top: 50%;
+    left: calc(50% - 80px);
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (min-width: 640px) {
+  @keyframes center-left {
+    0% {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    100% {
+      top: 50%;
+      left: calc(50% - 100px);
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  @keyframes center-left {
+    0% {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    100% {
+      top: 50%;
+      left: calc(50% - 120px);
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  @keyframes center-left {
+    0% {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    100% {
+      top: 50%;
+      left: calc(50% - 150px);
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+@keyframes wkmn-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
