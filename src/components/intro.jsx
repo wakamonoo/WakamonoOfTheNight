@@ -28,22 +28,22 @@ export default function Intro() {
         </p>
         <div className="flex gap-2 text-4xl sm:text-5xl lg:text-6xl xl:text-7xl justify-center pt-2 text-normal overflow-visible">
           <a href="https://www.facebook.com/joven.serdanbataller">
-            <button className="transition-all duration-300 hover:scale-125 hover:text-[var(--color-accent)] active:scale-125 focus:text-[var(--color-accent)]">
+            <button className="transition-all duration-300 hover:scale-125 hover:text-[var(--color-accent)] active:scale-125 focus:text-[var(--color-accent)] cursor-pointer">
               <FaFacebookF />
             </button>
           </a>
           <a href="https://www.instagram.com/wakamonoooo/">
-            <button className="transition-all duration-300 hover:scale-125 hover:text-[var(--color-accent)] active:scale-125 focus:text-[var(--color-accent)]">
+            <button className="transition-all duration-300 hover:scale-125 hover:text-[var(--color-accent)] active:scale-125 focus:text-[var(--color-accent)] cursor-pointer">
               <FaInstagram />
             </button>
           </a>
           <a href="https://www.linkedin.com/in/joven-bataller-085761350/">
-            <button className="transition-all duration-300 hover:scale-125 hover:text-[var(--color-accent)] active:scale-125 focus:text-[var(--color-accent)]">
+            <button className="transition-all duration-300 hover:scale-125 hover:text-[var(--color-accent)] active:scale-125 focus:text-[var(--color-accent)] cursor-pointer">
               <FaLinkedinIn />
             </button>
           </a>
           <a href="https://github.com/wakamonoo">
-            <button className="transition-all duration-300 hover:scale-125 hover:text-[var(--color-accent)] active:scale-125 focus:text-[var(--color-accent)]">
+            <button className="transition-all duration-300 hover:scale-125 hover:text-[var(--color-accent)] active:scale-125 focus:text-[var(--color-accent)] cursor-pointer">
               <FaGithub />
             </button>
           </a>
