@@ -20,7 +20,9 @@ export default function Aibou() {
   const divRef = useRef(null);
   const botRef = useRef(null);
 
-  {/* ———————————————————————————————————— aibou, start. user, end ——— */}
+  {
+    /* ———————————————————————————————————— aibou, start. user, end ——— */
+  }
   useEffect(() => {
     const lastText = sentText[sentText.length - 1];
     if (scrollEnd.current && lastText?.sender === "user") {
@@ -30,7 +32,9 @@ export default function Aibou() {
     }
   }, [sentText]);
 
-  {/* ———————————————————————————————————— message modal closer ——— */}
+  {
+    /* ———————————————————————————————————— message modal closer ——— */
+  }
   useEffect(() => {
     function handleOutClick(e) {
       if (
@@ -48,16 +52,18 @@ export default function Aibou() {
     };
   }, []);
 
-  {/* ———————————————————————————————————— sent handler ——— */}
+  {
+    /* ———————————————————————————————————— sent handler ——— */
+  }
   async function handleSent(textToSend) {
     const text = textToSend ?? draftText.trim();
-    if (text !== "") {
-      setSentText((prev) => [...prev, { sender: "user", text }]);
-      setDraftText("");
-      setLoading(true);
-      setError(null);
-      setPreset(false);
-    }
+    if (!text) return;
+    setSentText((prev) => [...prev, { sender: "user", text }]);
+    setDraftText("");
+    setLoading(true);
+    setError(null);
+    setPreset(false);
+
     try {
       const response = await fetch("api/chatbot", {
         method: "POST",
@@ -202,9 +208,9 @@ export default function Aibou() {
             </div>
           )}
 
-          <div className="flex bg-panel justify-between gap-2 items-center p-4">
+          <div className="flex bg-panel justify-between gap-2 items-center p-3">
             <textarea
-              className="w-[90%] h-full text-normal text-base sm:text-xl md:text-2xl bg-brand px-2 rounded-md"
+              className="w-[85%] h-[6vh] text-normal text-base sm:text-xl md:text-2xl bg-brand p-2 rounded-md"
               placeholder="hi, im aibou! how can i assist?"
               value={draftText}
               onChange={(e) => setDraftText(e.target.value)}
@@ -220,7 +226,7 @@ export default function Aibou() {
               onClick={() => {
                 if (!loading) handleSent();
               }}
-              className="text-5xl text-normal bg-brand p-2 h-full w-[10%] rounded-md transition duration-100 hover:scale-110 active:scale-110"
+              className="text-5xl text-normal bg-brand p-2 w-[15%] h-[6vh] rounded-md transition duration-100 hover:scale-110 active:scale-110"
             />
           </div>
         </div>
