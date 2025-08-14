@@ -9,16 +9,20 @@ import Swal from "sweetalert2";
 
 export default function Contact() {
   const form = useRef();
+  const ejssid = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+  const ejstid = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+  const ejspk = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 
+  {/* ———————————————————————————————————— contact section powered by emailjs ——— */}
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        "service_63ovony",
-        "template_008hedl",
+        ejssid,
+        ejstid,
         form.current,
-        "u8-c71FS0yKlrua_p"
+        ejspk
       )
       .then(
         () => {

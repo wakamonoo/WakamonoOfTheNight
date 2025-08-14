@@ -20,6 +20,7 @@ export default function Aibou() {
   const divRef = useRef(null);
   const botRef = useRef(null);
 
+  {/* ———————————————————————————————————— aibou, start. user, end ——— */}
   useEffect(() => {
     const lastText = sentText[sentText.length - 1];
     if (scrollEnd.current && lastText?.sender === "user") {
@@ -29,6 +30,7 @@ export default function Aibou() {
     }
   }, [sentText]);
 
+  {/* ———————————————————————————————————— message modal closer ——— */}
   useEffect(() => {
     function handleOutClick(e) {
       if (
@@ -46,6 +48,7 @@ export default function Aibou() {
     };
   }, []);
 
+  {/* ———————————————————————————————————— sent handler ——— */}
   async function handleSent(textToSend) {
     const text = textToSend ?? draftText.trim();
     if (text !== "") {

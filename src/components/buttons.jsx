@@ -11,6 +11,7 @@ export default function NavMenu() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [expanded, setExpanded] = useState(false);
 
+  {/* ———————————————————————————————————— menu on 50 scroll ——— */}
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -20,6 +21,7 @@ export default function NavMenu() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  {/* ———————————————————————————————————— nav sec on !scroll ——— */}
   if (!isScrolled) {
     return (
       <div className="flex left-1/2 transform -translate-x-1/2 p-4 fixed z-50">

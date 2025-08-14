@@ -13,6 +13,7 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState(null);
 
+  {/* ———————————————————————————————————— loader ——— */}
   useEffect(() => {
     const fetchSomething = async () => {
       const result = await new Promise((resolve) =>
@@ -26,12 +27,18 @@ export default function Home() {
 
   return (
     <main>
+      {/* ———————————————————————————————————— loader ——— */}
       {loading && <Loader />}
+
+      {/* ———————————————————————————————————— chatbot ——— */}
       <Aibou />
+
+      {/* ———————————————————————————————————— hero section ——— */}
       <section id="hero" className="bg-brand h-screen relative overflow-hidden">
         <Hero />
       </section>
 
+      {/* ———————————————————————————————————— about section ——— */}
       <section
         id="about"
         className="bg-second p-8 sm:p-15 md:p-24 lg:p-32 xl:px-72"
@@ -39,6 +46,7 @@ export default function Home() {
         <About />
       </section>
 
+      {/* ———————————————————————————————————— skills section ——— */}
       <section
         id="skills"
         className="bg-second p-8 sm:p-15 md:p-24 lg:p-32 xl:px-72"
@@ -46,6 +54,7 @@ export default function Home() {
         <Skills />
       </section>
 
+      {/* ———————————————————————————————————— portfolio section ——— */}
       <section
         id="portfolio"
         className="bg-second p-8 sm:p-15 md:p-24 lg:p-32 xl:px-72"
@@ -53,6 +62,7 @@ export default function Home() {
         <Portfolio />
       </section>
 
+      {/* ———————————————————————————————————— contact section ——— */}
       <section
         id="contact"
         className="bg-second p-8 sm:p-15 md:p-24 lg:p-32 xl:px-72"
@@ -60,6 +70,7 @@ export default function Home() {
         <Contact />
       </section>
 
+      {/* ———————————————————————————————————— footer ——— */}
       <section className="flex justify-center h-auto w-full bg-panel py-4">
         <Footer />
       </section>

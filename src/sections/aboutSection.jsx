@@ -64,6 +64,7 @@ export default function About() {
           </ul>
         </div>
 
+        {/* ———————————————————————————————————— resume ——— */}
         <a href="Bataller_Resume.pdf" download>
           <button
             className="p-2 sm:p-4 sm:text-xl md:text-2xl mt-8 bg-brand rounded shadow-2xl border border-accent transition-all duration-200

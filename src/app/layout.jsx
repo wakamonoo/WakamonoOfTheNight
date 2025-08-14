@@ -1,3 +1,4 @@
+{/* ———————————————————————————————————— imports ——— */}
 import { IconBase } from "react-icons";
 import "./globals.css";
 import {
@@ -8,6 +9,7 @@ import {
   Bebas_Neue,
 } from "next/font/google";
 
+{/* ———————————————————————————————————— fonts config ——— */}
 const bangers = Bangers({
   subsets: ["latin"],
   weight: "400",
