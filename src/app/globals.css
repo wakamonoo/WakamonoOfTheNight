@@ -1,26 +1,26 @@
-/* === GOOGLE FONTS === */
+/* ———————————————————————————————————— google fonts ——— */
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Merriweather&family=Special+Elite&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bangers&family=Black+Han+Sans&family=Rubik:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap");
 
-/* === TAILWIND === */
+/* ———————————————————————————————————— tailwind ——— */
 @import "tailwindcss";
 
-/* === BASE LAYER === */
+/* ———————————————————————————————————— base layer ——— */
 @layer base {
   :root {
-    --color-bg: #6f553f; /* Primary-Bg */
-    --color-accent: #ffeccf; /* Header */
-    --color-text: #f5f5f5; /* Normal-Text */
-    --color-panel: #3b2f2f; /* nav bg */
-    --color-secondary: #5e5e5e; /* 2nd BG */
-    --color-army: #4e6952;
+    --color-bg: #6f553f; /* ———————————————————————————————————— primary bg ——— */
+    --color-accent: #ffeccf; /* ———————————————————————————————————— header ——— */
+    --color-text: #f5f5f5; /* ———————————————————————————————————— normal text ——— */
+    --color-panel: #3b2f2f; /* ———————————————————————————————————— nav bg ——— */
+    --color-secondary: #5e5e5e; /* ———————————————————————————————————— second bg ——— */
+    --color-army: #4e6952; /* ———————————————————————————————————— army green ——— */
 
-    --font-heading: "Bangers", cursive;
-    --font-body: "Rubik", sans-serif;
-    --font-alt: "Black Han Sans", sans-serif;
-    --font-tall: "Anton", sans-serif;
-    --font-tall-alt: "Bebas Neue", sans-serif;
+    --font-heading: "Bangers", cursive; /* ———————————————————————————————————— header ——— */
+    --font-body: "Rubik", sans-serif; /* ———————————————————————————————————— normal ——— */
+    --font-alt: "Black Han Sans", sans-serif; /* ———————————————————————————————————— normal alt ——— */
+    --font-tall: "Anton", sans-serif; /* ———————————————————————————————————— big titles ——— */
+    --font-tall-alt: "Bebas Neue", sans-serif; /* ———————————————————————————————————— titles alt ——— */
   }
 
   body {
@@ -46,7 +46,7 @@
   }
 }
 
-/* === UTILITIES LAYER === */
+/* ———————————————————————————————————— utilities layer ——— */
 @layer utilities {
   .bg-brand {
     background-color: var(--color-bg);
@@ -101,7 +101,7 @@
   }
 
   .shadow-aot {
-    box-shadow: 0 4px 10px rgba(139, 30, 30, 0.4); /* Titan Red shadow */
+    box-shadow: 0 4px 10px rgba(139, 30, 30, 0.4);
   }
 
   .border-accent {
@@ -118,6 +118,7 @@
   }
 }
 
+/* ———————————————————————————————————— loader animation ——— */
 @keyframes center-left {
   0% {
     top: 50%;
@@ -185,6 +186,7 @@
   }
 }
 
+/* ———————————————————————————————————— m-query ——— */
 @media (min-width: 1600px) {
   .xl-plus\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
