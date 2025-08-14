@@ -115,22 +115,22 @@ export default function Aibou() {
         onClick={() => setIsOpen((open) => !open)}
         className="fixed bottom-4 p-2 right-4 flex rounded-full bg-army shadow-2xl z-60 cursor-pointer transform translate duration-200 hover:scale-110 active:scale-110"
       >
-        <Image src={Bot} alt="bot" className="w-16 h-auto" />
+        <Image src={Bot} alt="bot" className="w-12 lg:w-16 h-auto" />
       </div>
 
       {isOpen && (
         <div
           ref={divRef}
-          className="fixed flex flex-col bottom-25 right-4 z-100 bg-army shadow-2xl w-80 h-110 rounded-2xl overflow-hidden"
+          className="fixed flex flex-col bottom-22 lg:bottom-25 right-4 z-100 bg-army shadow-2xl w-[90vw] sm:w-[80vw] md:w-[65vw] lg:w-[50vw] xl:w-[40vw] 2xl:w-[30vw] h-[70vh] rounded-2xl overflow-hidden"
         >
-          <div className="p-4 py-8 text-2xl text-header flex justify-between items-center gap-4 w-full h-8 bg-panel">
+          <div className="py-2 px-4 text-2xl sm:text-3xl md:text-4xl text-header flex justify-between items-center gap-4 w-full h-fill bg-panel">
             <div className="flex items-center gap-4">
               <Image
                 src={Bot}
                 alt="bot"
-                className="w-12 bg-army p-2 rounded-full"
+                className="w-12 lg:w-16 bg-army p-2 rounded-full"
               />
-              <p className=" font-heading">AIbou</p>
+              <p className="font-heading">AIbou</p>
             </div>
             <div>
               <MdClose
@@ -152,10 +152,10 @@ export default function Aibou() {
               >
                 {msg.sender === "user" ? (
                   <>
-                    <p className="bg-brand w-50 p-2 text-normal rounded-2xl">
+                    <p className="bg-brand w-[40vw] md:w-[32vw] lg:w-[24vw] xl:w-[18vw] 2xl:w-[14vw] p-2 text-normal text-base sm:text-xl md:text-2xl rounded-2xl">
                       {msg.text}
                     </p>
-                    <FiUser className="text-4xl bg-brand rounded-full p-2" />
+                    <FiUser className="text-4xl md:text-5xl bg-brand rounded-full p-2" />
                   </>
                 ) : (
                   <>
@@ -163,9 +163,9 @@ export default function Aibou() {
                     <Image
                       src={Bot}
                       alt="bot"
-                      className="w-10 bg-panel p-2 rounded-full"
+                      className="w-10 md:w-14 bg-panel p-2 rounded-full"
                     />
-                    <div className="bg-panel w-50 p-2 text-normal rounded-2xl">
+                    <div className="bg-panel w-[40vw] md:w-[32vw] lg:w-[24vw] xl:w-[18vw] 2xl:w-[14vw] p-2 text-normal text-base sm:text-xl md:text-2xl rounded-2xl">
                       <ReactMarkdown>{msg.text}</ReactMarkdown>
                     </div>
                   </>
