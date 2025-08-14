@@ -183,19 +183,19 @@ export default function Aibou() {
             <div className="flex flex-col gap-2 p-4">
               <p
                 onClick={() => handleSent("Tell me more about Joven!")}
-                className="bg-panel p-2 w-full rounded-md text-normal text-base sm:text-xl md:text-2xl font-normal text-center cursor-pointer"
+                className="bg-panel p-2 w-full rounded-md text-normal text-base sm:text-xl md:text-2xl font-normal text-center cursor-pointer transition duration-100 hover:scale-102 active:scale-102"
               >
                 Tell me more about Joven!
               </p>
               <p
                 onClick={() => handleSent("What is Joven's tech-stack?")}
-                className="bg-panel p-2 w-full rounded-md text-normal text-base sm:text-xl md:text-2xl font-normal text-center cursor-pointer"
+                className="bg-panel p-2 w-full rounded-md text-normal text-base sm:text-xl md:text-2xl font-normal text-center cursor-pointer transition duration-100 hover:scale-102 active:scale-102"
               >
                 What is Joven's tech-stack?
               </p>
               <p
                 onClick={() => handleSent("Why are you called AIbou?")}
-                className="bg-panel p-2 w-full rounded-md text-normal text-base sm:text-xl md:text-2xl font-normal text-center cursor-pointer"
+                className="bg-panel p-2 w-full rounded-md text-normal text-base sm:text-xl md:text-2xl font-normal text-center cursor-pointer transition duration-100 hover:scale-102 active:scale-102"
               >
                 Why are you called AIbou?
               </p>
