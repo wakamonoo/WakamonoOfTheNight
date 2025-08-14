@@ -202,9 +202,9 @@ export default function Aibou() {
             </div>
           )}
 
-          <div className="flex bg-panel justify-between gap-2 items-center p-2">
+          <div className="flex bg-panel justify-between gap-2 items-center p-4">
             <textarea
-              className="w-full h-12 text-normal text-base sm:text-xl md:text-2xl bg-brand p-2 rounded-md"
+              className="w-[90%] h-full text-normal text-base sm:text-xl md:text-2xl bg-brand px-2 rounded-md"
               placeholder="hi, im aibou! how can i assist?"
               value={draftText}
               onChange={(e) => setDraftText(e.target.value)}
@@ -220,7 +220,7 @@ export default function Aibou() {
               onClick={() => {
                 if (!loading) handleSent();
               }}
-              className="text-5xl text-normal bg-brand p-2 rounded-md hover:scale-110 active:scale-110"
+              className="text-5xl text-normal bg-brand p-2 h-full w-[10%] rounded-md transition duration-100 hover:scale-110 active:scale-110"
             />
           </div>
         </div>
