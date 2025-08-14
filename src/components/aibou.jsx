@@ -204,7 +204,7 @@ export default function Aibou() {
 
           <div className="flex bg-panel justify-between gap-2 items-center p-2">
             <textarea
-              className="w-full h-12 text-normal text-sm sm:text-base md:text-xl bg-brand p-2 rounded-md"
+              className="w-full h-12 text-normal text-base sm:text-xl md:text-2xl bg-brand p-2 rounded-md"
               placeholder="hi, im aibou! how can i assist?"
               value={draftText}
               onChange={(e) => setDraftText(e.target.value)}
