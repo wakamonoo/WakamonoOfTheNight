@@ -9,49 +9,44 @@ import Swal from "sweetalert2";
 
 export default function Contact() {
   const form = useRef();
-  const ejssid = process.env.REACT_APP_EMAILJS_SERVICE_ID;
-  const ejstid = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
-  const ejspk = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+  const ejssid = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+  const ejstid = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+  const ejspk = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
-  {/* ———————————————————————————————————— contact section powered by emailjs ——— */}
+  {
+    /* ———————————————————————————————————— contact section powered by emailjs ——— */
+  }
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        ejssid,
-        ejstid,
-        form.current,
-        ejspk
-      )
-      .then(
-        () => {
-          Swal.fire({
-            title: "Mission Accomplished!",
-            text: "Intel Transmision Succesful",
-            icon: "success",
-            background: "#3b2f2f",
-            color: "#f5f5f5",
-            showConfirmButton: false,
-            timer: 2000,
-            timerProgressBar: true,
-          });
-          form.current.reset();
-        },
-        (error) => {
-          Swal.fire({
-            title: "Breach Detected!",
-            text: "Lost Contact with Recon Unit",
-            icon: "error",
-            background: "#3b2f2f",
-            color: "#f5f5f5",
-            showConfirmButton: false,
-            timer: 2000,
-            timerProgressBar: true,
-          });
-          console.error(error.text);
-        }
-      );
+    emailjs.sendForm(ejssid, ejstid, form.current, ejspk).then(
+      () => {
+        Swal.fire({
+          title: "Mission Accomplished!",
+          text: "Intel Transmision Succesful",
+          icon: "success",
+          background: "#3b2f2f",
+          color: "#f5f5f5",
+          showConfirmButton: false,
+          timer: 2000,
+          timerProgressBar: true,
+        });
+        form.current.reset();
+      },
+      (error) => {
+        Swal.fire({
+          title: "Breach Detected!",
+          text: "Lost Contact with Recon Unit",
+          icon: "error",
+          background: "#3b2f2f",
+          color: "#f5f5f5",
+          showConfirmButton: false,
+          timer: 2000,
+          timerProgressBar: true,
+        });
+        console.error(error.text);
+      }
+    );
   };
 
   return (

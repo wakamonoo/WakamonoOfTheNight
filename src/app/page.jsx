@@ -13,7 +13,9 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState(null);
 
-  {/* ———————————————————————————————————— loader ——— */}
+  {
+    /* ———————————————————————————————————— loader ——— */
+  }
   useEffect(() => {
     const fetchSomething = async () => {
       const result = await new Promise((resolve) =>
