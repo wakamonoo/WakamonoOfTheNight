@@ -152,7 +152,7 @@ export default function Aibou() {
               >
                 {msg.sender === "user" ? (
                   <>
-                    <p className="bg-brand w-[40vw] md:w-[32vw] lg:w-[24vw] xl:w-[18vw] 2xl:w-[14vw] p-2 text-normal text-base sm:text-xl md:text-2xl rounded-2xl">
+                    <p className="bg-brand w-[52vw] md:w-[44vw] lg:w-[30vw] xl:w-[24vw] 2xl:w-[18vw] p-2 text-normal text-base sm:text-xl md:text-2xl rounded-2xl">
                       {msg.text}
                     </p>
                     <FiUser className="text-4xl md:text-5xl bg-brand rounded-full p-2" />
@@ -165,7 +165,7 @@ export default function Aibou() {
                       alt="bot"
                       className="w-10 md:w-14 bg-panel p-2 rounded-full"
                     />
-                    <div className="bg-panel w-[40vw] md:w-[32vw] lg:w-[24vw] xl:w-[18vw] 2xl:w-[14vw] p-2 text-normal text-base sm:text-xl md:text-2xl rounded-2xl">
+                    <div className="bg-panel w-[52vw] md:w-[44vw] lg:w-[30vw] xl:w-[24vw] 2xl:w-[18vw] p-2 text-normal text-base sm:text-xl md:text-2xl rounded-2xl">
                       <ReactMarkdown>{msg.text}</ReactMarkdown>
                     </div>
                   </>
@@ -183,19 +183,19 @@ export default function Aibou() {
             <div className="flex flex-col gap-2 p-4">
               <p
                 onClick={() => handleSent("Tell me more about Joven!")}
-                className="bg-panel p-2 w-full rounded-md text-normal font-normal text-center cursor-pointer"
+                className="bg-panel p-2 w-full rounded-md text-normal text-base sm:text-xl md:text-2xl font-normal text-center cursor-pointer"
               >
                 Tell me more about Joven!
               </p>
               <p
                 onClick={() => handleSent("What is Joven's tech-stack?")}
-                className="bg-panel p-2 w-full rounded-md text-normal font-normal text-center cursor-pointer"
+                className="bg-panel p-2 w-full rounded-md text-normal text-base sm:text-xl md:text-2xl font-normal text-center cursor-pointer"
               >
                 What is Joven's tech-stack?
               </p>
               <p
                 onClick={() => handleSent("Why are you called AIbou?")}
-                className="bg-panel p-2 w-full rounded-md text-normal font-normal text-center cursor-pointer"
+                className="bg-panel p-2 w-full rounded-md text-normal text-base sm:text-xl md:text-2xl font-normal text-center cursor-pointer"
               >
                 Why are you called AIbou?
               </p>
@@ -204,7 +204,7 @@ export default function Aibou() {
 
           <div className="flex bg-panel justify-between gap-2 items-center p-2">
             <textarea
-              className="w-full h-12 bg-brand p-2 rounded-md"
+              className="w-full h-12 text-normal text-sm sm:text-base md:text-xl bg-brand p-2 rounded-md"
               placeholder="hi, im aibou! how can i assist?"
               value={draftText}
               onChange={(e) => setDraftText(e.target.value)}
