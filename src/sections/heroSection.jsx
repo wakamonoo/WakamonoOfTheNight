@@ -10,7 +10,10 @@ import Titan from "../assets/bertolo.png";
 export default function Hero() {
   return (
     <>
+      {/* ———————————————————————————————————— nav import ——— */}
       <NavMenu />
+
+      {/* ———————————————————————————————————— wall, titan, me-pic and info ——— */}
       <div className="absolute top-8 left-1/2 transform -translate-x-1/2 w-[35rem] sm:w-[40rem] h-[20rem] sm:h-[25rem] md:w-[45rem] md:h-[30rem] lg:w-[50rem] lg:h-[30rem]xl:w-[50rem] xl:h-[30rem]">
         <Image
           src={Titan}
@@ -40,6 +43,8 @@ export default function Hero() {
         >
           <Image src={me} alt="me" fill className="object-cover object-top" />
         </div>
+
+        {/* ———————————————————————————————————— intro import ——— */}
         <Intro />
       </div>
     </>
