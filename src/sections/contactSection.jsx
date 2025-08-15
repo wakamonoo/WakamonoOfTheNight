@@ -55,34 +55,34 @@ export default function Contact() {
         DISPATCH RESOLVE ────
       </h1>
       <div>
-        <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-2">
+        <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-3">
           <input
             placeholder="enter cadet name"
             name="name"
             required
             type="text"
-            className="w-full border bg-panel p-2 rounded"
+            className="w-full border bg-panel p-2 rounded text-base sm:text-xl md:text-2xl"
           />
           <input
             placeholder="your signal relay code (email)"
             name="email"
             required
             type="email"
-            className="w-full border bg-panel p-2 rounded"
+            className="w-full border bg-panel p-2 rounded text-base sm:text-xl md:text-2xl"
           />
           <input
             placeholder="mission intent (subject)"
             name="title"
             required
             type="text"
-            className="w-full border bg-panel p-2 rounded"
+            className="w-full border bg-panel p-2 rounded text-base sm:text-xl md:text-2xl"
           />
           <textarea
             placeholder="detail your intel"
             name="message"
             required
             type="text"
-            className="w-full h-40 border bg-panel p-2 rounded"
+            className="w-full h-[20vh] border bg-panel p-2 rounded text-base sm:text-xl md:text-2xl"
           />
           <div>
             <button
