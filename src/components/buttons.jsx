@@ -25,7 +25,7 @@ export default function NavMenu() {
   if (!isScrolled) {
     return (
       <div className="flex left-1/2 transform -translate-x-1/2 p-4 fixed z-50">
-        <div className="flex text-4xl md:text-5xl gap-2 bg-panel p-4 rounded-2xl">
+        <div className="flex text-4xl md:text-5xl gap-2 bg-panel p-4 px-6 rounded-full">
           <NavLinks />
         </div>
       </div>
@@ -40,9 +40,9 @@ export default function NavMenu() {
       ) : (
         <button
           onClick={() => setExpanded(true)}
-          className="p-4 text-normal hover:scale-110 transition"
+          className="p-4 text-normal"
         >
-          <MdApps className="text-4xl md:text-5xl text-normal cursor-pointer" />
+          <MdApps className="text-4xl md:text-5xl text-normal cursor-pointer hover:scale-110 transition" />
         </button>
       )}
     </div>
