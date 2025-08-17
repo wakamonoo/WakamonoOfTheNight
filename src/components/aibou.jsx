@@ -77,12 +77,15 @@ export default function Aibou() {
     fetchContributions();
   }, []);
 
+  {
+    /* ———————————————————————————————————— aibou pre-message ——— */
+  }
   useEffect(() => {
     if(isOpen && sentText.length === 0) {
       setLoading(true) 
 
       setTimeout(() => {
-        setSentText([{ sender: "aibout" , text: "hi i'm aibou, joven's ai assistant"}]);
+        setSentText([{ sender: "aibout" , text: "konnichiwa i'm aibou, joven's ai assistant. what can i do for you?"}]);
         setLoading(false)
       }, 1000);
     }
