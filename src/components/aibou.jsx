@@ -227,7 +227,8 @@ export default function Aibou() {
               <p
                 onClick={() =>
                   handleSent(
-                    "Joven's GitHub contributions today?"
+                    "Joven's GitHub contributions today?",
+                    "How many github contributions in all repositories did joven made today and what are those?"
                   )
                 }
                 className="bg-panel p-2 w-full rounded-md text-normal text-base sm:text-xl md:text-2xl font-normal text-center cursor-pointer transition duration-100 hover:scale-102 active:scale-102"
