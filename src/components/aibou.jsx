@@ -52,6 +52,10 @@ export default function Aibou() {
     };
   }, []);
 
+
+  {
+    /* ———————————————————————————————————— contribution aware ——— */
+  }
   useEffect(() => {
     async function fetchContributions() {
       try {
@@ -61,7 +65,7 @@ export default function Aibou() {
         if (data.contributions?.length) {
           presetInfo.push({
             role: "system",
-            content: `Q: How many contributions to github Joven have today? A: Here are Joven's GitHub contributions today:\n- ${data.contributions.join(
+            content: `Q: Joven's GitHub contributions today? A: Here are Joven's GitHub contributions today:\n- ${data.contributions.join(
               "\n- "
             )}`,
           });
@@ -224,12 +228,12 @@ export default function Aibou() {
               <p
                 onClick={() =>
                   handleSent(
-                    "How many contributions to github Joven have today?"
+                    "Joven's GitHub contributions today??"
                   )
                 }
                 className="bg-panel p-2 w-full rounded-md text-normal text-base sm:text-xl md:text-2xl font-normal text-center cursor-pointer transition duration-100 hover:scale-102 active:scale-102"
               >
-                How many contributions to github Joven have today?
+                Joven's GitHub contributions today?
               </p>
             </div>
           )}
