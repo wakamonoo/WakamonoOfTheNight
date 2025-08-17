@@ -77,6 +77,17 @@ export default function Aibou() {
     fetchContributions();
   }, []);
 
+  useEffect(() => {
+    if(isOpen && sentText.length === 0) {
+      setLoading(true) 
+
+      setTimeout(() => {
+        setSentText([{ sender: "aibout" , text: "hi i'm aibou, joven's ai assistant"}]);
+        setLoading(false)
+      }, 1000);
+    }
+  }, [isOpen]);
+
   {
     /* ———————————————————————————————————— sent handler ——— */
   }
@@ -211,16 +222,16 @@ export default function Aibou() {
           </div>
 
           {Preset && (
-            <div className="flex flex-col gap-2 p-4">
+            <div className="flex flex-col items-end gap-4 p-4">
               <p
                 onClick={() => handleSent("Tell me more about Joven!")}
-                className="bg-panel p-2 w-full rounded-md text-normal text-base sm:text-xl md:text-2xl font-normal text-center cursor-pointer transition duration-100 hover:scale-102 active:scale-102"
+                className="bg-[var(--color-accent)] p-4 w-fit rounded-full text-[var(--color-bg)] text-base sm:text-xl md:text-2xl font-normal text-center cursor-pointer transition duration-100 hover:bg-[var(--color-bg)] hover:text-[var(--color-accent)] active:bg-[var(--color-bg)] active:text-[var(--color-accent)]"
               >
                 Tell me more about Joven!
               </p>
               <p
                 onClick={() => handleSent("What is Joven's tech-stack?")}
-                className="bg-panel p-2 w-full rounded-md text-normal text-base sm:text-xl md:text-2xl font-normal text-center cursor-pointer transition duration-100 hover:scale-102 active:scale-102"
+                className="bg-[var(--color-accent)] p-4 w-fit rounded-full text-[var(--color-bg)] text-base sm:text-xl md:text-2xl font-normal text-center cursor-pointer transition duration-100 hover:bg-[var(--color-bg)] hover:text-[var(--color-accent)] active:bg-[var(--color-bg)] active:text-[var(--color-accent)]"
               >
                 What is Joven's tech-stack?
               </p>
@@ -231,7 +242,7 @@ export default function Aibou() {
                     "How many github contributions in all repositories did joven made today and what are those?"
                   )
                 }
-                className="bg-panel p-2 w-full rounded-md text-normal text-base sm:text-xl md:text-2xl font-normal text-center cursor-pointer transition duration-100 hover:scale-102 active:scale-102"
+                className="bg-[var(--color-accent)] p-4 w-fit rounded-full text-[var(--color-bg)] text-base sm:text-xl md:text-2xl font-normal text-center cursor-pointer transition duration-100 hover:bg-[var(--color-bg)] hover:text-[var(--color-accent)] active:bg-[var(--color-bg)] active:text-[var(--color-accent)]"
               >
                 Joven's GitHub contributions today?
               </p>
@@ -240,7 +251,7 @@ export default function Aibou() {
 
           <div className="flex bg-panel justify-between gap-2 items-center p-3">
             <textarea
-              className="w-[85%] h-[6vh] text-normal text-base sm:text-xl md:text-2xl bg-brand p-2 rounded-md"
+              className="w-[85%] h-[6vh] text-[var(--color-bg)] placeholder-[var(--color-bg)] text-base sm:text-xl md:text-2xl bg-[var(--color-accent)] p-2 rounded-md"
               placeholder="hi, im aibou! how can i assist?"
               value={draftText}
               onChange={(e) => setDraftText(e.target.value)}
@@ -256,7 +267,7 @@ export default function Aibou() {
               onClick={() => {
                 if (!loading) handleSent();
               }}
-              className="text-5xl text-normal bg-brand p-2 w-[15%] h-[6vh] rounded-md transition duration-100 hover:scale-110 active:scale-110"
+              className="text-5xl text-[var(--color-bg)] bg-[var(--color-accent)] p-2 w-[15%] h-[6vh] rounded-md transition duration-100 hover:scale-110 active:scale-110"
             />
           </div>
         </div>
