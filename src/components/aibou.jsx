@@ -52,7 +52,6 @@ export default function Aibou() {
     };
   }, []);
 
-
   {
     /* ———————————————————————————————————— contribution aware ——— */
   }
@@ -65,7 +64,7 @@ export default function Aibou() {
         if (data.contributions?.length) {
           presetInfo.push({
             role: "system",
-            content: `Q: Joven's GitHub contributions today? A: Here are Joven's GitHub contributions today:\n- ${data.contributions.join(
+            content: `Today's GitHub contributions:\n- ${data.contributions.join(
               "\n- "
             )}`,
           });
@@ -228,7 +227,7 @@ export default function Aibou() {
               <p
                 onClick={() =>
                   handleSent(
-                    "Joven's GitHub contributions today??"
+                    "Joven's GitHub contributions today?"
                   )
                 }
                 className="bg-panel p-2 w-full rounded-md text-normal text-base sm:text-xl md:text-2xl font-normal text-center cursor-pointer transition duration-100 hover:scale-102 active:scale-102"
