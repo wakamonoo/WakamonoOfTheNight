@@ -19,6 +19,9 @@ export default function Aibou() {
   const scrollStart = useRef(null);
   const divRef = useRef(null);
   const botRef = useRef(null);
+  const [preRef1, setPreRef1] = useState(false);
+  const [preRef2, setPreRef2] = useState(false);
+  const [preRef3, setPreRef3] = useState(false);
 
   {
     /* ———————————————————————————————————— aibou, start. user, end ——— */
@@ -80,16 +83,36 @@ export default function Aibou() {
   {
     /* ———————————————————————————————————— aibou pre-message ——— */
   }
-  useEffect(() => {
-    if(isOpen && sentText.length === 0) {
-      setLoading(true) 
+  const preMessage = (onDone) => {
+    if (isOpen && sentText.length === 0) {
+      setLoading(true);
 
       setTimeout(() => {
-        setSentText([{ sender: "aibout" , text: "konnichiwa i'm aibou, joven's ai assistant. what can i do for you?"}]);
-        setLoading(false)
+        setSentText([
+          {
+            sender: "aibuo",
+            text: "konnichiwa! i'm aibou, joven's ai assistant. what can i do for you?",
+          },
+        ]);
+        setLoading(false);
+        if (onDone) onDone();
       }, 1000);
     }
-  }, [isOpen]);
+  };
+
+  useEffect(() => {
+    preMessage(() => {
+      setTimeout(() => {
+        setPreRef1(true);
+      }, 400);
+      setTimeout(() => {
+        setPreRef2(true);
+      }, 600);
+      setTimeout(() => {
+        setPreRef3(true);
+      }, 800);
+    });
+  }, [isOpen, sentText]);
 
   {
     /* ———————————————————————————————————— sent handler ——— */
@@ -226,29 +249,41 @@ export default function Aibou() {
 
           {Preset && (
             <div className="flex flex-col items-end gap-2 lg:gap-4 p-4">
-              <p
-                onClick={() => handleSent("Tell me more about Joven!")}
-                className="bg-[var(--color-accent)] p-2 w-fit rounded-full text-[var(--color-bg)] text-base sm:text-xl md:text-2xl font-normal text-center cursor-pointer transition duration-100 hover:bg-[var(--color-bg)] hover:text-[var(--color-accent)] active:bg-[var(--color-bg)] active:text-[var(--color-accent)]"
-              >
-                Tell me more about Joven!
-              </p>
-              <p
-                onClick={() => handleSent("What is Joven's tech-stack?")}
-                className="bg-[var(--color-accent)] p-2 w-fit rounded-full text-[var(--color-bg)] text-base sm:text-xl md:text-2xl font-normal text-center cursor-pointer transition duration-100 hover:bg-[var(--color-bg)] hover:text-[var(--color-accent)] active:bg-[var(--color-bg)] active:text-[var(--color-accent)]"
-              >
-                What is Joven's tech-stack?
-              </p>
-              <p
-                onClick={() =>
-                  handleSent(
-                    "Joven's GitHub contributions today?",
-                    "How many github contributions in all repositories did joven made today and what are those?"
-                  )
-                }
-                className="bg-[var(--color-accent)] p-2 w-fit rounded-full text-[var(--color-bg)] text-base sm:text-xl md:text-2xl font-normal text-center cursor-pointer transition duration-100 hover:bg-[var(--color-bg)] hover:text-[var(--color-accent)] active:bg-[var(--color-bg)] active:text-[var(--color-accent)]"
-              >
-                Joven's GitHub contributions today?
-              </p>
+              {preRef1 && (
+                <div className="contains">
+                  <p
+                    onClick={() => handleSent("Tell me more about Joven!")}
+                    className="bg-[var(--color-accent)] p-2 w-fit rounded-full text-[var(--color-bg)] text-base sm:text-xl md:text-2xl font-normal text-center cursor-pointer transition duration-100 hover:bg-[var(--color-bg)] hover:text-[var(--color-accent)] active:bg-[var(--color-bg)] active:text-[var(--color-accent)]"
+                  >
+                    Tell me more about Joven!
+                  </p>
+                </div>
+              )}
+              {preRef2 && (
+                <div className="contains">
+                  <p
+                    onClick={() => handleSent("What is Joven's tech-stack?")}
+                    className="bg-[var(--color-accent)] p-2 w-fit rounded-full text-[var(--color-bg)] text-base sm:text-xl md:text-2xl font-normal text-center cursor-pointer transition duration-100 hover:bg-[var(--color-bg)] hover:text-[var(--color-accent)] active:bg-[var(--color-bg)] active:text-[var(--color-accent)]"
+                  >
+                    What is Joven's tech-stack?
+                  </p>
+                </div>
+              )}
+              {preRef3 && (
+                <div className="contains">
+                  <p
+                    onClick={() =>
+                      handleSent(
+                        "Joven's GitHub contributions today?",
+                        "How many github contributions in all repositories did joven made today and what are those?"
+                      )
+                    }
+                    className="bg-[var(--color-accent)] p-2 w-fit rounded-full text-[var(--color-bg)] text-base sm:text-xl md:text-2xl font-normal text-center cursor-pointer transition duration-100 hover:bg-[var(--color-bg)] hover:text-[var(--color-accent)] active:bg-[var(--color-bg)] active:text-[var(--color-accent)]"
+                  >
+                    Joven's GitHub contributions today?
+                  </p>
+                </div>
+              )}
             </div>
           )}
 
