@@ -52,6 +52,28 @@ export default function Aibou() {
     };
   }, []);
 
+  useEffect(() => {
+    async function fetchContributions() {
+      try {
+        const res = await fetch("/api/gitContributions");
+        const data = await res.json();
+
+        if (data.contributions?.length) {
+          presetInfo.push({
+            role: "system",
+            content: `Q: How many contributions to github Joven have today? A: Here are Joven's GitHub contributions today:\n- ${data.contributions.join(
+              "\n- "
+            )}`,
+          });
+        }
+      } catch (err) {
+        console.error("Failed to fetch GitHub contributions:", err);
+      }
+    }
+
+    fetchContributions();
+  }, []);
+
   {
     /* ———————————————————————————————————— sent handler ——— */
   }
@@ -200,10 +222,14 @@ export default function Aibou() {
                 What is Joven's tech-stack?
               </p>
               <p
-                onClick={() => handleSent("Why are you called AIbou?")}
+                onClick={() =>
+                  handleSent(
+                    "How many contributions to github Joven have today?"
+                  )
+                }
                 className="bg-panel p-2 w-full rounded-md text-normal text-base sm:text-xl md:text-2xl font-normal text-center cursor-pointer transition duration-100 hover:scale-102 active:scale-102"
               >
-                Why are you called AIbou?
+                How many contributions to github Joven have today?
               </p>
             </div>
           )}
