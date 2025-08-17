@@ -222,16 +222,16 @@ export default function Aibou() {
           </div>
 
           {Preset && (
-            <div className="flex flex-col items-end gap-4 p-4">
+            <div className="flex flex-col items-end gap-2 lg:gap-4 p-4">
               <p
                 onClick={() => handleSent("Tell me more about Joven!")}
-                className="bg-[var(--color-accent)] p-4 w-fit rounded-full text-[var(--color-bg)] text-base sm:text-xl md:text-2xl font-normal text-center cursor-pointer transition duration-100 hover:bg-[var(--color-bg)] hover:text-[var(--color-accent)] active:bg-[var(--color-bg)] active:text-[var(--color-accent)]"
+                className="bg-[var(--color-accent)] p-2 w-fit rounded-full text-[var(--color-bg)] text-base sm:text-xl md:text-2xl font-normal text-center cursor-pointer transition duration-100 hover:bg-[var(--color-bg)] hover:text-[var(--color-accent)] active:bg-[var(--color-bg)] active:text-[var(--color-accent)]"
               >
                 Tell me more about Joven!
               </p>
               <p
                 onClick={() => handleSent("What is Joven's tech-stack?")}
-                className="bg-[var(--color-accent)] p-4 w-fit rounded-full text-[var(--color-bg)] text-base sm:text-xl md:text-2xl font-normal text-center cursor-pointer transition duration-100 hover:bg-[var(--color-bg)] hover:text-[var(--color-accent)] active:bg-[var(--color-bg)] active:text-[var(--color-accent)]"
+                className="bg-[var(--color-accent)] p-2 w-fit rounded-full text-[var(--color-bg)] text-base sm:text-xl md:text-2xl font-normal text-center cursor-pointer transition duration-100 hover:bg-[var(--color-bg)] hover:text-[var(--color-accent)] active:bg-[var(--color-bg)] active:text-[var(--color-accent)]"
               >
                 What is Joven's tech-stack?
               </p>
@@ -242,7 +242,7 @@ export default function Aibou() {
                     "How many github contributions in all repositories did joven made today and what are those?"
                   )
                 }
-                className="bg-[var(--color-accent)] p-4 w-fit rounded-full text-[var(--color-bg)] text-base sm:text-xl md:text-2xl font-normal text-center cursor-pointer transition duration-100 hover:bg-[var(--color-bg)] hover:text-[var(--color-accent)] active:bg-[var(--color-bg)] active:text-[var(--color-accent)]"
+                className="bg-[var(--color-accent)] p-2 w-fit rounded-full text-[var(--color-bg)] text-base sm:text-xl md:text-2xl font-normal text-center cursor-pointer transition duration-100 hover:bg-[var(--color-bg)] hover:text-[var(--color-accent)] active:bg-[var(--color-bg)] active:text-[var(--color-accent)]"
               >
                 Joven's GitHub contributions today?
               </p>
