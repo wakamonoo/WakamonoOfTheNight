@@ -88,9 +88,10 @@ export default function Aibou() {
       setLoading(true);
 
       setTimeout(() => {
-        setSentText([
+        setSentText((prev) => [
+          ...prev,
           {
-            sender: "aibuo",
+            sender: "aibou",
             text: "konnichiwa! i'm aibou, joven's ai assistant. what can i do for you?",
           },
         ]);
