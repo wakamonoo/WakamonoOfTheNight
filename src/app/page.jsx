@@ -19,7 +19,7 @@ export default function Home() {
   useEffect(() => {
     const fetchSomething = async () => {
       const result = await new Promise((resolve) =>
-        setTimeout(() => resolve("done loading"), 1500)
+        setTimeout(() => resolve("done loading"), 2000)
       );
       setData(result);
       setLoading(false);
