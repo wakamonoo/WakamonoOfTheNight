@@ -11,17 +11,15 @@ import Aibou from "@/components/aibou";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
-  const [data, setData] = useState(null);
 
   {
     /* ———————————————————————————————————— loader ——— */
   }
   useEffect(() => {
     const handleLoad = async () => {
-      const result = await new Promise((resolve) =>
-        setTimeout(() => resolve("done loading"), 2000)
+      await new Promise((resolve) =>
+        setTimeout(() => resolve("done loading"), 3500)
       );
-      setData(result);
       setLoading(false);
     };
     
@@ -31,7 +29,7 @@ export default function Home() {
   return (
     <main>
       {/* ———————————————————————————————————— loader ——— */}
-      {loading && <Loader onload={() => setLoading(true)} />}
+      {loading && <Loader onFinish={() => setLoading(false)} />}
 
       {/* ———————————————————————————————————— chatbot ——— */}
       <Aibou />
