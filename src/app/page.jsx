@@ -17,14 +17,23 @@ export default function Home() {
     /* ———————————————————————————————————— loader ——— */
   }
   useEffect(() => {
-    const fetchSomething = async () => {
+    const handleLoad = async () => {
       const result = await new Promise((resolve) =>
         setTimeout(() => resolve("done loading"), 2000)
       );
       setData(result);
       setLoading(false);
     };
-    fetchSomething();
+    
+    if(document.readyState === "complete") {
+      handleLoad();
+    } else {
+      window.addEventListener("load", handleLoad);
+    }
+
+    return() => {
+      window.removeEventListener("load", handleLoad);
+    }
   }, []);
 
   return (
