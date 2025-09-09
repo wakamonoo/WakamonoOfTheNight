@@ -18,7 +18,7 @@ export default function Home() {
   useEffect(() => {
     const handleLoad = async () => {
       await new Promise((resolve) =>
-        setTimeout(() => resolve("done loading"), 3500)
+        setTimeout(() => resolve("done loading"), 4000)
       );
       setLoading(false);
     };
