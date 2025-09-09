@@ -199,7 +199,7 @@ export default function Portfolio() {
                       Simple, safe, and reliable car rentals with self-drive and
                       chauffeur options.
                     </p>
-                    <div className="flex gap-2 mt-2 text-2xl sm:text-3xl md:text-4xl text-normal">
+                    <div className="flex flex-wrap gap-2 mt-2 text-2xl sm:text-3xl md:text-4xl text-normal">
                       <SiNextdotjs />
                       <SiReact />
                       <SiTailwindcss />
