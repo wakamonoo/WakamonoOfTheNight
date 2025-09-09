@@ -11,6 +11,7 @@ import Work7 from "../assets/work-7.png";
 import Work8 from "../assets/work-8.png";
 import Work9 from "../assets/work-9.png";
 import Work10 from "../assets/work-10.png";
+import Work11 from "../assets/work-11.png";
 import {
   SiHtml5,
   SiCss3,
@@ -20,6 +21,12 @@ import {
   SiKotlin,
   SiMysql,
   SiPhp,
+  SiNextdotjs,
+  SiReact,
+  SiNodedotjs,
+  SiExpress,
+  SiMongodb,
+  SiCloudinary,
 } from "react-icons/si";
 import { useState } from "react";
 
@@ -45,7 +52,7 @@ export default function Portfolio() {
           the walls of convention.
         </p>
         <div className="grid grid-cols-1 xl-plus:grid-cols-2 gap-4">
-          <div className="p-4 sm:p-8 bg-brand w-full h-full rounded shadow-xl focus:shadow-2xl focus:-translate-y-2 hover:shadow-2xl hover:-translate-y-2 duration-200 ease-in-out">
+          <div className="p-4 sm:p-8 bg-brand w-full h-full rounded shadow-9xl focus:shadow-2xl hover:shadow-2xl duration-200 ease-in-out">
             <div className="flex justify-between">
               <Image
                 src={Work1}
@@ -70,18 +77,16 @@ export default function Portfolio() {
               <div className="mt-2 w-full grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4">
                 <a href="">
                   <button
-                    className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer transition-all duration-200
-                       hover:bg-[var(--color-panel)] hover:scale-110 
-                       active:scale-110 active:bg-[var(--color-panel)]"
+                    className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-header hover:text-[var(--color-panel)] active:text-[var(--color-panel)] w-full cursor-pointer transition-all duration-200
+                       hover:bg-[var(--color-accent)] active:bg-[var(--color-accent)] hover:shadow-2xl active:shadow-2xl"
                   >
                     Commence Operation
                   </button>
                 </a>
                 <a href="https://github.com/wakamonoo/FirstResponse">
                   <button
-                    className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer transition-all duration-200
-                       hover:bg-[var(--color-panel)] hover:scale-110 
-                       active:scale-110 active:bg-[var(--color-panel)]"
+                    className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-header hover:text-[var(--color-panel)] active:text-[var(--color-panel)] w-full cursor-pointer transition-all duration-200
+                       hover:bg-[var(--color-accent)] active:bg-[var(--color-accent)] hover:shadow-2xl active:shadow-2xl"
                   >
                     Open War Archives
                   </button>
@@ -89,7 +94,7 @@ export default function Portfolio() {
               </div>
             </div>
           </div>
-          <div className="p-4 sm:p-8 bg-brand w-full h-full rounded shadow-xl focus:shadow-2xl focus:-translate-y-2 hover:shadow-2xl hover:-translate-y-2 duration-200 ease-in-out">
+          <div className="p-4 sm:p-8 bg-brand w-full h-full rounded shadow-9xl focus:shadow-2xl hover:shadow-2xl duration-200 ease-in-out">
             <div className="flex justify-between">
               <Image
                 src={Work2}
@@ -115,18 +120,16 @@ export default function Portfolio() {
               <div className="mt-2 w-full grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4">
                 <a href="">
                   <button
-                    className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer transition-all duration-200
-                       hover:bg-[var(--color-panel)] hover:scale-110 
-                       active:scale-110 active:bg-[var(--color-panel)]"
+                    className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-header hover:text-[var(--color-panel)] active:text-[var(--color-panel)] w-full cursor-pointer transition-all duration-200
+                       hover:bg-[var(--color-accent)] active:bg-[var(--color-accent)] hover:shadow-2xl active:shadow-2xl"
                   >
                     Commence Operation
                   </button>
                 </a>
                 <a href="https://github.com/wakamonoo/RevvedEcommerce">
                   <button
-                    className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer transition-all duration-200
-                       hover:bg-[var(--color-panel)] hover:scale-110 
-                       active:scale-110 active:bg-[var(--color-panel)]"
+                    className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-header hover:text-[var(--color-panel)] active:text-[var(--color-panel)] w-full cursor-pointer transition-all duration-200
+                       hover:bg-[var(--color-accent)] active:bg-[var(--color-accent)] hover:shadow-2xl active:shadow-2xl"
                   >
                     Open War Archives
                   </button>
@@ -137,7 +140,7 @@ export default function Portfolio() {
 
           {showProjects && (
             <div className="contents">
-              <div className="p-4 sm:p-8 bg-brand w-full h-full rounded shadow-xl focus:shadow-2xl focus:-translate-y-2 hover:shadow-2xl hover:-translate-y-2 duration-200 ease-in-out">
+              <div className="p-4 sm:p-8 bg-brand w-full h-full rounded shadow-9xl focus:shadow-2xl hover:shadow-2xl duration-200 ease-in-out">
                 <div className="flex justify-between">
                   <Image
                     src={Work3}
@@ -163,18 +166,65 @@ export default function Portfolio() {
                   <div className="mt-2 w-full grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4">
                     <a href="https://ancestory-wakamonoo.vercel.app">
                       <button
-                        className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer transition-all duration-200
-                       hover:bg-[var(--color-panel)] hover:scale-110 
-                       active:scale-110 active:bg-[var(--color-panel)]"
+                        className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-header hover:text-[var(--color-panel)] active:text-[var(--color-panel)] w-full cursor-pointer transition-all duration-200
+                       hover:bg-[var(--color-accent)] active:bg-[var(--color-accent)] hover:shadow-2xl active:shadow-2xl"
                       >
                         Advance Beyond Walls
                       </button>
                     </a>
                     <a href="https://github.com/wakamonoo/ancestory">
                       <button
-                        className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer transition-all duration-200
-                       hover:bg-[var(--color-panel)] hover:scale-110 
-                       active:scale-110 active:bg-[var(--color-panel)]"
+                        className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-header hover:text-[var(--color-panel)] active:text-[var(--color-panel)] w-full cursor-pointer transition-all duration-200
+                       hover:bg-[var(--color-accent)] active:bg-[var(--color-accent)] hover:shadow-2xl active:shadow-2xl"
+                      >
+                        Open War Archives
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="p-4 sm:p-8 bg-brand w-full h-full rounded shadow-9xl focus:shadow-2xl hover:shadow-2xl duration-200 ease-in-out">
+                <div className="flex justify-between">
+                  <Image
+                    src={Work11}
+                    alt="project"
+                    className="w-[8rem] sm:w-[11rem] md:w-[14rem] h-auto rounded"
+                  />
+                  <div className="w-full ml-2 sm:ml-4">
+                    <h4 className="text-xl sm:text-3xl md:text-4xl text-header">
+                      ARQILA
+                    </h4>
+                    <p className="text-sm sm:text-xl md:text-2xl leading-4 sm:leading-5.5 md:leading-6.5 sm:mt-2 text-normal">
+                      Simple, safe, and reliable car rentals with self-drive and
+                      chauffeur options.
+                    </p>
+                    <div className="flex gap-2 mt-2 text-2xl sm:text-3xl md:text-4xl text-normal">
+                      <SiNextdotjs />
+                      <SiReact />
+                      <SiTailwindcss />
+                      <SiFirebase />
+                      <SiNodedotjs />
+                      <SiExpress />
+                      <SiMongodb />
+                      <SiCloudinary />
+                    </div>
+                  </div>
+                </div>
+                <div className="flex justify-center">
+                  <div className="mt-2 w-full grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4">
+                    <a href="https://arqila-wakamonoo.vercel.app">
+                      <button
+                        className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-header hover:text-[var(--color-panel)] active:text-[var(--color-panel)] w-full cursor-pointer transition-all duration-200
+                       hover:bg-[var(--color-accent)] active:bg-[var(--color-accent)] hover:shadow-2xl active:shadow-2xl"
+                      >
+                        Advance Beyond Walls
+                      </button>
+                    </a>
+                    <a href="https://github.com/wakamonoo/arqila">
+                      <button
+                        className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-header hover:text-[var(--color-panel)] active:text-[var(--color-panel)] w-full cursor-pointer transition-all duration-200
+                       hover:bg-[var(--color-accent)] active:bg-[var(--color-accent)] hover:shadow-2xl active:shadow-2xl"
                       >
                         Open War Archives
                       </button>
@@ -209,7 +259,7 @@ export default function Portfolio() {
         </p>
         <div className="grid grid-cols-1 xl-plus:grid-cols-2 gap-4">
           <div className="contents">
-            <div className="p-4 sm:p-8 bg-brand w-full h-full rounded shadow-xl focus:shadow-2xl focus:-translate-y-2 hover:shadow-2xl hover:-translate-y-2 duration-200 ease-in-out">
+            <div className="p-4 sm:p-8 bg-brand w-full h-full rounded shadow-9xl focus:shadow-2xl hover:shadow-2xl duration-200 ease-in-out">
               <div className="flex justify-between">
                 <Image
                   src={Work4}
@@ -235,18 +285,16 @@ export default function Portfolio() {
                 <div className="mt-2 w-full grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4">
                   <a href="https://sora-wakamonoo.vercel.app">
                     <button
-                      className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer transition-all duration-200
-                       hover:bg-[var(--color-panel)] hover:scale-110 
-                       active:scale-110 active:bg-[var(--color-panel)]"
+                      className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-header hover:text-[var(--color-panel)] active:text-[var(--color-panel)] w-full cursor-pointer transition-all duration-200
+                       hover:bg-[var(--color-accent)] active:bg-[var(--color-accent)] hover:shadow-2xl active:shadow-2xl"
                     >
                       Advance Beyond Walls
                     </button>
                   </a>
                   <a href="https://github.com/wakamonoo/Sora">
                     <button
-                      className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer transition-all duration-200
-                       hover:bg-[var(--color-panel)] hover:scale-110 
-                       active:scale-110 active:bg-[var(--color-panel)]"
+                      className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-header hover:text-[var(--color-panel)] active:text-[var(--color-panel)] w-full cursor-pointer transition-all duration-200
+                       hover:bg-[var(--color-accent)] active:bg-[var(--color-accent)] hover:shadow-2xl active:shadow-2xl"
                     >
                       Open War Archives
                     </button>
@@ -255,7 +303,7 @@ export default function Portfolio() {
               </div>
             </div>
 
-            <div className="p-4 sm:p-8 bg-brand w-full h-full rounded shadow-xl focus:shadow-2xl focus:-translate-y-2 hover:shadow-2xl hover:-translate-y-2 duration-200 ease-in-out">
+            <div className="p-4 sm:p-8 bg-brand w-full h-full rounded shadow-9xl focus:shadow-2xl hover:shadow-2xl duration-200 ease-in-out">
               <div className="flex justify-between">
                 <Image
                   src={Work5}
@@ -281,18 +329,16 @@ export default function Portfolio() {
                 <div className="mt-2 w-full grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4">
                   <a href="https://debtflix-wakamonoo.vercel.app">
                     <button
-                      className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer transition-all duration-200
-                       hover:bg-[var(--color-panel)] hover:scale-110 
-                       active:scale-110 active:bg-[var(--color-panel)]"
+                      className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-header hover:text-[var(--color-panel)] active:text-[var(--color-panel)] w-full cursor-pointer transition-all duration-200
+                       hover:bg-[var(--color-accent)] active:bg-[var(--color-accent)] hover:shadow-2xl active:shadow-2xl"
                     >
                       Advance Beyond Walls
                     </button>
                   </a>
                   <a href="https://github.com/wakamonoo/Debtflix">
                     <button
-                      className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer transition-all duration-200
-                       hover:bg-[var(--color-panel)] hover:scale-110 
-                       active:scale-110 active:bg-[var(--color-panel)]"
+                      className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-header hover:text-[var(--color-panel)] active:text-[var(--color-panel)] w-full cursor-pointer transition-all duration-200
+                       hover:bg-[var(--color-accent)] active:bg-[var(--color-accent)] hover:shadow-2xl active:shadow-2xl"
                     >
                       Open War Archives
                     </button>
@@ -303,7 +349,7 @@ export default function Portfolio() {
 
             {showMinorProjects && (
               <div className="contents">
-                <div className="p-4 sm:p-8 bg-brand w-full h-full rounded shadow-xl focus:shadow-2xl focus:-translate-y-2 hover:shadow-2xl hover:-translate-y-2 duration-200 ease-in-out">
+                <div className="p-4 sm:p-8 bg-brand w-full h-full rounded shadow-9xl focus:shadow-2xl hover:shadow-2xl duration-200 ease-in-out">
                   <div className="flex justify-between">
                     <Image
                       src={Work6}
@@ -330,18 +376,16 @@ export default function Portfolio() {
                     <div className="mt-2 w-full grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4">
                       <a href="https://kandili-wakamonoo.vercel.app">
                         <button
-                          className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer transition-all duration-200
-                       hover:bg-[var(--color-panel)] hover:scale-110 
-                       active:scale-110 active:bg-[var(--color-panel)]"
+                          className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-header hover:text-[var(--color-panel)] active:text-[var(--color-panel)] w-full cursor-pointer transition-all duration-200
+                       hover:bg-[var(--color-accent)] active:bg-[var(--color-accent)] hover:shadow-2xl active:shadow-2xl"
                         >
                           Advance Beyond Walls
                         </button>
                       </a>
                       <a href="https://github.com/wakamonoo/Kandili">
                         <button
-                          className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer transition-all duration-200
-                       hover:bg-[var(--color-panel)] hover:scale-110 
-                       active:scale-110 active:bg-[var(--color-panel)]"
+                          className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-header hover:text-[var(--color-panel)] active:text-[var(--color-panel)] w-full cursor-pointer transition-all duration-200
+                       hover:bg-[var(--color-accent)] active:bg-[var(--color-accent)] hover:shadow-2xl active:shadow-2xl"
                         >
                           Open War Archives
                         </button>
@@ -350,7 +394,7 @@ export default function Portfolio() {
                   </div>
                 </div>
 
-                <div className="p-4 sm:p-8 bg-brand w-full h-full rounded shadow-xl focus:shadow-2xl focus:-translate-y-2 hover:shadow-2xl hover:-translate-y-2 duration-200 ease-in-out">
+                <div className="p-4 sm:p-8 bg-brand w-full h-full rounded shadow-9xl focus:shadow-2xl hover:shadow-2xl duration-200 ease-in-out">
                   <div className="flex justify-between">
                     <Image
                       src={Work7}
@@ -376,18 +420,16 @@ export default function Portfolio() {
                     <div className="mt-2 w-full grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4">
                       <a href="https://todochan-wakamonoo.vercel.app">
                         <button
-                          className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer transition-all duration-200
-                       hover:bg-[var(--color-panel)] hover:scale-110 
-                       active:scale-110 active:bg-[var(--color-panel)]"
+                          className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-header hover:text-[var(--color-panel)] active:text-[var(--color-panel)] w-full cursor-pointer transition-all duration-200
+                       hover:bg-[var(--color-accent)] active:bg-[var(--color-accent)] hover:shadow-2xl active:shadow-2xl"
                         >
                           Advance Beyond Walls
                         </button>
                       </a>
                       <a href="https://github.com/wakamonoo/Todochan">
                         <button
-                          className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer transition-all duration-200
-                       hover:bg-[var(--color-panel)] hover:scale-110 
-                       active:scale-110 active:bg-[var(--color-panel)]"
+                          className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-header hover:text-[var(--color-panel)] active:text-[var(--color-panel)] w-full cursor-pointer transition-all duration-200
+                       hover:bg-[var(--color-accent)] active:bg-[var(--color-accent)] hover:shadow-2xl active:shadow-2xl"
                         >
                           Open War Archives
                         </button>
@@ -396,7 +438,7 @@ export default function Portfolio() {
                   </div>
                 </div>
 
-                <div className="p-4 sm:p-8 bg-brand w-full h-full rounded shadow-xl focus:shadow-2xl focus:-translate-y-2 hover:shadow-2xl hover:-translate-y-2 duration-200 ease-in-out">
+                <div className="p-4 sm:p-8 bg-brand w-full h-full rounded shadow-9xl focus:shadow-2xl hover:shadow-2xl duration-200 ease-in-out">
                   <div className="flex justify-between">
                     <Image
                       src={Work8}
@@ -421,18 +463,16 @@ export default function Portfolio() {
                     <div className="mt-2 w-full grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4">
                       <a href="https://pointcity-wakamonoo.vercel.app">
                         <button
-                          className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer transition-all duration-200
-                       hover:bg-[var(--color-panel)] hover:scale-110 
-                       active:scale-110 active:bg-[var(--color-panel)]"
+                          className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-header hover:text-[var(--color-panel)] active:text-[var(--color-panel)] w-full cursor-pointer transition-all duration-200
+                       hover:bg-[var(--color-accent)] active:bg-[var(--color-accent)] hover:shadow-2xl active:shadow-2xl"
                         >
                           Advance Beyond Walls
                         </button>
                       </a>
                       <a href="https://github.com/wakamonoo/PointCity">
                         <button
-                          className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer transition-all duration-200
-                       hover:bg-[var(--color-panel)] hover:scale-110 
-                       active:scale-110 active:bg-[var(--color-panel)]"
+                          className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-header hover:text-[var(--color-panel)] active:text-[var(--color-panel)] w-full cursor-pointer transition-all duration-200
+                       hover:bg-[var(--color-accent)] active:bg-[var(--color-accent)] hover:shadow-2xl active:shadow-2xl"
                         >
                           Open War Archives
                         </button>
@@ -441,7 +481,7 @@ export default function Portfolio() {
                   </div>
                 </div>
 
-                <div className="p-4 sm:p-8 bg-brand w-full h-full rounded shadow-xl focus:shadow-2xl focus:-translate-y-2 hover:shadow-2xl hover:-translate-y-2 duration-200 ease-in-out">
+                <div className="p-4 sm:p-8 bg-brand w-full h-full rounded shadow-9xl focus:shadow-2xl hover:shadow-2xl duration-200 ease-in-out">
                   <div className="flex justify-between">
                     <Image
                       src={Work9}
@@ -467,18 +507,16 @@ export default function Portfolio() {
                     <div className="mt-2 w-full grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4">
                       <a href="https://rina-wakamonoo.vercel.app">
                         <button
-                          className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer transition-all duration-200
-                       hover:bg-[var(--color-panel)] hover:scale-110 
-                       active:scale-110 active:bg-[var(--color-panel)]"
+                          className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-header hover:text-[var(--color-panel)] active:text-[var(--color-panel)] w-full cursor-pointer transition-all duration-200
+                       hover:bg-[var(--color-accent)] active:bg-[var(--color-accent)] hover:shadow-2xl active:shadow-2xl"
                         >
                           Advance Beyond Walls
                         </button>
                       </a>
                       <a href="https://github.com/wakamonoo/Rina">
                         <button
-                          className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer transition-all duration-200
-                       hover:bg-[var(--color-panel)] hover:scale-110 
-                       active:scale-110 active:bg-[var(--color-panel)]"
+                          className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-header hover:text-[var(--color-panel)] active:text-[var(--color-panel)] w-full cursor-pointer transition-all duration-200
+                       hover:bg-[var(--color-accent)] active:bg-[var(--color-accent)] hover:shadow-2xl active:shadow-2xl"
                         >
                           Open War Archives
                         </button>
@@ -487,7 +525,7 @@ export default function Portfolio() {
                   </div>
                 </div>
 
-                <div className="p-4 sm:p-8 bg-brand w-full h-full rounded shadow-xl focus:shadow-2xl focus:-translate-y-2 hover:shadow-2xl hover:-translate-y-2 duration-200 ease-in-out">
+                <div className="p-4 sm:p-8 bg-brand w-full h-full rounded shadow-9xl focus:shadow-2xl hover:shadow-2xl duration-200 ease-in-out">
                   <div className="flex justify-between">
                     <Image
                       src={Work10}
@@ -513,18 +551,16 @@ export default function Portfolio() {
                     <div className="mt-2 w-full grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4">
                       <a href="https://dcxvi-initiative-wakamonoo.vercel.app">
                         <button
-                          className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer transition-all duration-200
-                       hover:bg-[var(--color-panel)] hover:scale-110 
-                       active:scale-110 active:bg-[var(--color-panel)]"
+                          className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-header hover:text-[var(--color-panel)] active:text-[var(--color-panel)] w-full cursor-pointer transition-all duration-200
+                       hover:bg-[var(--color-accent)] active:bg-[var(--color-accent)] hover:shadow-2xl active:shadow-2xl"
                         >
                           Advance Beyond Walls
                         </button>
                       </a>
                       <a href="https://github.com/wakamonoo/DCXVI-Initiative">
                         <button
-                          className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-normal w-full cursor-pointer transition-all duration-200
-                       hover:bg-[var(--color-panel)] hover:scale-110 
-                       active:scale-110 active:bg-[var(--color-panel)]"
+                          className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-header hover:text-[var(--color-panel)] active:text-[var(--color-panel)] w-full cursor-pointer transition-all duration-200
+                       hover:bg-[var(--color-accent)] active:bg-[var(--color-accent)] hover:shadow-2xl active:shadow-2xl"
                         >
                           Open War Archives
                         </button>
