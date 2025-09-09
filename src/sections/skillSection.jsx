@@ -38,37 +38,37 @@ export default function Skills() {
           <div className="flex flex-wrap gap-2">
             <div
               tabIndex="0"
-              className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] active:-translate-y-5 active:shadow-2xl active:bg-[var(--color-panel)] active:text-[var(--color-accent)] cursor-pointer w-fit h-fit"
+              className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] cursor-pointer w-fit h-fit"
             >
               <SiHtml5 />
             </div>
             <div
               tabIndex="0"
-              className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] active:-translate-y-5 active:shadow-2xl active:bg-[var(--color-panel)] active:text-[var(--color-accent)] cursor-pointer w-fit h-fit"
+              className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] cursor-pointer w-fit h-fit"
             >
               <SiCss3 />
             </div>
             <div
               tabIndex="0"
-              className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] active:-translate-y-5 active:shadow-2xl active:bg-[var(--color-panel)] active:text-[var(--color-accent)] cursor-pointer w-fit h-fit"
+              className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] cursor-pointer w-fit h-fit"
             >
               <SiJavascript />
             </div>
             <div
               tabIndex="0"
-              className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] active:-translate-y-5 active:shadow-2xl active:bg-[var(--color-panel)] active:text-[var(--color-accent)] cursor-pointer w-fit h-fit"
+              className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] cursor-pointer w-fit h-fit"
             >
               <SiTailwindcss />
             </div>
             <div
               tabIndex="0"
-              className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] active:-translate-y-5 active:shadow-2xl active:bg-[var(--color-panel)] active:text-[var(--color-accent)] cursor-pointer w-fit h-fit"
+              className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] cursor-pointer w-fit h-fit"
             >
               <SiReact />
             </div>
             <div
               tabIndex="0"
-              className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] active:-translate-y-5 active:shadow-2xl active:bg-[var(--color-panel)] active:text-[var(--color-accent)] cursor-pointer w-fit h-fit"
+              className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] cursor-pointer w-fit h-fit"
             >
               <SiNextdotjs />
             </div>
@@ -86,19 +86,19 @@ export default function Skills() {
           <div className="flex flex-wrap gap-2">
             <div
               tabIndex="0"
-              className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] active:-translate-y-5 active:shadow-2xl active:bg-[var(--color-panel)] active:text-[var(--color-accent)] cursor-pointer w-fit h-fit"
+              className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] cursor-pointer w-fit h-fit"
             >
               <SiExpress />
             </div>
             <div
               tabIndex="0"
-              className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] active:-translate-y-5 active:shadow-2xl active:bg-[var(--color-panel)] active:text-[var(--color-accent)] cursor-pointer w-fit h-fit"
+              className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] cursor-pointer w-fit h-fit"
             >
               <SiNodedotjs />
             </div>
             <div
               tabIndex="0"
-              className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] active:-translate-y-5 active:shadow-2xl active:bg-[var(--color-panel)] active:text-[var(--color-accent)] cursor-pointer w-fit h-fit"
+              className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] cursor-pointer w-fit h-fit"
             >
               <SiPhp />
             </div>
@@ -116,19 +116,19 @@ export default function Skills() {
           <div className="flex flex-wrap gap-2">
             <div
               tabIndex="0"
-              className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] active:-translate-y-5 active:shadow-2xl active:bg-[var(--color-panel)] active:text-[var(--color-accent)] cursor-pointer w-fit h-fit"
+              className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] cursor-pointer w-fit h-fit"
             >
               <SiFirebase />
             </div>
             <div
               tabIndex="0"
-              className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] active:-translate-y-5 active:shadow-2xl active:bg-[var(--color-panel)] active:text-[var(--color-accent)] cursor-pointer w-fit h-fit"
+              className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] cursor-pointer w-fit h-fit"
             >
               <SiMysql />
             </div>
             <div
               tabIndex="0"
-              className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] active:-translate-y-5 active:shadow-2xl active:bg-[var(--color-panel)] active:text-[var(--color-accent)] cursor-pointer w-fit h-fit"
+              className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] cursor-pointer w-fit h-fit"
             >
               <SiMongodb />
             </div>
@@ -146,33 +146,33 @@ export default function Skills() {
           <div className="flex flex-wrap gap-2">
             <div
               tabIndex="0"
-              className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] active:-translate-y-5 active:shadow-2xl active:bg-[var(--color-panel)] active:text-[var(--color-accent)] cursor-pointer w-fit h-fit"
+              className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] cursor-pointer w-fit h-fit"
             >
               <FaGithub />
             </div>
             <div
               tabIndex="0"
-              className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] active:-translate-y-5 active:shadow-2xl active:bg-[var(--color-panel)] active:text-[var(--color-accent)] cursor-pointer w-fit h-fit"
+              className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] cursor-pointer w-fit h-fit"
             >
               <SiVercel />
             </div>
 
             <div
               tabIndex="0"
-              className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] active:-translate-y-5 active:shadow-2xl active:bg-[var(--color-panel)] active:text-[var(--color-accent)] cursor-pointer w-fit h-fit"
+              className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] cursor-pointer w-fit h-fit"
             >
               <SiSocketdotio />
             </div>
 
             <div
               tabIndex="0"
-              className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] active:-translate-y-5 active:shadow-2xl active:bg-[var(--color-panel)] active:text-[var(--color-accent)] cursor-pointer w-fit h-fit"
+              className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] cursor-pointer w-fit h-fit"
             >
               <SiRender />
             </div>
             <div
               tabIndex="0"
-              className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] active:-translate-y-5 active:shadow-2xl active:bg-[var(--color-panel)] active:text-[var(--color-accent)] cursor-pointer w-fit h-fit"
+              className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] cursor-pointer w-fit h-fit"
             >
               <SiCloudinary />
             </div>
@@ -189,7 +189,7 @@ export default function Skills() {
           <div className="flex flex-wrap gap-2">
             <div
               tabIndex="0"
-              className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] active:-translate-y-5 active:shadow-2xl active:bg-[var(--color-panel)] active:text-[var(--color-accent)] cursor-pointer w-fit h-fit"
+              className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] cursor-pointer w-fit h-fit"
             >
               <SiKotlin />
             </div>
