@@ -25,21 +25,13 @@ export default function Home() {
       setLoading(false);
     };
     
-    if(document.readyState === "complete") {
-      handleLoad();
-    } else {
-      window.addEventListener("load", handleLoad);
-    }
-
-    return() => {
-      window.removeEventListener("load", handleLoad);
-    }
+    handleLoad()
   }, []);
 
   return (
     <main>
       {/* ———————————————————————————————————— loader ——— */}
-      {loading && <Loader />}
+      {loading && <Loader onload={() => setLoading(true)} />}
 
       {/* ———————————————————————————————————— chatbot ——— */}
       <Aibou />
