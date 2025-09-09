@@ -6,9 +6,16 @@ export default function Loader({ onFinish }) {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => {
+    const handleLoad = () => setShow(true);
+
+    if(document.readyState === "complete") {
       setShow(true);
-    }, 500);
+    } else {
+      window.addEventListener("load", handleLoad);
+      return() => {
+        window.removeEventListener("load", handleLoad);
+      }
+    }
   }, []);
   return (
     <div className="fixed inset-0 z-100 backdrop-blur-2xl flex justify-center items-center w-screen h-screen ">
