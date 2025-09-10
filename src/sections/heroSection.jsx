@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import wall from "../assets/aotWall.png";
-import me from "../assets/wkmn.png";
+import me from "../assets/wakamono.png";
 import NavMenu from "@/components/buttons";
 import Signage from "@/components/signage";
 import Intro from "@/components/intro";
