@@ -1,5 +1,4 @@
 "use client";
-import MinorProjects from "@/components/minorProjects";
 import Image from "next/image";
 import Work1 from "../assets/work-1.png";
 import Work2 from "../assets/work-2.png";
