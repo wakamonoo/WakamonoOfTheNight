@@ -31,7 +31,7 @@ export default function About({ loading }) {
 
   const containerVariant = {
     hidden: {},
-    visible: { transition: { staggerChilder: 0.12 } },
+    visible: { transition: { staggerChildren: 0.12 } },
   };
 
   const itemVariants = {
