@@ -62,9 +62,10 @@ export default function Hero({ loading }) {
         initial="hidden"
         variants={containerVariant}
         animate={inView ? "visible" : "hidden"}
+        className="pointer-events-none"
       >
         {/* ———————————————————————————————————— nav import ——— */}
-        <motion.div variants={itemVariants} className="relative z-50">
+        <motion.div variants={itemVariants} className="relative z-50 pointer-events-auto">
           <NavMenu />
         </motion.div>
 
@@ -93,7 +94,7 @@ export default function Hero({ loading }) {
             className="w-full h-full object-cover object-top"
           />
         </motion.div>
-        <div id="meInfo">
+        <div id="meInfo" className="relative z-30 w-full h-screen">
           <motion.div
             variants={imageVariants}
             id="mePhoto"
@@ -105,7 +106,7 @@ export default function Hero({ loading }) {
           </motion.div>
 
           {/* ———————————————————————————————————— intro import ——— */}
-          <motion.div variants={itemVariants} className="relative z-50">
+          <motion.div variants={itemVariants} className="relative z-50 pointer-events-auto">
             <Intro />
           </motion.div>
         </div>
