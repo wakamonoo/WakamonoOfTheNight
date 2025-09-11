@@ -34,27 +34,31 @@ export default function Portfolio({ loading }) {
   const [showProjects, setShowProjects] = useState(false);
   const [showMinorProjects, setShowMinorProjects] = useState(false);
   const containerRef = useRef(null);
+  const containerRef2 = useRef(null);
+  const containerRef3 = useRef(null);
   const [inView, setInView] = useState(false);
+  const [inView2, setInView2] = useState(false);
+  const [inView3, setInView3] = useState(false);
 
   useEffect(() => {
     if (loading) return;
-    const current = containerRef.current;
-    if (!current) return;
 
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setInView(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.25 }
-    );
-
-    observer.observe(current);
-    return () => {
-      observer.disconnect();
+    const createObserver = (ref, setVisible) => {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setVisible(true);
+            observer.unobserve(entry.target);
+          }
+        },
+        { threshold: 0.40 }
+      );
+      if (ref.current) observer.observe(ref.current);
     };
+
+    createObserver(containerRef, setInView);
+    createObserver(containerRef2, setInView2);
+    createObserver(containerRef3, setInView3);
   }, [loading]);
 
   const containerVariant = {
@@ -81,8 +85,9 @@ export default function Portfolio({ loading }) {
   };
 
   return (
-    <div ref={containerRef}>
+    <>
       <motion.div
+        ref={containerRef}
         variants={containerVariant}
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
@@ -309,7 +314,14 @@ export default function Portfolio({ loading }) {
             </button>
           </motion.div>
         </div>
+      </motion.div>
 
+      <motion.div
+        ref={containerRef2}
+        variants={containerVariant}
+        initial="hidden"
+        animate={inView2 ? "visible" : "hidden"}
+      >
         <div>
           <motion.h2
             variants={itemVariants}
@@ -655,31 +667,36 @@ export default function Portfolio({ loading }) {
             </button>
           </motion.div>
         </div>
-
-        <div>
-          <motion.h2
-            variants={itemVariants}
-            className="text-2xl sm:text-3xl md:text-4xl p-2 bg-brand rounded text-header mb-4 mt-16"
-          >
-            BATTLE RECORD
-          </motion.h2>
-          <motion.p
-            variants={itemVariants}
-            className="text-normal text-base sm:text-xl md:text-2xl font-normal leading-4.5 sm:leading-6 md:leading-8 lg:leading-8.5 mb-4 md:mb-8"
-          >
-            Beyond the walls of hesitation lies the battlefield of creation.
-            Every commit is a battle, every push a charge into the unknown. Here
-            stands the record of every campaign fought in code.
-          </motion.p>
-          <motion.div variants={cardVariants}>
-            <img
-              src="https://ghchart.rshah.org/6f553f/wakamonoo"
-              alt="git contributions"
-              className="w-full h-auto"
-            />
-          </motion.div>
-        </div>
       </motion.div>
-    </div>
+
+      <motion.div
+        ref={containerRef3}
+        variants={containerVariant}
+        initial="hidden"
+        animate={inView3 ? "visible" : "hidden"}
+      >
+        <motion.h2
+          variants={itemVariants}
+          className="text-2xl sm:text-3xl md:text-4xl p-2 bg-brand rounded text-header mb-4 mt-16"
+        >
+          BATTLE RECORD
+        </motion.h2>
+        <motion.p
+          variants={itemVariants}
+          className="text-normal text-base sm:text-xl md:text-2xl font-normal leading-4.5 sm:leading-6 md:leading-8 lg:leading-8.5 mb-4 md:mb-8"
+        >
+          Beyond the walls of hesitation lies the battlefield of creation. Every
+          commit is a battle, every push a charge into the unknown. Here stands
+          the record of every campaign fought in code.
+        </motion.p>
+        <motion.div variants={cardVariants}>
+          <img
+            src="https://ghchart.rshah.org/6f553f/wakamonoo"
+            alt="git contributions"
+            className="w-full h-auto"
+          />
+        </motion.div>
+      </motion.div>
+    </>
   );
 }

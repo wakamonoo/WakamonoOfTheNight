@@ -20,7 +20,7 @@ export default function About({ loading }) {
           observer.disconnect();
         }
       },
-      { threshold: 0.25 }
+      { threshold: 0.60 }
     );
 
     observer.observe(current);
@@ -53,10 +53,10 @@ export default function About({ loading }) {
         </motion.h1>
 
         <div className="w-full clearfix">
-          <motion.div variants={imageVariants} className="float-left w-1/2 max-w-[30rem] mr-2 mb-2 md:mr-4 md:mb-4 lg:mr-8 lg:mb-8 relative z-50">
+          <motion.div variants={imageVariants} className="float-left w-1/2 max-w-[30rem] mr-2 mb-2 md:mr-4 md:mb-4 lg:mr-8 lg:mb-8 relative z-40">
             <Image
               src={AboutImage}
-              className="w-full h-auto rounded-xl z-10"
+              className="w-full h-auto rounded-xl"
               alt="aboutImage"
             />
           </motion.div>

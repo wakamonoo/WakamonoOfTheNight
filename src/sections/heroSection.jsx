@@ -25,7 +25,7 @@ export default function Hero({ loading }) {
           observer.disconnect();
         }
       },
-      { threshold: 0.25 }
+      { threshold: 0.95 }
     );
 
     observer.observe(current);
