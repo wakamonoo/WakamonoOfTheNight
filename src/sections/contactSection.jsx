@@ -29,7 +29,7 @@ export default function Contact({ loading }) {
             observer.unobserve(entry.target);
           }
         },
-        { threshold: 0.4 }
+        { threshold: 0.6 }
       );
       if (ref.current) observer.observe(ref.current);
     };
