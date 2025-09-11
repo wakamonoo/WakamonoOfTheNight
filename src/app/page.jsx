@@ -36,7 +36,7 @@ export default function Home() {
 
       {/* ———————————————————————————————————— hero section ——— */}
       <section id="hero" className="bg-brand h-screen relative overflow-hidden">
-        <Hero />
+        <Hero loading={loading} />
       </section>
 
       {/* ———————————————————————————————————— about section ——— */}
@@ -44,7 +44,7 @@ export default function Home() {
         id="about"
         className="bg-second p-8 sm:p-15 md:p-24 lg:p-32 xl:px-72"
       >
-        <About />
+        <About loading={loading} />
       </section>
 
       {/* ———————————————————————————————————— skills section ——— */}
@@ -52,7 +52,7 @@ export default function Home() {
         id="skills"
         className="bg-second p-8 sm:p-15 md:p-24 lg:p-32 xl:px-72"
       >
-        <Skills />
+        <Skills loading={loading} />
       </section>
 
       {/* ———————————————————————————————————— portfolio section ——— */}
@@ -60,7 +60,7 @@ export default function Home() {
         id="portfolio"
         className="bg-second p-8 sm:p-15 md:p-24 lg:p-32 xl:px-72"
       >
-        <Portfolio />
+        <Portfolio loading={loading} />
       </section>
 
       {/* ———————————————————————————————————— contact section ——— */}
@@ -68,12 +68,12 @@ export default function Home() {
         id="contact"
         className="bg-second p-8 sm:p-15 md:p-24 lg:p-32 xl:px-72"
       >
-        <Contact />
+        <Contact loading={loading} />
       </section>
 
       {/* ———————————————————————————————————— footer ——— */}
       <section className="flex justify-center h-auto w-full bg-panel py-4">
-        <Footer />
+        <Footer loading={loading} />
       </section>
     </main>
   );
