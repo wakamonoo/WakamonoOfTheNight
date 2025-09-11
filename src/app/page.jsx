@@ -22,8 +22,8 @@ export default function Home() {
       );
       setLoading(false);
     };
-    
-    handleLoad()
+
+    handleLoad();
   }, []);
 
   return (
@@ -32,7 +32,8 @@ export default function Home() {
       {loading && <Loader onFinish={() => setLoading(false)} />}
 
       {/* ———————————————————————————————————— chatbot ——— */}
-      <Aibou />
+
+      <Aibou loading={loading} />
 
       {/* ———————————————————————————————————— hero section ——— */}
       <section id="hero" className="bg-brand h-screen relative overflow-hidden">

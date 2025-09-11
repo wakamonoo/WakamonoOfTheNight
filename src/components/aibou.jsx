@@ -7,12 +7,13 @@ import AibouLoader from "./aibouLoader";
 import ReactMarkdown from "react-markdown";
 import Bot from "../assets/aibou.png";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
-export default function Aibou() {
+export default function Aibou({ loading }) {
   const [isOpen, setIsOpen] = useState(false);
   const [draftText, setDraftText] = useState("");
   const [sentText, setSentText] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [load, setLoad] = useState(false);
   const [error, setError] = useState(null);
   const [Preset, setPreset] = useState(true);
   const scrollEnd = useRef(null);
@@ -85,7 +86,7 @@ export default function Aibou() {
   }
   const preMessage = (onDone) => {
     if (isOpen && sentText.length === 0) {
-      setLoading(true);
+      setLoad(true);
 
       setTimeout(() => {
         setSentText((prev) => [
@@ -95,7 +96,7 @@ export default function Aibou() {
             text: "konnichiwa! i'm aibou, joven's ai assistant. what can i do for you?",
           },
         ]);
-        setLoading(false);
+        setLoad(false);
         if (onDone) onDone();
       }, 1000);
     }
@@ -123,7 +124,7 @@ export default function Aibou() {
     if (!text) return;
     setSentText((prev) => [...prev, { sender: "user", text }]);
     setDraftText("");
-    setLoading(true);
+    setLoad(true);
     setError(null);
     setPreset(false);
 
@@ -169,7 +170,7 @@ export default function Aibou() {
       ]);
       console.error(err);
     } finally {
-      setLoading(false);
+      setLoad(false);
     }
   }
 
@@ -179,13 +180,18 @@ export default function Aibou() {
         <div className="fixed inset-0 backdrop-blur-2xl pointer-events-none z-60" />
       )}
 
-      <div
-        ref={botRef}
-        onClick={() => setIsOpen((open) => !open)}
-        className="fixed bottom-4 p-2 right-4 flex rounded-full bg-army shadow-2xl z-60 cursor-pointer transform translate duration-200 hover:scale-110 active:scale-110"
-      >
-        <Image src={Bot} alt="bot" className="w-12 lg:w-16 h-auto" />
-      </div>
+      {!loading && (
+        <motion.div
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.1, ease: "easeOut" }}
+          ref={botRef}
+          onClick={() => setIsOpen((open) => !open)}
+          className="fixed bottom-4 p-2 right-4 flex rounded-full bg-army shadow-2xl z-60 cursor-pointer transform translate duration-200 hover:scale-110 active:scale-110"
+        >
+          <Image src={Bot} alt="bot" className="w-12 lg:w-16 h-auto" />
+        </motion.div>
+      )}
 
       {isOpen && (
         <div
@@ -241,7 +247,7 @@ export default function Aibou() {
                 )}
               </div>
             ))}
-            {loading && <AibouLoader />}
+            {load && <AibouLoader />}
             {error && (
               <p className="text-center text-red-500 italic">{error}</p>
             )}
@@ -297,14 +303,14 @@ export default function Aibou() {
               onKeyDown={(e) => {
                 if (e.key === "Enter" && !e.shiftKey) {
                   e.preventDefault();
-                  if (!loading) handleSent();
+                  if (!load) handleSent();
                 }
               }}
-              disabled={loading}
+              disabled={load}
             />
             <FiSend
               onClick={() => {
-                if (!loading) handleSent();
+                if (!load) handleSent();
               }}
               className="text-5xl text-[var(--color-bg)] bg-[var(--color-accent)] p-2 w-[15%] h-[6vh] rounded-md transition duration-100 hover:scale-110 active:scale-110"
             />
