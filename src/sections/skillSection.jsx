@@ -62,7 +62,7 @@ export default function Skills({ loading }) {
   };
 
   const iconVariants = {
-    hidden: { opacity: 0, y: -50 },
+    hidden: { opacity: 0, y: -30 },
     visible: {
       opacity: 1,
       y: 0,
