@@ -1,9 +1,13 @@
-import { NextResponse } from "next/server";
+import express from "express";
+import dotenv from "dotenv";
 
-export async function POST(request) {
+dotenv.config();
+
+const router = express.Router();
+
+router.post("/aibou", async (req, res) => {
   try {
-    const { messages } = await request.json();
-
+    const { messages } = req.body;
     const apikey = process.env.OPEN_ROUTER_API_KEY;
 
     const response = await fetch(
@@ -24,20 +28,16 @@ export async function POST(request) {
     );
 
     if (!response.ok) {
-      const responseText = await response.text();
-      return NextResponse.json(
-        { error: `API error: ${responseText}` },
-        { status: response.status }
-      );
+      const text = await response.text();
+      return res.status(500).json({ error: `api errror: ${text}` });
     }
 
     const data = await response.json();
-    return NextResponse.json(data);
-  } catch (error) {
-    console.error("API Error:", error);
-    return NextResponse.json(
-      { error: "Internal server error" },
-      { status: 500 }
-    );
+    res.status(200).json(data);
+  } catch (err) {
+    console.error("api error", err);
+    res.status(500).json({ error: "internal error:", err });
   }
-}
+});
+
+export default router;

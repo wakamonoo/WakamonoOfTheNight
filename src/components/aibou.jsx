@@ -129,7 +129,7 @@ export default function Aibou({ loading }) {
     setPreset(false);
 
     try {
-      const response = await fetch("api/chatbot", {
+      const response = await fetch("http://localhost:4000/api/chatbot/aibou", {
         method: "POST",
         headers: {
           "HTTP-Referer": "https://wakamonoo.vercel.app",
