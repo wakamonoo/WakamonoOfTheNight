@@ -62,7 +62,7 @@ export default function Aibou({ loading }) {
   useEffect(() => {
     async function fetchContributions() {
       try {
-        const res = await fetch("/api/gitContributions");
+        const res = await fetch("http://localhost:4000/api/git/contributions");
         const data = await res.json();
 
         if (data.contributions?.length) {
