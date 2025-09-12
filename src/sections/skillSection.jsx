@@ -18,6 +18,7 @@ import {
   SiRender,
   SiCloudinary,
   SiGithub,
+  SiFramer,
 } from "react-icons/si";
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
@@ -200,14 +201,37 @@ export default function Skills({ loading }) {
                   </p>
                 </div>
               </motion.div>
+
+              <motion.div
+                variants={iconVariants}
+                className="relative group w-fit"
+              >
+                <div
+                  tabIndex="0"
+                  className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:-rotate-3 sm:hover:-translate-y-6 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 sm:focus:-translate-y-6  focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] focus:-rotate-3  cursor-pointer w-fit h-fit"
+                >
+                  <SiFramer />
+                </div>
+                <div className="absolute left-1/2 -translate-x-1/2 opacity-0 transition-all duration-300 delay-50 group-hover:opacity-100 group-focus-within:opacity-100 -mt-5 sm:-mt-6 pointer-events-none text-brand group-hover:text-[var(--color-panel)] group-focus-within:text-[var(--color-panel)] z-10">
+                  <p className="text-base sm:text-xl md:text-2xl font-extrabold w-full whitespace-nowrap">
+                    FRAMER-MOTION
+                  </p>
+                </div>
+              </motion.div>
             </div>
           </div>
 
           <div>
-            <motion.h2 variants={itemVariants} className="w-full text-2xl sm:text-3xl md:text-4xl p-2 bg-brand rounded text-header mb-4 mt-4">
+            <motion.h2
+              variants={itemVariants}
+              className="w-full text-2xl sm:text-3xl md:text-4xl p-2 bg-brand rounded text-header mb-4 mt-4"
+            >
               Back-End Development
             </motion.h2>
-            <motion.p variants={itemVariants} className="text-normal text-base sm:text-xl md:text-2xl font-normal leading-4.5 sm:leading-6 md:leading-8 lg:leading-8.5 mb-4 md:mb-8">
+            <motion.p
+              variants={itemVariants}
+              className="text-normal text-base sm:text-xl md:text-2xl font-normal leading-4.5 sm:leading-6 md:leading-8 lg:leading-8.5 mb-4 md:mb-8"
+            >
               Handling server-side logic, APIs, and data processing to make
               applications functional and efficient.
             </motion.p>
@@ -262,14 +286,37 @@ export default function Skills({ loading }) {
                   </p>
                 </div>
               </motion.div>
+
+              <motion.div
+                variants={iconVariants}
+                className="relative group w-fit"
+              >
+                <div
+                  tabIndex="0"
+                  className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:-rotate-3 sm:hover:-translate-y-6 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 sm:focus:-translate-y-6  focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] focus:-rotate-3  cursor-pointer w-fit h-fit"
+                >
+                  <SiSocketdotio />
+                </div>
+                <div className="absolute left-1/2 -translate-x-1/2 opacity-0 transition-all duration-300 delay-50 group-hover:opacity-100 group-focus-within:opacity-100 -mt-5 sm:-mt-6 pointer-events-none text-brand group-hover:text-[var(--color-panel)] group-focus-within:text-[var(--color-panel)] z-10">
+                  <p className="text-base sm:text-xl md:text-2xl font-extrabold">
+                    SOCKET.IO
+                  </p>
+                </div>
+              </motion.div>
             </div>
           </div>
 
           <div>
-            <motion.h2 variants={itemVariants} className="w-full text-2xl sm:text-3xl md:text-4xl p-2 bg-brand rounded text-header mb-4 mt-4">
+            <motion.h2
+              variants={itemVariants}
+              className="w-full text-2xl sm:text-3xl md:text-4xl p-2 bg-brand rounded text-header mb-4 mt-4"
+            >
               Database & Authentication
             </motion.h2>
-            <motion.p variants={itemVariants} className="text-normal text-base sm:text-xl md:text-2xl font-normal leading-4.5 sm:leading-6 md:leading-8 lg:leading-8.5 mb-4 md:mb-8">
+            <motion.p
+              variants={itemVariants}
+              className="text-normal text-base sm:text-xl md:text-2xl font-normal leading-4.5 sm:leading-6 md:leading-8 lg:leading-8.5 mb-4 md:mb-8"
+            >
               Managing data storage, retrieval, and user authentication to keep
               information secure and accessible.
             </motion.p>
@@ -328,10 +375,16 @@ export default function Skills({ loading }) {
           </div>
 
           <div>
-            <motion.h2 variants={itemVariants} className="w-full text-2xl sm:text-3xl md:text-4xl p-2 bg-brand rounded text-header mb-4 mt-4">
+            <motion.h2
+              variants={itemVariants}
+              className="w-full text-2xl sm:text-3xl md:text-4xl p-2 bg-brand rounded text-header mb-4 mt-4"
+            >
               Tools & Platforms
             </motion.h2>
-            <motion.p variants={itemVariants} className="text-normal text-base sm:text-xl md:text-2xl font-normal leading-4.5 sm:leading-6 md:leading-8 lg:leading-8.5 mb-4 md:mb-8">
+            <motion.p
+              variants={itemVariants}
+              className="text-normal text-base sm:text-xl md:text-2xl font-normal leading-4.5 sm:leading-6 md:leading-8 lg:leading-8.5 mb-4 md:mb-8"
+            >
               Using deployment tools, version control, and cloud platforms to
               build, host, and manage applications.
             </motion.p>
@@ -378,23 +431,6 @@ export default function Skills({ loading }) {
                   tabIndex="0"
                   className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:-rotate-3 sm:hover:-translate-y-6 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 sm:focus:-translate-y-6  focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] focus:-rotate-3  cursor-pointer w-fit h-fit"
                 >
-                  <SiSocketdotio />
-                </div>
-                <div className="absolute left-1/2 -translate-x-1/2 opacity-0 transition-all duration-300 delay-50 group-hover:opacity-100 group-focus-within:opacity-100 -mt-5 sm:-mt-6 pointer-events-none text-brand group-hover:text-[var(--color-panel)] group-focus-within:text-[var(--color-panel)] z-10">
-                  <p className="text-base sm:text-xl md:text-2xl font-extrabold">
-                    SOCKET.IO
-                  </p>
-                </div>
-              </motion.div>
-
-              <motion.div
-                variants={iconVariants}
-                className="relative group w-fit"
-              >
-                <div
-                  tabIndex="0"
-                  className="p-2 md:p-4 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:-rotate-3 sm:hover:-translate-y-6 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 sm:focus:-translate-y-6  focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] focus:-rotate-3  cursor-pointer w-fit h-fit"
-                >
                   <SiRender />
                 </div>
                 <div className="absolute left-1/2 -translate-x-1/2 opacity-0 transition-all duration-300 delay-50 group-hover:opacity-100 group-focus-within:opacity-100 -mt-5 sm:-mt-6 pointer-events-none text-brand group-hover:text-[var(--color-panel)] group-focus-within:text-[var(--color-panel)] z-10">
@@ -423,10 +459,16 @@ export default function Skills({ loading }) {
             </div>
           </div>
           <div>
-            <motion.h2 variants={itemVariants} className="w-full text-2xl sm:text-3xl md:text-4xl p-2 bg-brand rounded text-header mb-4 mt-4">
+            <motion.h2
+              variants={itemVariants}
+              className="w-full text-2xl sm:text-3xl md:text-4xl p-2 bg-brand rounded text-header mb-4 mt-4"
+            >
               Mobile App Development
             </motion.h2>
-            <motion.p variants={itemVariants} className="text-normal text-base sm:text-xl md:text-2xl font-normal leading-4.5 sm:leading-6 md:leading-8 lg:leading-8.5 mb-4 md:mb-8">
+            <motion.p
+              variants={itemVariants}
+              className="text-normal text-base sm:text-xl md:text-2xl font-normal leading-4.5 sm:leading-6 md:leading-8 lg:leading-8.5 mb-4 md:mb-8"
+            >
               Creating cross-platform and native mobile applications with
               optimized performance and modern features.
             </motion.p>
