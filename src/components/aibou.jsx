@@ -9,9 +9,9 @@ import Bot from "../assets/aibou.png";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-const BASE_URL = (process.env.NODE_ENV = "production"
+const BASE_URL = process.env.NODE_ENV === "production"
   ? "https://wakamonoofthenight.onrender.com"
-  : "http://localhost:4000");
+  : "http://localhost:4000";
 
 export default function Aibou({ loading }) {
   const [isOpen, setIsOpen] = useState(false);
