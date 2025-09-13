@@ -9,6 +9,10 @@ import Bot from "../assets/aibou.png";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
+const BASE_URL = (process.env.NODE_ENV = "production"
+  ? "https://wakamonoofthenight.onrender.com"
+  : "http://localhost:4000");
+
 export default function Aibou({ loading }) {
   const [isOpen, setIsOpen] = useState(false);
   const [draftText, setDraftText] = useState("");
@@ -62,7 +66,7 @@ export default function Aibou({ loading }) {
   useEffect(() => {
     async function fetchContributions() {
       try {
-        const res = await fetch("http://localhost:4000/api/git/contributions");
+        const res = await fetch(`${BASE_URL}/api/git/contributions`);
         const data = await res.json();
 
         if (data.contributions?.length) {
@@ -129,7 +133,7 @@ export default function Aibou({ loading }) {
     setPreset(false);
 
     try {
-      const response = await fetch("http://localhost:4000/api/chatbot/aibou", {
+      const response = await fetch(`${BASE_URL}/api/chatbot/aibou`, {
         method: "POST",
         headers: {
           "HTTP-Referer": "https://wakamonoo.vercel.app",
