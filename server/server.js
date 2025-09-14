@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 
 import aibouRoute from "./routes/aibouRoute.js";
-import gitRoute from "./routes/gitRoute.js"
+import gitRoute from "./routes/gitRoute.js";
 
 dotenv.config();
 

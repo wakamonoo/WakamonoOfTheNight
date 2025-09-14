@@ -143,7 +143,7 @@ export default function Portfolio({ loading }) {
               </div>
               <div className="flex justify-center">
                 <div className="mt-2 w-full grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4">
-                  <a href="">
+                  <a href="https://drive.google.com/drive/folders/17kHeyMQZClrlnOXBPFTKUoWeTgtjLhfS">
                     <button
                       className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-header hover:text-[var(--color-panel)] active:text-[var(--color-panel)] w-full cursor-pointer transition-all duration-200
                        hover:bg-[var(--color-accent)] active:bg-[var(--color-accent)] hover:shadow-2xl active:shadow-2xl"
@@ -186,7 +186,7 @@ export default function Portfolio({ loading }) {
               </div>
               <div className="flex justify-center">
                 <div className="mt-2 w-full grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4">
-                  <a href="">
+                  <a href="https://drive.google.com/drive/folders/1tnvcrwOfpoEowmRXJ7boxzOotpQxEaxO">
                     <button
                       className="text-center font-normal text-sm sm:text-xl md:text-2xl p-2 sm:p-4 bg-panel rounded text-header hover:text-[var(--color-panel)] active:text-[var(--color-panel)] w-full cursor-pointer transition-all duration-200
                        hover:bg-[var(--color-accent)] active:bg-[var(--color-accent)] hover:shadow-2xl active:shadow-2xl"
