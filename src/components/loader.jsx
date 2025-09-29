@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Logo from "../assets/logo.png";
+import wkmn from "@/assets/wkmn.webp";
 import Image from "next/image";
 
 export default function Loader({ onFinish }) {
@@ -8,13 +8,13 @@ export default function Loader({ onFinish }) {
   useEffect(() => {
     const handleLoad = () => setShow(true);
 
-    if(document.readyState === "complete") {
+    if (document.readyState === "complete") {
       setShow(true);
     } else {
       window.addEventListener("load", handleLoad);
-      return() => {
+      return () => {
         window.removeEventListener("load", handleLoad);
-      }
+      };
     }
   }, []);
   return (
@@ -22,7 +22,7 @@ export default function Loader({ onFinish }) {
       {show && (
         <>
           <Image
-            src={Logo}
+            src={wkmn}
             alt="wakamono-logo"
             priority
             className="absolute object-cover w-36 sm:w-50 lg:w-60 xl:70 h-auto animate-[center-left_1s_ease-in-out_forwards] [animation-delay:1000ms]"
