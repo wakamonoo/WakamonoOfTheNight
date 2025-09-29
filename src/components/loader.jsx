@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import wkmn from "@/assets/wkmn.webp";
+import wkmn from "@/assets/logo.webp";
 import Image from "next/image";
 
 export default function Loader({ onFinish }) {
