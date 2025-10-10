@@ -85,7 +85,7 @@ export default function Hero({ loading }) {
         <motion.div
           variants={itemVariants}
           id="bg"
-          className="absolute bottom-0 left-0 w-full inset-0 top-45 sm:top-40 lg:top-28"
+          className="absolute bottom-0 left-0 w-full inset-0 top-45 md:top-40"
         >
           <Signage />
           <Image
@@ -99,7 +99,7 @@ export default function Hero({ loading }) {
             variants={imageVariants}
             id="mePhoto"
             className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-10
-             w-full h-[85vh] sm:h-[90vh] max-w-[450px] max-h-[850px] md:max-h-[1000px] lg:max-h-[1024px]
+             w-full h-[85vh] md:h-[90vh] max-w-[450px] max-h-[850px] md:max-h-[1000px] lg:max-h-[1024px]
              flex justify-center items-end"
           >
             <Image src={me} alt="me" fill className="object-cover object-top" />

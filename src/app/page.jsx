@@ -43,7 +43,7 @@ export default function Home() {
       {/* ———————————————————————————————————— about section ——— */}
       <section
         id="about"
-        className="bg-second p-8 sm:p-15 md:p-24 lg:p-32 xl:px-72"
+        className="bg-second p-8 md:p-16 lg:p-32 xl:px-72"
       >
         <About loading={loading} />
       </section>
@@ -51,7 +51,7 @@ export default function Home() {
       {/* ———————————————————————————————————— skills section ——— */}
       <section
         id="skills"
-        className="bg-second p-8 sm:p-15 md:p-24 lg:p-32 xl:px-72"
+        className="bg-second p-8 md:p-16 lg:p-32 xl:px-72"
       >
         <Skills loading={loading} />
       </section>
@@ -59,7 +59,7 @@ export default function Home() {
       {/* ———————————————————————————————————— portfolio section ——— */}
       <section
         id="portfolio"
-        className="bg-second p-8 sm:p-15 md:p-24 lg:p-32 xl:px-72"
+        className="bg-second p-8 md:p-16 lg:p-32 xl:px-72"
       >
         <Portfolio loading={loading} />
       </section>
@@ -67,7 +67,7 @@ export default function Home() {
       {/* ———————————————————————————————————— contact section ——— */}
       <section
         id="contact"
-        className="bg-second p-8 sm:p-15 md:p-24 lg:p-32 xl:px-72"
+        className="bg-second p-8 md:p-16 lg:p-32 xl:px-72"
       >
         <Contact loading={loading} />
       </section>

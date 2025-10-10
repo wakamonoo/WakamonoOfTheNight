@@ -98,7 +98,7 @@ export default function Contact({ loading }) {
       >
         <motion.h1
           variants={itemVariants}
-          className="text-3xl sm:text-5xl md:text-6xl mb-4 text-header md:mb-8 lg:mb-12 xl:mb-16"
+          className="text-2xl md:text-3xl lg:text-4xl mb-4 text-header md:mb-8 lg:mb-12"
         >
           DISPATCH RESOLVE ────
         </motion.h1>
@@ -113,35 +113,35 @@ export default function Contact({ loading }) {
             name="name"
             required
             type="text"
-            className="w-full border bg-panel p-2 rounded text-base sm:text-xl md:text-2xl"
+            className="w-full border bg-panel p-2 rounded text-base md:text-lg lg:text-xl"
           />
           <input
             placeholder="your signal relay code (email)"
             name="email"
             required
             type="email"
-            className="w-full border bg-panel p-2 rounded text-base sm:text-xl md:text-2xl"
+            className="w-full border bg-panel p-2 rounded text-base md:text-lg lg:text-xl"
           />
           <input
             placeholder="mission intent (subject)"
             name="title"
             required
             type="text"
-            className="w-full border bg-panel p-2 rounded text-base sm:text-xl md:text-2xl"
+            className="w-full border bg-panel p-2 rounded text-base md:text-lg lg:text-xl"
           />
           <textarea
             placeholder="detail your intel"
             name="message"
             required
             type="text"
-            className="w-full h-[20vh] border bg-panel p-2 rounded text-base sm:text-xl md:text-2xl"
+            className="w-full h-[20vh] border bg-panel p-2 rounded text-base md:text-lg lg:text-xl"
           />
           <div>
             <button
               type="submit"
-              className="p-2 sm:p-4 sm:text-xl md:text-2xl mt-4 bg-brand rounded shadow-2xl border border-accent transition-all duration-200
+              className="p-2 sm:p-4 text-base md:text-lg lg:text-xl mt-8 bg-brand rounded shadow-2xl border border-accent transition-all duration-200
              hover:bg-[var(--color-panel)] hover:scale-110 
-             active:scale-110 active:bg-[var(--color-panel)]"
+             active:scale-110 active:bg-[var(--color-panel)] cursor-pointer"
             >
               ALERT HEADQUARTERS
             </button>
@@ -150,7 +150,7 @@ export default function Contact({ loading }) {
 
         <motion.p
           variants={itemVariants}
-          className="font-normal text-sm sm:text-base md:text-xl py-8 text-normal"
+          className="font-normal text-sm md:text-base lg:text-lg py-8 text-normal"
         >
           alternate recon points:
         </motion.p>
@@ -172,10 +172,10 @@ export default function Contact({ loading }) {
              hover:bg-[var(--color-panel)] hover:scale-110 
              active:scale-110 active:bg-[var(--color-panel)]"
             >
-              <div className="text-4xl sm:text-5xl mb-4 font-header text-header">
+              <div className="text-4xl md:text-5xl mb-4 font-header text-header">
                 <FaFacebookF />
               </div>
-              <h4 className="text-xl sm:text-3xl lg:text-xl 2xl:text-3xl font-header text-header">
+              <h4 className="text-xl md:text-2xl lg:text-3xl font-header text-header">
                 Joven Bataller
               </h4>
             </div>
@@ -190,10 +190,10 @@ export default function Contact({ loading }) {
              hover:bg-[var(--color-panel)] hover:scale-110 
              active:scale-110 active:bg-[var(--color-panel)]"
             >
-              <div className="text-4xl sm:text-5xl mb-4 font-header text-header">
+              <div className="text-4xl md:text-5xl mb-4 font-header text-header">
                 <FaInstagram />
               </div>
-              <h4 className="text-xl sm:text-3xl lg:text-xl 2xl:text-3xl  font-header text-header">
+              <h4 className="text-xl md:text-2xl lg:text-3xl font-header text-header">
                 WAKAMONOOOO
               </h4>
             </div>
@@ -208,10 +208,10 @@ export default function Contact({ loading }) {
              hover:bg-[var(--color-panel)] hover:scale-110 
              active:scale-110 active:bg-[var(--color-panel)]"
             >
-              <div className="text-4xl sm:text-5xl mb-4 font-header text-header">
+              <div className="text-4xl md:text-5xl mb-4 font-header text-header">
                 <FaLinkedinIn />
               </div>
-              <h4 className="text-xl sm:text-3xl lg:text-xl 2xl:text-3xl font-header text-header">
+              <h4 className="text-xl md:text-2xl lg:text-3xl font-header text-header">
                 JOVEN BATALLER
               </h4>
             </div>
@@ -223,10 +223,10 @@ export default function Contact({ loading }) {
              hover:bg-[var(--color-panel)] hover:scale-110 
              active:scale-110 active:bg-[var(--color-panel)]"
             >
-              <div className="text-4xl sm:text-5xl mb-4 font-header text-header">
+              <div className="text-4xl md:text-5xl mb-4 font-header text-header">
                 <FaGithub />
               </div>
-              <h4 className="text-xl sm:text-3xl lg:text-xl 2xl:text-3xl font-header text-header">
+              <h4 className="text-xl md:text-2xl lg:text-3xl font-header text-header">
                 WAKAMONOO
               </h4>
             </div>
