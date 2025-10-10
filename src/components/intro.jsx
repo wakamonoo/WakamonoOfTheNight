@@ -9,7 +9,7 @@ export default function Intro() {
   return (
     <div className="flex justify-end">
       <div className="relative z-40 p-4 right-[5vw] lg:right-[5vw] xl:right-[12vw] top-[60vh] h-full rounded-xl bg-panel w-70 md:w-85 lg:w-110">
-        <div className="absolute bottom-30 lg:bottom-38 -left-8">
+        <div className="absolute bottom-24 md:bottom-30 lg:bottom-24 -left-10 md:-left-12 z-10">
           <Image
             src={Bell}
             alt="bell"
@@ -17,13 +17,10 @@ export default function Intro() {
           />
         </div>
 
-        <h1 className="relative text-5xl md:text-6xl lg:text-7xl text-header text-right">
+        <h1 className="relative text-5xl md:text-6xl lg:text-7xl text-header text-right leading-7 md:leading-10">
           JOVEN BATALLER
         </h1>
         <p className="text-right text-2xl md:text-3xl lg:text-4xl text-normal">
-          <span className="text-2xl md:text-3xl lg:text-4xl text-normal">
-            ────{" "}
-          </span>
           web developer
         </p>
         <div className="flex justify-end gap-2 text-4xl md:text-5xl pt-2 text-normal overflow-visible">
