@@ -19,6 +19,7 @@ import {
   SiCloudinary,
   SiGithub,
   SiFramer,
+  SiGit,
 } from "react-icons/si";
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
@@ -123,7 +124,7 @@ export default function Skills({ loading }) {
               >
                 <div
                   tabIndex="0"
-                   className="p-2 md:p-4 text-5xl md:text-6xl lg:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:-rotate-3 sm:hover:-translate-y-6 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 sm:focus:-translate-y-6  focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] focus:-rotate-3  cursor-pointer w-fit h-fit"
+                  className="p-2 md:p-4 text-5xl md:text-6xl lg:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:-rotate-3 sm:hover:-translate-y-6 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 sm:focus:-translate-y-6  focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] focus:-rotate-3  cursor-pointer w-fit h-fit"
                 >
                   <SiCss3 />
                 </div>
@@ -140,7 +141,7 @@ export default function Skills({ loading }) {
               >
                 <div
                   tabIndex="0"
-                   className="p-2 md:p-4 text-5xl md:text-6xl lg:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:-rotate-3 sm:hover:-translate-y-6 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 sm:focus:-translate-y-6  focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] focus:-rotate-3  cursor-pointer w-fit h-fit"
+                  className="p-2 md:p-4 text-5xl md:text-6xl lg:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:-rotate-3 sm:hover:-translate-y-6 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 sm:focus:-translate-y-6  focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] focus:-rotate-3  cursor-pointer w-fit h-fit"
                 >
                   <SiJavascript />
                 </div>
@@ -157,7 +158,7 @@ export default function Skills({ loading }) {
               >
                 <div
                   tabIndex="0"
-                   className="p-2 md:p-4 text-5xl md:text-6xl lg:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:-rotate-3 sm:hover:-translate-y-6 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 sm:focus:-translate-y-6  focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] focus:-rotate-3  cursor-pointer w-fit h-fit"
+                  className="p-2 md:p-4 text-5xl md:text-6xl lg:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:-rotate-3 sm:hover:-translate-y-6 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 sm:focus:-translate-y-6  focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] focus:-rotate-3  cursor-pointer w-fit h-fit"
                 >
                   <SiTailwindcss />
                 </div>
@@ -174,7 +175,7 @@ export default function Skills({ loading }) {
               >
                 <div
                   tabIndex="0"
-                   className="p-2 md:p-4 text-5xl md:text-6xl lg:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:-rotate-3 sm:hover:-translate-y-6 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 sm:focus:-translate-y-6  focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] focus:-rotate-3  cursor-pointer w-fit h-fit"
+                  className="p-2 md:p-4 text-5xl md:text-6xl lg:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:-rotate-3 sm:hover:-translate-y-6 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 sm:focus:-translate-y-6  focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] focus:-rotate-3  cursor-pointer w-fit h-fit"
                 >
                   <SiReact />
                 </div>
@@ -191,7 +192,7 @@ export default function Skills({ loading }) {
               >
                 <div
                   tabIndex="0"
-                   className="p-2 md:p-4 text-5xl md:text-6xl lg:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:-rotate-3 sm:hover:-translate-y-6 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 sm:focus:-translate-y-6  focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] focus:-rotate-3  cursor-pointer w-fit h-fit"
+                  className="p-2 md:p-4 text-5xl md:text-6xl lg:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:-rotate-3 sm:hover:-translate-y-6 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 sm:focus:-translate-y-6  focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] focus:-rotate-3  cursor-pointer w-fit h-fit"
                 >
                   <SiNextdotjs />
                 </div>
@@ -208,7 +209,7 @@ export default function Skills({ loading }) {
               >
                 <div
                   tabIndex="0"
-                   className="p-2 md:p-4 text-5xl md:text-6xl lg:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:-rotate-3 sm:hover:-translate-y-6 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 sm:focus:-translate-y-6  focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] focus:-rotate-3  cursor-pointer w-fit h-fit"
+                  className="p-2 md:p-4 text-5xl md:text-6xl lg:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:-rotate-3 sm:hover:-translate-y-6 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 sm:focus:-translate-y-6  focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] focus:-rotate-3  cursor-pointer w-fit h-fit"
                 >
                   <SiFramer />
                 </div>
@@ -230,7 +231,7 @@ export default function Skills({ loading }) {
             </motion.h2>
             <motion.p
               variants={itemVariants}
-             className="text-normal text-base md:text-lg lg:text-xl font-normal leading-4.5 md:leading-6 mb-4 md:mb-8"
+              className="text-normal text-base md:text-lg lg:text-xl font-normal leading-4.5 md:leading-6 mb-4 md:mb-8"
             >
               Handling server-side logic, APIs, and data processing to make
               applications functional and efficient.
@@ -242,7 +243,7 @@ export default function Skills({ loading }) {
               >
                 <div
                   tabIndex="0"
-                   className="p-2 md:p-4 text-5xl md:text-6xl lg:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:-rotate-3 sm:hover:-translate-y-6 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 sm:focus:-translate-y-6  focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] focus:-rotate-3  cursor-pointer w-fit h-fit"
+                  className="p-2 md:p-4 text-5xl md:text-6xl lg:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:-rotate-3 sm:hover:-translate-y-6 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 sm:focus:-translate-y-6  focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] focus:-rotate-3  cursor-pointer w-fit h-fit"
                 >
                   <SiExpress />
                 </div>
@@ -259,7 +260,7 @@ export default function Skills({ loading }) {
               >
                 <div
                   tabIndex="0"
-                   className="p-2 md:p-4 text-5xl md:text-6xl lg:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:-rotate-3 sm:hover:-translate-y-6 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 sm:focus:-translate-y-6  focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] focus:-rotate-3  cursor-pointer w-fit h-fit"
+                  className="p-2 md:p-4 text-5xl md:text-6xl lg:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:-rotate-3 sm:hover:-translate-y-6 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 sm:focus:-translate-y-6  focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] focus:-rotate-3  cursor-pointer w-fit h-fit"
                 >
                   <SiNodedotjs />
                 </div>
@@ -276,24 +277,7 @@ export default function Skills({ loading }) {
               >
                 <div
                   tabIndex="0"
-                   className="p-2 md:p-4 text-5xl md:text-6xl lg:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:-rotate-3 sm:hover:-translate-y-6 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 sm:focus:-translate-y-6  focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] focus:-rotate-3  cursor-pointer w-fit h-fit"
-                >
-                  <SiPhp />
-                </div>
-                <div className="absolute left-1/2 -translate-x-1/2 opacity-0 transition-all duration-300 delay-50 group-hover:opacity-100 group-focus-within:opacity-100 -mt-5 sm:-mt-6 pointer-events-none text-brand group-hover:text-[var(--color-panel)] group-focus-within:text-[var(--color-panel)] z-10">
-                  <p className="text-base md:text-lg lg:text-xl font-extrabold">
-                    PHP
-                  </p>
-                </div>
-              </motion.div>
-
-              <motion.div
-                variants={iconVariants}
-                className="relative group w-fit"
-              >
-                <div
-                  tabIndex="0"
-                   className="p-2 md:p-4 text-5xl md:text-6xl lg:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:-rotate-3 sm:hover:-translate-y-6 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 sm:focus:-translate-y-6  focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] focus:-rotate-3  cursor-pointer w-fit h-fit"
+                  className="p-2 md:p-4 text-5xl md:text-6xl lg:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:-rotate-3 sm:hover:-translate-y-6 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 sm:focus:-translate-y-6  focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] focus:-rotate-3  cursor-pointer w-fit h-fit"
                 >
                   <SiSocketdotio />
                 </div>
@@ -315,7 +299,7 @@ export default function Skills({ loading }) {
             </motion.h2>
             <motion.p
               variants={itemVariants}
-             className="text-normal text-base md:text-lg lg:text-xl font-normal leading-4.5 md:leading-6 mb-4 md:mb-8"
+              className="text-normal text-base md:text-lg lg:text-xl font-normal leading-4.5 md:leading-6 mb-4 md:mb-8"
             >
               Managing data storage, retrieval, and user authentication to keep
               information secure and accessible.
@@ -327,7 +311,7 @@ export default function Skills({ loading }) {
               >
                 <div
                   tabIndex="0"
-                   className="p-2 md:p-4 text-5xl md:text-6xl lg:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:-rotate-3 sm:hover:-translate-y-6 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 sm:focus:-translate-y-6  focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] focus:-rotate-3  cursor-pointer w-fit h-fit"
+                  className="p-2 md:p-4 text-5xl md:text-6xl lg:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:-rotate-3 sm:hover:-translate-y-6 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 sm:focus:-translate-y-6  focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] focus:-rotate-3  cursor-pointer w-fit h-fit"
                 >
                   <SiFirebase />
                 </div>
@@ -344,24 +328,7 @@ export default function Skills({ loading }) {
               >
                 <div
                   tabIndex="0"
-                   className="p-2 md:p-4 text-5xl md:text-6xl lg:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:-rotate-3 sm:hover:-translate-y-6 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 sm:focus:-translate-y-6  focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] focus:-rotate-3  cursor-pointer w-fit h-fit"
-                >
-                  <SiMysql />
-                </div>
-                <div className="absolute left-1/2 -translate-x-1/2 opacity-0 transition-all duration-300 delay-50 group-hover:opacity-100 group-focus-within:opacity-100 -mt-5 sm:-mt-6 pointer-events-none text-brand group-hover:text-[var(--color-panel)] group-focus-within:text-[var(--color-panel)] z-10">
-                  <p className="text-base md:text-lg lg:text-xl font-extrabold">
-                    MYSQL
-                  </p>
-                </div>
-              </motion.div>
-
-              <motion.div
-                variants={iconVariants}
-                className="relative group w-fit"
-              >
-                <div
-                  tabIndex="0"
-                   className="p-2 md:p-4 text-5xl md:text-6xl lg:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:-rotate-3 sm:hover:-translate-y-6 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 sm:focus:-translate-y-6  focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] focus:-rotate-3  cursor-pointer w-fit h-fit"
+                  className="p-2 md:p-4 text-5xl md:text-6xl lg:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:-rotate-3 sm:hover:-translate-y-6 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 sm:focus:-translate-y-6  focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] focus:-rotate-3  cursor-pointer w-fit h-fit"
                 >
                   <SiMongodb />
                 </div>
@@ -383,7 +350,7 @@ export default function Skills({ loading }) {
             </motion.h2>
             <motion.p
               variants={itemVariants}
-             className="text-normal text-base md:text-lg lg:text-xl font-normal leading-4.5 md:leading-6 mb-4 md:mb-8"
+              className="text-normal text-base md:text-lg lg:text-xl font-normal leading-4.5 md:leading-6 mb-4 md:mb-8"
             >
               Using deployment tools, version control, and cloud platforms to
               build, host, and manage applications.
@@ -395,7 +362,24 @@ export default function Skills({ loading }) {
               >
                 <div
                   tabIndex="0"
-                   className="p-2 md:p-4 text-5xl md:text-6xl lg:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:-rotate-3 sm:hover:-translate-y-6 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 sm:focus:-translate-y-6  focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] focus:-rotate-3  cursor-pointer w-fit h-fit"
+                  className="p-2 md:p-4 text-5xl md:text-6xl lg:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:-rotate-3 sm:hover:-translate-y-6 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 sm:focus:-translate-y-6  focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] focus:-rotate-3  cursor-pointer w-fit h-fit"
+                >
+                  <SiGit />
+                </div>
+                <div className="absolute left-1/2 -translate-x-1/2 opacity-0 transition-all duration-300 delay-50 group-hover:opacity-100 group-focus-within:opacity-100 -mt-5 sm:-mt-6 pointer-events-none text-brand group-hover:text-[var(--color-panel)] group-focus-within:text-[var(--color-panel)] z-10">
+                  <p className="text-base md:text-lg lg:text-xl font-extrabold">
+                    GIT
+                  </p>
+                </div>
+              </motion.div>
+
+              <motion.div
+                variants={iconVariants}
+                className="relative group w-fit"
+              >
+                <div
+                  tabIndex="0"
+                  className="p-2 md:p-4 text-5xl md:text-6xl lg:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:-rotate-3 sm:hover:-translate-y-6 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 sm:focus:-translate-y-6  focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] focus:-rotate-3  cursor-pointer w-fit h-fit"
                 >
                   <SiGithub />
                 </div>
@@ -412,7 +396,7 @@ export default function Skills({ loading }) {
               >
                 <div
                   tabIndex="0"
-                   className="p-2 md:p-4 text-5xl md:text-6xl lg:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:-rotate-3 sm:hover:-translate-y-6 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 sm:focus:-translate-y-6  focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] focus:-rotate-3  cursor-pointer w-fit h-fit"
+                  className="p-2 md:p-4 text-5xl md:text-6xl lg:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:-rotate-3 sm:hover:-translate-y-6 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 sm:focus:-translate-y-6  focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] focus:-rotate-3  cursor-pointer w-fit h-fit"
                 >
                   <SiVercel />
                 </div>
@@ -429,7 +413,7 @@ export default function Skills({ loading }) {
               >
                 <div
                   tabIndex="0"
-                   className="p-2 md:p-4 text-5xl md:text-6xl lg:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:-rotate-3 sm:hover:-translate-y-6 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 sm:focus:-translate-y-6  focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] focus:-rotate-3  cursor-pointer w-fit h-fit"
+                  className="p-2 md:p-4 text-5xl md:text-6xl lg:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:-rotate-3 sm:hover:-translate-y-6 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 sm:focus:-translate-y-6  focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] focus:-rotate-3  cursor-pointer w-fit h-fit"
                 >
                   <SiRender />
                 </div>
@@ -446,46 +430,13 @@ export default function Skills({ loading }) {
               >
                 <div
                   tabIndex="0"
-                   className="p-2 md:p-4 text-5xl md:text-6xl lg:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:-rotate-3 sm:hover:-translate-y-6 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 sm:focus:-translate-y-6  focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] focus:-rotate-3  cursor-pointer w-fit h-fit"
+                  className="p-2 md:p-4 text-5xl md:text-6xl lg:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:-rotate-3 sm:hover:-translate-y-6 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 sm:focus:-translate-y-6  focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] focus:-rotate-3  cursor-pointer w-fit h-fit"
                 >
                   <SiCloudinary />
                 </div>
                 <div className="absolute left-1/2 -translate-x-1/2 opacity-0 transition-all duration-300 delay-50 group-hover:opacity-100 group-focus-within:opacity-100 -mt-5 sm:-mt-6 pointer-events-none text-brand group-hover:text-[var(--color-panel)] group-focus-within:text-[var(--color-panel)] z-10">
                   <p className="text-base md:text-lg lg:text-xl font-extrabold">
                     CLOUDINARY
-                  </p>
-                </div>
-              </motion.div>
-            </div>
-          </div>
-          <div>
-            <motion.h2
-              variants={itemVariants}
-              className="w-full text-xl md:text-2xl lg:text-3xl p-2 bg-brand rounded text-header mb-4 mt-4"
-            >
-              Mobile App Development
-            </motion.h2>
-            <motion.p
-              variants={itemVariants}
-             className="text-normal text-base md:text-lg lg:text-xl font-normal leading-4.5 md:leading-6 mb-4 md:mb-8"
-            >
-              Creating cross-platform and native mobile applications with
-              optimized performance and modern features.
-            </motion.p>
-            <div className="flex flex-wrap gap-2">
-              <motion.div
-                variants={iconVariants}
-                className="relative group w-fit"
-              >
-                <div
-                  tabIndex="0"
-                   className="p-2 md:p-4 text-5xl md:text-6xl lg:text-7xl text-normal bg-brand rounded transition-all duration-300 hover:-translate-y-5 hover:-rotate-3 sm:hover:-translate-y-6 hover:shadow-2xl hover:bg-[var(--color-panel)] hover:text-[var(--color-accent)] focus:-translate-y-5 sm:focus:-translate-y-6  focus:shadow-2xl focus:bg-[var(--color-panel)] focus:text-[var(--color-accent)] focus:-rotate-3  cursor-pointer w-fit h-fit"
-                >
-                  <SiKotlin />
-                </div>
-                <div className="absolute left-1/2 -translate-x-1/2 opacity-0 transition-all duration-300 delay-50 group-hover:opacity-100 group-focus-within:opacity-100 -mt-5 sm:-mt-6 pointer-events-none text-brand group-hover:text-[var(--color-panel)] group-focus-within:text-[var(--color-panel)] z-10">
-                  <p className="text-base md:text-lg lg:text-xl font-extrabold">
-                    KOTLIN
                   </p>
                 </div>
               </motion.div>
