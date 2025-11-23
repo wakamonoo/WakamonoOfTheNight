@@ -8,6 +8,7 @@ import Footer from "@/sections/footer";
 import Loader from "@/components/loader";
 import { useEffect, useState } from "react";
 import Aibou from "@/components/aibou";
+import Bulletin from "@/components/bulletin";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -41,18 +42,15 @@ export default function Home() {
       </section>
 
       {/* ———————————————————————————————————— about section ——— */}
-      <section
-        id="about"
-        className="bg-second p-8 md:p-16 lg:p-32 xl:px-72"
-      >
+      <Bulletin />
+
+      {/* ———————————————————————————————————— about section ——— */}
+      <section id="about" className="bg-second p-8 md:p-16 lg:p-32 xl:px-72">
         <About loading={loading} />
       </section>
 
       {/* ———————————————————————————————————— skills section ——— */}
-      <section
-        id="skills"
-        className="bg-second p-8 md:p-16 lg:p-32 xl:px-72"
-      >
+      <section id="skills" className="bg-second p-8 md:p-16 lg:p-32 xl:px-72">
         <Skills loading={loading} />
       </section>
 
@@ -65,10 +63,7 @@ export default function Home() {
       </section>
 
       {/* ———————————————————————————————————— contact section ——— */}
-      <section
-        id="contact"
-        className="bg-second p-8 md:p-16 lg:p-32 xl:px-72"
-      >
+      <section id="contact" className="bg-second p-8 md:p-16 lg:p-32 xl:px-72">
         <Contact loading={loading} />
       </section>
 
