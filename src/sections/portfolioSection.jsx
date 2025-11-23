@@ -255,6 +255,55 @@ export default function Portfolio({ loading }) {
                 <div className="p-4 sm:p-8 bg-brand w-full h-full rounded shadow-9xl focus:shadow-2xl hover:shadow-2xl duration-200 ease-in-out">
                   <div className="flex justify-between">
                     <Image
+                      src={Work10}
+                      alt="project"
+                      className="w-[8rem] md:w-[11rem] h-auto rounded"
+                    />
+                    <div className="w-full ml-2 sm:ml-4">
+                      <h4 className="text-lg md:text-xl lg:text-2xl text-header">
+                        NEXUS
+                      </h4>
+                      <p className="text-sm md:text-base lg:text-lg leading-4 lg:leading-5 md:mt-2 text-normal">
+                        MCU fansite to track watch progress, rank titles,
+                        interact with community and many more.
+                      </p>
+                      <div className="flex flex-wrap gap-2 mt-2 text-xl md:text-2xl lg:text-3xl text-normal">
+                        <SiNextdotjs />
+                        <SiReact />
+                        <SiTailwindcss />
+                        <SiFirebase />
+                        <SiNodedotjs />
+                        <SiExpress />
+                        <SiMongodb />
+                        <SiCloudinary />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex justify-center">
+                    <div className="mt-2 w-full grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4">
+                      <a href="https://nexus-wakamonoo.vercel.app">
+                        <button
+                          className="text-center font-normal text-sm md:text-base lg:text-lg leading-4 p-2 sm:p-4 bg-panel rounded text-header hover:text-[var(--color-panel)] active:text-[var(--color-panel)] w-full cursor-pointer transition-all duration-200
+                       hover:bg-[var(--color-accent)] active:bg-[var(--color-accent)] hover:shadow-2xl active:shadow-2xl"
+                        >
+                          Breach Walls
+                        </button>
+                      </a>
+                      <a href="https://github.com/wakamonoo/arqila">
+                        <button
+                          className="text-center font-normal text-sm md:text-base lg:text-lg leading-4 p-2 sm:p-4 bg-panel rounded text-header hover:text-[var(--color-panel)] active:text-[var(--color-panel)] w-full cursor-pointer transition-all duration-200
+                       hover:bg-[var(--color-accent)] active:bg-[var(--color-accent)] hover:shadow-2xl active:shadow-2xl"
+                        >
+                          Open War Archives
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="p-4 sm:p-8 bg-brand w-full h-full rounded shadow-9xl focus:shadow-2xl hover:shadow-2xl duration-200 ease-in-out">
+                  <div className="flex justify-between">
+                    <Image
                       src={Work11}
                       alt="project"
                       className="w-[8rem] md:w-[11rem] h-auto rounded"
