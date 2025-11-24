@@ -57,7 +57,7 @@ export default function Bulletin({ loading }) {
       <motion.div variants={itemVariants} className="flex items-center gap-2">
         <Marquee
           pauseOnHover={true}
-          speed={50}
+          speed={80}
           className="cursor-pointer bg-panel"
         >
           <h1 className="text-base md:text-lg lg:text-xl font-tall text-header bg-brand border-x-3 border-[var(--color-secondary)] p-4">
@@ -65,7 +65,7 @@ export default function Bulletin({ loading }) {
           </h1>
 
           <div className="flex items-center">
-            <FaBullhorn className="text-sm md:text-base lg:text-lg mr-2" />
+            <FaBullhorn className="text-base md:text-lg lg:text-xl m-2" />
             <p className="text-sm md:text-base lg:text-lg font-normal text-normal">
               Attention, everyone! I proudly report that I have completed
               another mission, called
@@ -87,7 +87,7 @@ export default function Bulletin({ loading }) {
             </p>
           </div>
           <button
-            className="px-4 rounded-full bg-army mr-4 cursor-pointer transition-all duration-300 hover:scale-x-110 focus:scale-x-110"
+            className="px-4 rounded-full bg-army m-4 cursor-pointer transition-all duration-300 hover:scale-x-110 focus:scale-x-110"
             onClick={() => router.push("https://nexus-wakamonoo.vercel.app")}
           >
             <p className="text-sm md:text-base lg:text-lg font-bold">Visit</p>
