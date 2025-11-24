@@ -33,7 +33,6 @@ export default function Home() {
       {loading && <Loader onFinish={() => setLoading(false)} />}
 
       {/* ———————————————————————————————————— chatbot ——— */}
-
       <Aibou loading={loading} />
 
       {/* ———————————————————————————————————— hero section ——— */}
@@ -42,12 +41,14 @@ export default function Home() {
       </section>
 
       {/* ———————————————————————————————————— about section ——— */}
-      <Bulletin />
-
-      {/* ———————————————————————————————————— about section ——— */}
       <section id="about" className="bg-second p-8 md:p-16 lg:p-32 xl:px-72">
         <About loading={loading} />
       </section>
+
+      {/* ———————————————————————————————————— about section ——— */}
+      <div className="bg-second">
+        <Bulletin loading={loading} />
+      </div>
 
       {/* ———————————————————————————————————— skills section ——— */}
       <section id="skills" className="bg-second p-8 md:p-16 lg:p-32 xl:px-72">
