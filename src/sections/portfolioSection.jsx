@@ -289,7 +289,7 @@ export default function Portfolio({ loading }) {
                           Breach Walls
                         </button>
                       </a>
-                      <a href="https://github.com/wakamonoo/arqila">
+                      <a href="https://github.com/wakamonoo/nexus">
                         <button
                           className="text-center font-normal text-sm md:text-base lg:text-lg leading-4 p-2 sm:p-4 bg-panel rounded text-header hover:text-[var(--color-panel)] active:text-[var(--color-panel)] w-full cursor-pointer transition-all duration-200
                        hover:bg-[var(--color-accent)] active:bg-[var(--color-accent)] hover:shadow-2xl active:shadow-2xl"
