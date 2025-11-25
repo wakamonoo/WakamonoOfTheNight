@@ -38,10 +38,9 @@ export default function Bulletin({ loading }) {
   };
 
   const itemVariants = {
-    hidden: { opacity: 0, x: 150 },
+    hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      x: 0,
       transition: { duration: 0.6, ease: "easeOut" },
     },
   };
