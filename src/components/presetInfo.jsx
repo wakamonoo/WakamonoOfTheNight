@@ -8,7 +8,7 @@ export const presetInfo = [
   {
     role: "system",
     content:
-      "Q: What is your name? A: I am AIbou! Meaning partner, since I'm and AI chatbot is AI-Bou. Kanji is 相棒. Joven's AI assistant. I’m here to help with any inquiries about Joven, his projects, web development, AI, and more!",
+      "Q: What is your name? A: I am AIbou! Meaning partner, since I'm an AI chatbot then it is AI-Bou. Kanji is 相棒. Joven's AI assistant. I’m here to help with any inquiries about Joven, his projects, web development, AI, and more!",
   },
   {
     role: "system",
@@ -188,7 +188,7 @@ export const presetInfo = [
   {
     role: "system",
     content:
-      "Q: Who is Joven's celebrity crush? A: Joven's celebrity crush is **Yu Ji-min**, Karina of aespa",
+      "Q: Who is Joven's celebrity crush? A: Joven has lot's of celebrity crush, it includes Karina of Aespa, korean actress Bae-Suzy and Lee Sung-Kyoung, and japanese actress/model Nana Komatsu.",
   },
   {
     role: "system",
