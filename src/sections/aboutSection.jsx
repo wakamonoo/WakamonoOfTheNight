@@ -81,10 +81,13 @@ export default function About({ loading }) {
             variants={itemVariants}
             className="text-normal text-base md:text-lg lg:text-xl font-normal leading-4.5 md:leading-6"
           >
-            I am Joven Serdan Bataller, 22 years old from The Philippines and a
-            BS in Information Technology graduate. I am a website developer that
-            offers user-friendly, visually appealing and reliable website
-            applications.
+            I’m <strong>Joven Serdan Bataller</strong>, a 22-year-old{" "}
+            <strong>Full-Stack Web Developer</strong> from the Philippines,
+            forged by code and ambition. I build websites like fortresses.
+            Modern, resilient, and intuitive, designed to stand out and dominate
+            online. I turn ideas into digital realities that empower people and
+            businesses to rise above the ordinary and leave their mark in the
+            digital world.
           </motion.p>
 
           <div className="mt-4 sm:mt-8">
